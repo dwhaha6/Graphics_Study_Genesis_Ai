@@ -77,12 +77,8 @@ total_reward = (
     - At > 0이면, L을 줄이기 위해 log 값이 커짐 즉 그 행동의 확률이 올라감
     - At < 0이면, L을 줄이기 위해 반대로 log 값이 작아짐 즉 그 행동의 확률이 줄어듦
 5. PPO에서는 위 정책에서 안정성을 더한 버전
-$$
-L^{\mathrm{PPO}}(\theta)
-= \mathbb{E}_t\Big[
-\min\big(r_t(\theta)A_t,\; \mathrm{clip}(r_t(\theta),\,1-\epsilon,\,1+\epsilon)\,A_t\big)
-\Big]
-$$
+PPO의 목적함수는 $L^{\mathrm{PPO}}(\theta)=\mathbb{E}_t[\min(r_t(\theta)A_t,\;\mathrm{clip}(r_t(\theta),1-\epsilon,1+\epsilon)A_t)]$ 
+
 
 - 행동 확률이 너무 급격히 바뀌지 않도록 클리핑을 넣음
 
@@ -210,4 +206,5 @@ self.obs_buf = torch.cat(
     - params = 12 x 128 + 12 = 1548
 ### 총 파라미터 = 31232 + 131328 + 32896 + 1548 = 197004개
     - single.pt , double.pt 둘 다 파라미터 개수 동일
+
 
