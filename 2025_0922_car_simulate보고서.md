@@ -158,6 +158,7 @@ for t in range(STEPS):
 - 자동차가 생성이 되고 바퀴도 굴러가지만 제자리에서 움직이지 않는 문제 발생
 - 코드의 주요 부분들을 읽고 이해하며 마찰력이 0인 것이 문제였음을 파악
     - car.set_friction(0.0)
+  
 ![Image](https://github.com/user-attachments/assets/6473f3f1-664f-4ac0-b191-c324da77ac66)
 - car.set_friction(1.0)으로 수정 후 잘 동작하는 것을 확인
 ### 추가 사항
@@ -169,5 +170,6 @@ for t in range(STEPS):
 - collider와 협력하여 더욱 정교하고 빠르게 충돌을 감지하는 세부 기술을 담은 gjk_decomp.py / mpr_decomp.py / support_field_decomp.py
 
 - 자동차가 "미끄러지지 않는" 구속 조건을 다루는 constraint_noslip.py 등이 존재
+
 
 
