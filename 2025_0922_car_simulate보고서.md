@@ -150,7 +150,8 @@ for t in range(STEPS):
 2. 공기 저항 (Air Resistance): 자동차가 움직이는 속도에 비례해 바람의 저항을 받음
 3. 마찰 저항 (Rolling Resistance): 바퀴가 지형 위를 굴러갈 때 발생하는 저항(울퉁불퉁한 길에서 저항이 더 커짐)
 4. 중력 (Gravity Force): 자동차는 항상 아래로 잡아당겨짐
-5. 수직 항력 (Normal Force): 중력으로 땅을 누르면, 땅이 자동차를 다시 위로 밀어내는 힘
+5. 수직 항력 (Normal Force): 중력으로 땅을 누르면, 땅이 자동차를 다시 위로 밀어내는 힘  
+
 ![](./이미지/sujik.png)
 - 이 모든 힘들을 계산해 자동차의 움직임을 예측, 업데이트함
 - 자동차가 실제 물리 법칙으로 움직이는 것처럼 보임 
@@ -174,6 +175,7 @@ for t in range(STEPS):
 - collider와 협력하여 더욱 정교하고 빠르게 충돌을 감지하는 세부 기술을 담은 gjk_decomp.py / mpr_decomp.py / support_field_decomp.py
 
 - 자동차가 "미끄러지지 않는" 구속 조건을 다루는 constraint_noslip.py 등이 존재
+
 
 
 
