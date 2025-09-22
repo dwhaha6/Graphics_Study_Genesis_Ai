@@ -125,6 +125,7 @@ car.set_dofs_kv(kv=np.full(n, KV, dtype=np.float32), dofs_idx_local=dofs)
     - 즉 이 자동차는 바퀴 하나당 최대로 200만큼의 힘을 낼 수 있음
         - lower는 뒤로 가게 하는 힘
         - upper는 앞으로 가게 하는 힘
+      
 ![](./이미지/TOQUE.png)
 ## 3. 시뮬레이션 루프
 ```python
@@ -164,4 +165,5 @@ for t in range(STEPS):
 - 구속조건(바퀴가 차체에 고정)을 해결하는 constraint_solver_decomp.py
 - 충돌을 감지하는 collider_decomp.py
 - collider와 협력하여 더욱 정교하고 빠르게 충돌을 감지하는 세부 기술을 담은 gjk_decomp.py / mpr_decomp.py / support_field_decomp.py
+
 - 자동차가 "미끄러지지 않는" 구속 조건을 다루는 constraint_noslip.py 등이 존재
