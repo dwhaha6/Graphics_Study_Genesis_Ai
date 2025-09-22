@@ -66,7 +66,7 @@ terrain = scene.add_entity(gs.morphs.Terrain(
     - 각 작은 구역의 크기를 6 by 6으로 설정
 - horizontal_scale, vertical_scale
     - 각각 주파수의 주기, 주파수의 진폭이라고 이해하면 편함
-    - 즉 horiaontal은 가로로 울퉁불퉁한 정도
+    - horiaontal은 가로로 울퉁불퉁한 정도
     - vertical은 세로로 울퉁불퉁한 정도
       
 ![](./이미지/wave.png)
@@ -174,6 +174,7 @@ for t in range(STEPS):
 - collider와 협력하여 더욱 정교하고 빠르게 충돌을 감지하는 세부 기술을 담은 gjk_decomp.py / mpr_decomp.py / support_field_decomp.py
 
 - 자동차가 "미끄러지지 않는" 구속 조건을 다루는 constraint_noslip.py 등이 존재
+
 
 
 
