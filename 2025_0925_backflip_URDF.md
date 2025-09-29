@@ -161,8 +161,8 @@ RL_hip_joint origin: xyz="-0.1934 0.0465 0"  → y = +0.0465
 - ±1.0472 rad ≈ ±60° → 뒤로 최대 60°, 앞으로 최대 60°.
 - effort(모터 최대 토크) = 23.7
 - velocity(최대 각속도) = 30.1(rad/s)
-
-[영상 보기](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/raw/main/video/go2_robot_joint_compressed.mp4)
+[
+[영상 보기](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/raw/main/video/go2_robot_joint_compressed.mp4)](https://github.com/user-attachments/assets/bc0c71b6-2d48-4683-9827-8102062c0a35)
 
 
 
@@ -246,6 +246,7 @@ RL_hip_joint origin: xyz="-0.1934 0.0465 0"  → y = +0.0465
 3. 센서 위치는 URDF에 들어있지만, 현실 정확도는 반드시 캘리브레이션 필요.
 
 4. 본체 크기는 충돌 단순화 모델이라 현실보다 작게 잡혀 있음.
+
 
 
 
