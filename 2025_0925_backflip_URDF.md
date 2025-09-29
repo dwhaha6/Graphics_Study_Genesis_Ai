@@ -162,7 +162,7 @@ RL_hip_joint origin: xyz="-0.1934 0.0465 0"  → y = +0.0465
 - effort(모터 최대 토크) = 23.7
 - velocity(최대 각속도) = 30.1(rad/s)
 
-[go2_robot_joint_compressed.mp4](Graphics_Study_Genesis_Ai/video/go2_robot_joint_compressed.mp4)
+[영상보기](video/go2_robot_joint_compressed.mp4)
 
 
 - 위 영상처럼 엉덩이,허벅지,종아리 관절 각각 한 축에 대해서만 움직임
@@ -245,6 +245,7 @@ RL_hip_joint origin: xyz="-0.1934 0.0465 0"  → y = +0.0465
 3. 센서 위치는 URDF에 들어있지만, 현실 정확도는 반드시 캘리브레이션 필요.
 
 4. 본체 크기는 충돌 단순화 모델이라 현실보다 작게 잡혀 있음.
+
 
 
 
