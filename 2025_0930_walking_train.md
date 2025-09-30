@@ -70,3 +70,29 @@ backflip 예제 관련 train코드가 없어 학습 데이터를 찾을 수 없�
 - 이 예제에선 존재하지 않음
 - Genesis의 드론, 백플립 등의 예제는 모두 **단일 환경 조건**
 - 예제 레벨의 코드에선 없고 필요시 추가해야 함함
+## 보행 예제 체크포인트 별 움직임
+- 1 ~ 140까지의 Iteration을 6등분으로 나누어 각 Iteration에서의 로봇의 상태를 관찰한 것
+- 140 이후의 보행은 거의 비슷하여 추가적으로 담지 않았음
+### chpt1
+
+https://github.com/user-attachments/assets/211aaf57-99f7-4a74-83dd-304eb71a3a9e
+
+### ckpt 29
+
+https://github.com/user-attachments/assets/a059a078-811f-4723-be18-e85e4a1e3aae
+
+### ckpt 57
+
+https://github.com/user-attachments/assets/46f38b6d-57b7-4ec1-8936-0a5a82b7dc41
+
+### ckpt 85
+
+https://github.com/user-attachments/assets/d988f652-9eef-4d9d-9f9b-532377758d3a
+
+### ckpt 113
+
+https://github.com/user-attachments/assets/d64c18dd-beb0-4fdb-9f3e-4458e29b11d1
+
+### ckpt 140
+
+https://github.com/user-attachments/assets/1e60b636-6965-4550-be48-1e5fdc4d4ef6
