@@ -36,10 +36,10 @@ https://github.com/user-attachments/assets/27073d1a-9c1f-414c-9db4-c4e572a14e97
 - **평가** 자체는 연산량이 적기에 CPU로도 충분하고 GPU와 결과가 사실상 동일
 - GPU는 학습(train)에서 수천개의 환경,배치,역전파가 있을 때 매우 유용함
 
-![gpu를 잡고 학습시켰을 때의 ETA](./이미지/gpu_train.png)
-
-![cpu만으로 학습시켰을 때의 ETA](./이미지/cpu_train.png)
- 
+![](./이미지/gpu_train.png)
+- gpu를 잡고 학습시켰을 때의 ETA
+![](./이미지/cpu_train.png)
+ - cpu만으로 학습시켰을 때의 ETA
 ### 그렇다면 집(RTX 4060)에서는 단순 eval 코드만 돌리는데도 왜 버벅거렸을까?
 
 - 집에 있는 컴퓨터를 손볼 수 없는 상황이기에 정확한 원인을 찾진 못 했으나, time.sleep(), render_every, substeps 등 코드에서 수정 가능한 요인이었을 수 있음
