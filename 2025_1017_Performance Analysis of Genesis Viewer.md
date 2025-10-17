@@ -7,7 +7,8 @@ https://github.com/user-attachments/assets/354a524b-f0fd-4ee9-aeb7-a7dbcca97d00
 ### 뷰어 렌더링 = CPU 작업
 - Genesis는 PyRender 라이브러리를 사용
 - PyRender는 OpenGL로 CPU에서 렌더링
-- GPU는 시뮬레이션을 잘 해주지만 CPU의 화면 출력에서 문제가 생긴 것
+- 더 정확히는 PyRender/pyglet가 매 프레임 윈도우 이벤트 처리 + OpenGL 함수 호출하는데 이 명령 제출은 CPU만 가능(윈도우 이벤트 처리)
+           - 여기서 병목이 생기는 것!
 
 ### CPU 병목 현상
 [매 스텝마다]
@@ -17,7 +18,7 @@ GPU 시뮬레이션 (빠름) → GPU→CPU 데이터 전송 (느림) → CPU 렌
          └──────────────────── GPU가 CPU를 기다림 ────────────────────┘
 ```
 ### 결론
-- GPU는 본인 일(시뮬레이션)을 다 마치고 CPU가 렌더링 끝내기를 기다림
+- GPU는 본인 일(시뮬레이션)을 다 마치고 CPU를 기다림
 - GPU 사용률이 뷰어를 껐을 때 대비 절반밖에 나오지 못 함
 ## 바꿀 수는 없나?
 ### Genesis 공식 문서
