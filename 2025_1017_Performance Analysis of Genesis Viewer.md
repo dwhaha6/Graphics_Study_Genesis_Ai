@@ -52,4 +52,4 @@ self._pyrender_viewer = pyrender.Viewer(
 2. 그렇게 빠르게 뽑아낸 영상을 원하는 fps로 렌더링하기에 mp4 영상도 매우 깔끔함
 3. 실시간으로 뷰어를 보진 못 해도 원하는 목적이 **실시간** 동영상이 아닌 시뮬레이션의 결과를 **깔끔하게** 보는 것이라면 매우 괜찮은 대안이라고 생각이 듦
 ### 카메라 렌더링으로 만든 동영상
-https://github.com/user-attachments/assets/6fe6a8cc-825d-45de-b913-f04f66fa2fcc
+[https://github.com/user-attachments/assets/6fe6a8cc-825d-45de-b913-f04f66fa2fcc](https://github.com/user-attachments/assets/d6ef1c6b-c70a-4689-9225-ec37911b8e1e)
