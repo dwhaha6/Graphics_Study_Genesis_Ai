@@ -10,7 +10,7 @@
 - 지형의 Shape을 Convex Hull로 설정할 시 지면의 세밀한 각도 하나하나가 전부 계산되어 자동차가 움직이진 않아도 연산량을 아낄 수 있다는 장점이 있음
 - 다만 저런 분화구나 계곡같은 지형에선 Convex Hull은 사용 불가
 
-영상2
+[](https://github.com/user-attachments/assets/213eb335-404d-434a-86f4-d1f4decaafdf)
 
 #### 왜 이런 일이?
 - Convex_Hull의 Collider 모양 때문
@@ -31,7 +31,7 @@
 - GPU로 돌릴 방안을 강구해 봤으나 찾지 못 했음
     - Blender 자체 물리엔진의 한계로 보임
 
-영상3
+https://github.com/user-attachments/assets/7aee6272-3483-4776-8197-09e138583abd
 
 #### mesh 방식의 단점을 해결할 방안(cache bake 방식)
 - blender에선 센서를 이용한 데이터 획득이 목적이므로 주행 시뮬레이션은 실시간이 아니더라도 보기 불편하기 않게 나오면 괜찮을 것이라고 판단하였음
@@ -41,7 +41,8 @@
 
 ![](./이미지/cache_bake.png)
 
-영상1
+https://github.com/user-attachments/assets/c4eef099-c48e-4fbf-a477-e0565a6ce1af
+
 - 위 방식으로 재생한 시뮬레이션
 
 ### 방식2(반드시 실시간으로 연산이 처리되어야 한다면?)
@@ -54,14 +55,16 @@
 - 현재 사용중인 지형과 같이 울퉁불퉁한 면이 많고 움푹 패여 있다면 자동차의 움직임이 부자연스러움
     - 단점이 1가지이지만 사실 이 하나가 매우 크다고 볼 수 있음
 
-영상4
+https://github.com/user-attachments/assets/2da3a0be-c967-46b9-a1b1-64fc2b402e0c
+
 - 초반처럼 완만한 지형은 잘 주행하지만 뒤로 갈 수록 Collider가 세밀하지 못 해 자동차가 공중에 떠서 가는 모습
 
 # bledner에서 데이터셋 뽑아내기
 - 이전에 설명한 Bake를 이용해 차량의 움직임을 미리 저장해두고 blender 내부에서 파이썬 코드를 통해 데이터 수집
 
-데이터 수집용 영상
-csv
+https://github.com/user-attachments/assets/79237732-6c8f-460e-8f86-b4a9c02a497e
+
+https://github.com/user-attachments/files/23292398/sensor_log.csv
 - 위 영상으로부터 얻어낸 csv 파일
 
 ### 1. frame
@@ -280,3 +283,4 @@ print("CSV:", CSV_PATH)
 print("이미지 폴더:", IMG_DIR)
 
 ```
+
