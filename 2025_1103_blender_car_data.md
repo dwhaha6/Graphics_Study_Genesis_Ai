@@ -64,7 +64,7 @@ https://github.com/user-attachments/assets/2da3a0be-c967-46b9-a1b1-64fc2b402e0c
 
 https://github.com/user-attachments/assets/79237732-6c8f-460e-8f86-b4a9c02a497e
 
-https://github.com/user-attachments/files/23292398/sensor_log.csv
+[sensor_log.csv](https://github.com/user-attachments/files/23292398/sensor_log.csv)
 - 위 영상으로부터 얻어낸 csv 파일
 
 ### 1. frame
@@ -156,6 +156,7 @@ frame 250: 6.651986
 - 거리가 점점 줄어든다는 의미는 오르막길로 서서히 다가가고 있다는 의미
 - 언덕 위로 올라오면 다시 차량 앞에 아무것도 없기에 데이터 칸이 비어져있는 모습
 
+### 데이터 수집 코드
 
 ```python
 import bpy
@@ -283,4 +284,5 @@ print("CSV:", CSV_PATH)
 print("이미지 폴더:", IMG_DIR)
 
 ```
+
 
