@@ -76,7 +76,7 @@ https://github.com/user-attachments/assets/d117c0b1-a937-4f97-9e35-f645352ab223
 ### 1. 차체 Collision을 box로 교체
 - 결론부터 말하면 바퀴의 collsion, 차체의 collsion이 앞바퀴에서 겹쳐지며 앞바퀴에 물리 오류를 일으킨 것
     - 이 오류를 해결하기 위해선 각 collision의 부피를 정확히 알아야 했기에 차체는 box, 바퀴는 cylinder인 상태에서 start
-    - 위 결론은 정황상 가장 확률이 높은 원인을 고른 것으로 개인적으로는 다른 원인이 있을 것으로 생각되는데 확실한 원인을 찾지는 못 했습니다.
+    - 위 결론은 정황상 가장 확률이 높은 원인을 고른 것으로 개인적으로는 다른 원인이 있을 것으로 생각되는데 확실한 원인을 찾지는 못 한 상황
 ### 2. 박스와 실린더의 collision 부피 계산
 
 - collision이 mesh가 아닌 box와 cylinder이기에 box의 collision과 cylinder의 collision이 조금이라도 겹치면 안 되는 상황
