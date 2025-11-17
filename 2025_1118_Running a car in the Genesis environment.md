@@ -89,7 +89,7 @@ https://github.com/user-attachments/assets/d117c0b1-a937-4f97-9e35-f645352ab223
   </geometry>
 </collision>
 ```
-![]()
+![](./이미지/문제collision.jpeg)
 - 위 상황을 도식화한 것
 #### 현재의 box collision
 ```
@@ -100,7 +100,7 @@ https://github.com/user-attachments/assets/d117c0b1-a937-4f97-9e35-f645352ab223
       </geometry>
     </collision>
 ```
-![]()
+![](./이미지/collision해결)
 - 마찬가지로 현재 collision 상황을 도식화 한 것  
 -> 앞바퀴 문제 해결
 ## 주행 영상
