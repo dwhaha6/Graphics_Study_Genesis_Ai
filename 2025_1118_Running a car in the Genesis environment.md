@@ -109,7 +109,8 @@ https://github.com/user-attachments/assets/5d6ede90-4758-4c64-aa20-7cb9b9c96c22
 ### 해결해야 하는 것들
 #### 1. 위 영상은 뒷바퀴 토크를 1000으로 주었음(시속 약 36km/h)
     - 토크를 2500올렸을 때 차가 안정적으로 주행하지 못 했음
-https://github.com/user-attachments/assets/20dc5609-0688-4b31-bf45-690a29933433
+https://github.com/user-attachments/assets/20dc5609-0688-4b31-bf45-690a29933433  
+
     - 현재 원인 파악 중에 있는 문제
 #### 2. blender 직진 문제
     - 정답 데이터를 가져와야 할 blender 차량에 문제가 있음을 만교 학생으로부터 알게 되었음
