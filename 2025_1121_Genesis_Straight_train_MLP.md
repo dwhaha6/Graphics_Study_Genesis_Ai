@@ -115,7 +115,7 @@ throttle_cmd = 0 → 스로틀 0
 throttle_cmd = +1 → 최대 스로틀
 ```
 ## 학습 완료된 차량 주행
-https://github.com/user-attachments/assets/aeddb5a6-7ef8-4ca1-8196-8955298305d8
+https://github.com/user-attachments/assets/93038e86-8a81-4a5d-8d9b-27c4f0e0436f
 - 정답 데이터에 따라 무난하게 주행하는 모습
 ### 초반에 조향이 틀어졌다가 서서히 직진 조향으로 바뀌는 이유?
 - 학습에 사용된 CSV 데이터는 대부분 차량이 이미 움직이고 있는 구간에서 추출
