@@ -2,11 +2,11 @@
     - 블렌더에서 데이터를 뽑아내는 방식은 직진 모델 학습때와 동일하므로 pass
         - 쿼터니언 차이를 이용한 각속도 뽑아내기였음
 
-(블렌더 영상)
+https://github.com/user-attachments/assets/6b979586-b3ab-4eff-a421-58f1abbbba04
 - 위 움직임을 모사할 예정
 
 ## MLP 구조
-![](./이미지/MLP.png)
+![](./이미지/MLP_steer.png)
 
 ### 입력층(Input Layer) - 6차원
 | 차원       | 의미                  |
@@ -82,7 +82,7 @@ throttle_norm = torch.tanh(raw_throttle)
 
 
 ## 시행 착오
-(주행영상)
+https://github.com/user-attachments/assets/fdce97ff-899c-40a7-b589-c862df49bfec
 ### Qualitative Problems
 - 차량이 Blender에 비해 느리다
 - 왼쪽으로 움직이긴 하나 그 정도가 미미하다
@@ -123,7 +123,7 @@ substeps = 2
 ```
 -> 1초에 100번으로 변경해서 높은 FPS 확보
 
-(영상 첨부)
+https://github.com/user-attachments/assets/c18bb9e6-60a0-4793-8f8d-2effbfaea85c
 - Blender 움직임 모사 완료
 
 ## 아직 해결하지 못 한 사항들
