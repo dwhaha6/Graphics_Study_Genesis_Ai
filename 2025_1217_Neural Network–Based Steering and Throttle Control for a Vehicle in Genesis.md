@@ -6,6 +6,7 @@
 
 - 즉 Genesis 제어 인터페이스(1개 steer, 1개 throttle)와 구조적으로 안 맞음.
 
+https://github.com/user-attachments/assets/3106972b-d1f0-400f-86a5-9b3e2601816c
 - 데이터를 추출할 blender simulation
 
 # 코드 수정 내용
@@ -66,6 +67,6 @@ spin_R = (ω_RL + ω_RR) / 2
 - 출력은 이전에 설명했으므로 생략
 
 # 학습 결과
-
+https://github.com/user-attachments/assets/391510ff-334e-47e6-91cf-f6550d6a974e
 
 - 이전과 다르게 블렌더의 움직임과 거의 똑같음(9자로 그려지지 않는 모습)
