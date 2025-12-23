@@ -1,35 +1,78 @@
-# Genesis ai Research_History
-# 2025_09
-## 1. Genesis 시뮬레이터를 직접 설치하고 실행해 보면서 과정과 문제 해결 방법을 정리한 기록
-https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0910_genesis%20%EC%83%98%ED%94%8C%20%EC%8B%A4%ED%96%89%20%EB%B3%B4%EA%B3%A0%EC%84%9C.md
-## 2. 드론이 명령한 높이·위치를 잘 따라가는지와 흔들림·충돌 없이 안정적으로 움직이는지를 그래프로 정리한 분석
-https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0916_ckpt%20%EA%B7%B8%EB%9E%98%ED%94%84%20%EC%84%A4%EB%AA%85.md
-## 3. Go2 로봇이 PPO로 학습되는 전체 코드 흐름과 신경망 구조, 보상이 어떻게 행동을 만들지 정리한 설명
-https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0916_train%EC%BD%94%EB%93%9C%20%EB%B6%84%EC%84%9D%20%EB%B0%8F%20%ED%95%99%EC%8A%B5%20%EA%B5%AC%EC%A1%B0%20%ED%8C%8C%EC%95%85.md
-## 4. Go2 백플립 로봇이 코드에서 어떤 순서로 움직임이 만들어지는지(입력 60 → 출력 12 → PD제어) 한 번에 정리한 문서
-https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0922_backflip%EB%B3%B4%EA%B3%A0%EC%84%9C.md
-## 5. CARLA 시뮬레이터로 자율주행 환경과 센서를 어떻게 구성하고 실행하는지 정리한 노트 (외부 자동차 시뮬레이션 조사)
-https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0918_%EC%99%B8%EB%B6%80%20%EC%9E%90%EB%8F%99%EC%B0%A8%20%EB%AC%BC%EB%A6%AC%20%EC%97%94%EC%A7%84%20%EC%A1%B0%EC%82%AC.md
-## 6. Genesis 물리 엔진으로 자동차 시뮬레이션을 처음으로 만들어보고, 왜 그렇게 움직이는지 하나씩 확인한 기록
-https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0922_car_simulate%EB%B3%B4%EA%B3%A0%EC%84%9C.md
-## 7. Go2 백플립 환경에서 쓰이는 좌표계, URDF 구조, 관절·센서 설정이 실제 로봇과 어떻게 대응되는지 정리한 분석
-https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0925_backflip_URDF.md
-## 8. Go2 로봇 보행 학습에서 step, rollout, iteration 같은 데이터 흐름을 이해하기 쉽게 정리한 문서
-https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0930_walking_train.md
-## 9. 한 Rollout과 Mini-batch 기준으로 강화학습 데이터가 얼마나 쌓이고 GPU 메모리를 얼마나 쓰는지 계산해본 정리
-# 2025_10
-https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/edit/main/2025_1014_backflip_data_size_report.md
-## 10. 하나의 환경에서 서로 다른 ckpt의 로봇들 담아 관찰하기 + GPU 이슈관련 해결방안 탐색
-https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1016_walk_report.md
-# 2025_11
-## 11. Blender 지형 위에서 자동차를 주행시키고 위치·자세·센서 데이터를 CSV로 뽑아내는 과정을 정리한 문서
-https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1103_blender_car_data.md
-## 12. Genesis에서 자동차가 제대로 굴러가도록 URDF의 무게중심, 관성, 충돌 박스를 조정하며 주행 문제를 해결한 과정 정리
-https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1118_Running%20a%20car%20in%20the%20Genesis%20environment.md
-## 13. Blender에서 수집한 직진 주행 데이터를 좌표계 변환 후 MLP로 학습해 Genesis 차량을 제어한 실험 기록(조향X, 직진만)
-https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1121_Genesis_Straight_train_MLP.md
-## 14. 직진뿐 아니라 조향까지 포함한 주행 데이터를 학습해 Genesis 차량이 Blender의 회전 동작을 따라가도록 만든 실험 기록
-https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1124_train_car_including_steer.md
-## 15. Blender에서 추출한 바퀴별 데이터를 Genesis의 steer·throttle 제어 방식에 맞게 통합하고 학습 구조를 개선한 기록(14에 대한 실험에한 피드백) 
-# 2025_12
-https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1217_Neural%20Network%E2%80%93Based%20Steering%20and%20Throttle%20Control%20for%20a%20Vehicle%20in%20Genesis.md
+# Genesis AI Research History
+
+Genesis 물리 시뮬레이터를 기반으로  
+로봇 제어, 강화학습 구조 분석, 자동차 시뮬레이션 및 데이터 기반 제어까지  
+단계적으로 확장해 온 개인 연구 기록
+
+---
+
+## Project Progress
+
+### 주요 마일스톤
+- **9월**: 드론·로봇 예제 시뮬레이션 분석 (URDF, 물리 엔진, 제어 구조 이해)
+- **10월**: 강화학습(PPO) 구조 분석 및 메모리·GPU 사용량 정량화
+- **11월**: Blender–Genesis 연동을 통한 자동차 데이터 수집 및 물리 안정화
+- **12월**: 데이터 통합 및 NN 기반 차량 제어 구조 개선 (진행 중)
+
+---
+
+## 2025.09 — Genesis & Robot Simulation Fundamentals
+
+- **Genesis 시뮬레이터 설치 및 예제 실행 기록**  
+  → [Genesis 샘플 실행 및 문제 해결 정리](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0910_genesis%20%EC%83%98%ED%94%8C%20%EC%8B%A4%ED%96%89%20%EB%B3%B4%EA%B3%A0%EC%84%9C.md)
+
+- **드론 위치·고도 추종 안정성 분석 (그래프 기반)**  
+  → [드론 ckpt 동작 그래프 분석](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0916_ckpt%20%EA%B7%B8%EB%9E%98%ED%94%84%20%EC%84%A4%EB%AA%85.md)
+
+- **Go2 로봇 PPO 학습 코드 흐름 및 신경망 구조 분석**  
+  → [PPO 학습 코드 및 보상 구조 정리](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0916_train%EC%BD%94%EB%93%9C%20%EB%B6%84%EC%84%9D%20%EB%B0%8F%20%ED%95%99%EC%8A%B5%20%EA%B5%AC%EC%A1%B0%20%ED%8C%8C%EC%95%85.md)
+
+- **Go2 백플립 동작 생성 파이프라인 정리 (입력→출력→PD 제어)**  
+  → [Backflip 동작 생성 흐름 분석](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0922_backflip%EB%B3%B4%EA%B3%A0%EC%84%9C.md)
+
+- **외부 시뮬레이터 조사: CARLA 자율주행 환경 분석**  
+  → [CARLA 환경 및 센서 구성 조사](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0918_%EC%99%B8%EB%B6%80%20%EC%9E%90%EB%8F%99%EC%B0%A8%20%EB%AC%BC%EB%A6%AC%20%EC%97%94%EC%A7%84%20%EC%A1%B0%EC%82%AC.md)
+
+- **Genesis 물리 엔진 기반 자동차 시뮬레이션 초기 실험**  
+  → [자동차 시뮬레이션 기초 실험 기록](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0922_car_simulate%EB%B3%B4%EA%B3%A0%EC%84%9C.md)
+
+- **Go2 백플립 환경의 좌표계·URDF·센서 구조 분석**  
+  → [Backflip URDF 및 좌표계 대응 분석](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0925_backflip_URDF.md)
+
+- **보행 학습에서 step / rollout / iteration 데이터 흐름 정리**  
+  → [Walking 학습 데이터 구조 설명](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0930_walking_train.md)
+
+---
+
+## 2025.10 — Reinforcement Learning Scaling & Performance
+
+- **Rollout 및 Mini-batch 기준 GPU 메모리 사용량 계산**  
+  → [Backflip 학습 데이터 크기 및 메모리 분석](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1014_backflip_data_size_report.md)
+
+- **다중 ckpt 로봇 동시 관찰 및 GPU 이슈 해결 시도**  
+  → [다중 로봇 실행 및 성능 이슈 정리](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1016_walk_report.md)
+
+---
+
+## 2025.11 — Vehicle Simulation & Data Collection
+
+- **Blender 지형 기반 차량 주행 및 CSV 데이터 수집**  
+  → [Blender 차량 데이터 수집 파이프라인](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1103_blender_car_data.md)
+
+- **URDF 무게중심·관성·충돌 박스 조정으로 주행 안정화**  
+  → [Genesis 차량 물리 파라미터 튜닝 기록](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1118_Running%20a%20car%20in%20the%20Genesis%20environment.md)
+
+- **직진 주행 데이터 기반 MLP 차량 제어 실험 (Steer 제외)**  
+  → [Straight Driving MLP 학습 실험](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1121_Genesis_Straight_train_MLP.md)
+
+- **조향 포함 주행 데이터 학습 및 회전 동작 재현**  
+  → [Steer 포함 차량 학습 실험](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1124_train_car_including_steer.md)
+
+---
+
+## 2025.12 — Neural Network–Based Vehicle Control (Ongoing)
+
+- **바퀴별 데이터 → Genesis 제어 인터페이스 통합 및 학습 구조 개선**  
+  → [NN 기반 Steering & Throttle 제어 구조 개선](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1217_Neural%20Network%E2%80%93Based%20Steering%20and%20Throttle%20Control%20for%20a%20Vehicle%20in%20Genesis.md)
+
+---
