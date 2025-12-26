@@ -65,13 +65,17 @@
 ## 위 방식으로 진행한 학습 결과
 - 24개의 예시를 전부 볼 수는 없기에 이전에는 모사하기 힘들었던 움직임 위주로 첨부하였음
 
-|움직임| Blender | Genesis |
-|--------|-------|--------|
-| 8자 그리며 움직이기 |https://github.com/user-attachments/assets/0d795060-c5bd-4b86-b94e-85d530b306a1| https://github.com/user-attachments/assets/12e806cf-edf6-4537-ac1b-82ffea53c91d|
-| slalom(스키 타듯이 왔다갔다 하는 움직임) |https://github.com/user-attachments/assets/93e78e85-621a-4d35-8e2c-9a3af7681870|https://github.com/user-attachments/assets/83791105-9e22-4218-925f-69fae03a86b7|
-| Spiral(나선형 모양) |https://github.com/user-attachments/assets/a4f8bc2e-dd4a-4c1d-9319-c9ad4ff1af9c|https://github.com/user-attachments/assets/682e9ab6-4a28-46ad-9448-7f62f21dd49d|
+### 8자 그리며 움직이기
+![](./이미지/eight.png)
+https://github.com/user-attachments/assets/12e806cf-edf6-4537-ac1b-82ffea53c91d
 
+### slalom(스키 타듯이 왔다갔다 하는 움직임)
+![](./이미지/slalom.png)
+https://github.com/user-attachments/assets/83791105-9e22-4218-925f-69fae03a86b7
 
+### Spiral(나선형 모양)
+![](./이미지/Spiral.png)
+https://github.com/user-attachments/assets/682e9ab6-4a28-46ad-9448-7f62f21dd49d
 
 ### slalom(스키 타듯이 왔다갔다 하는 움직임)
 
