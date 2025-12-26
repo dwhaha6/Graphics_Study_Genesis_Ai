@@ -67,7 +67,8 @@
 ### 8자 그리며 움직이기
 | Blender | Genesis |
 |-------|--------|
-| [![blender](eight.png)](eight.mp4) | [![Genesis]()](eight_Genesis.mp4) |
+| [![blender](./이미지/eight.png)](https://github.com/user-attachments/assets/0d795060-c5bd-4b86-b94e-85d530b306a1
+) | [![Genesis]()](eight_Genesis.mp4) |
 
 
 ### slalom(스키 타듯이 왔다갔다 하는 움직임)
