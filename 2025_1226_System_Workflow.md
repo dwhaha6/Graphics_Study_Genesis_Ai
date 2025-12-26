@@ -80,10 +80,6 @@ https://github.com/user-attachments/assets/83791105-9e22-4218-925f-69fae03a86b7
 
 https://github.com/user-attachments/assets/682e9ab6-4a28-46ad-9448-7f62f21dd49d
 
-### slalom(스키 타듯이 왔다갔다 하는 움직임)
-
-### Spiral(나선형 모양)
-
 # 아직 해결하지 못 한 사항
 - 절대적인 data양이 부족 -> 특히 후진과 brake의 움직임 예시가 더 추가될 필요가 있음
 - 후진에 대한 움직임은 아직 조금 미흡한 모습을 보임
