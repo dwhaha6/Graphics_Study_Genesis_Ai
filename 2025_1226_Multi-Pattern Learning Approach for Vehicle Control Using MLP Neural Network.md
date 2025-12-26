@@ -136,7 +136,6 @@ https://github.com/user-attachments/assets/da28bedb-0df8-441f-9ca1-82ce8c93aeb2
 
 - 수동으로 브레이크를 걸어준 예시를 학습한 영상
 - Brake를 따로 Genesis 쪽에서 세팅해주지 않아도 꽤나 유사하게 Blender를 모방한 모습
-- 
 ### 더 강한 브레이크를 위한 대안들
 
 ### 방법 1: PD gain 조정
