@@ -67,14 +67,17 @@
 
 ### 8자 그리며 움직이기
 ![](./이미지/eight.png)  
+
 https://github.com/user-attachments/assets/12e806cf-edf6-4537-ac1b-82ffea53c91d
 
 ### slalom(스키 타듯이 왔다갔다 하는 움직임)
 ![](./이미지/slalom.png)  
+
 https://github.com/user-attachments/assets/83791105-9e22-4218-925f-69fae03a86b7
 
 ### Spiral(나선형 모양)
 ![](./이미지/Spiral.png)  
+
 https://github.com/user-attachments/assets/682e9ab6-4a28-46ad-9448-7f62f21dd49d
 
 ### slalom(스키 타듯이 왔다갔다 하는 움직임)
