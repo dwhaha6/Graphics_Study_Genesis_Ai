@@ -130,9 +130,13 @@ torque = Kp * error  # 음수 토크 = 브레이크
    - 뒷바퀴에 토크 제어
    - target_spin = 0일 때 자동으로 멈추려는 힘 발생
 
+https://github.com/user-attachments/assets/f5a0a542-fccd-4d4e-a2f6-79f2d7df0352
+
+https://github.com/user-attachments/assets/da28bedb-0df8-441f-9ca1-82ce8c93aeb2
 
 - 수동으로 브레이크를 걸어준 예시를 학습한 영상
-
+- Brake를 따로 Genesis 쪽에서 세팅해주지 않아도 꽤나 유사하게 Blender를 모방한 모습
+- 
 ### 더 강한 브레이크를 위한 대안들
 
 ### 방법 1: PD gain 조정
