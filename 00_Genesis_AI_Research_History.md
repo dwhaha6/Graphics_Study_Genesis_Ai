@@ -76,5 +76,5 @@ Genesis 물리 시뮬레이터를 기반으로
   → [NN 기반 Steering & Throttle 제어 구조 개선](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1217_Neural%20Network%E2%80%93Based%20Steering%20and%20Throttle%20Control%20for%20a%20Vehicle%20in%20Genesis.md)
 - **24가지 data 기반으로 MLP 학습 진행 후 Genesis에서 시뮬레이션**  
   -> [MLP구조 및 조향,토크,브레이크 제어 파이프라인 정리](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1226_MLP_Architecture_and_Training.md)  
-  -> [전체적인 학습 시스템 파이프라인 및 학습결과를 정리](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1226_System_Workflow.md)
+  -> [전체적인 학습 시스템 파이프라인 및 학습결과 정리](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1226_System_Workflow.md)
 ---
