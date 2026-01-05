@@ -1,6 +1,7 @@
 # data 추출 방식 구체화 및 새로운 방식+ 이후 처리에 대해 궁금한 점 정리
 
 - MLP 학습 이전에 MLP의 정답 데이터가 blender에서 올바르게 뽑혀야 이후 과정 처리가 수월할 것 같다는 생각에 blender 데이터 추출 과정을 다시 한번 검토하였습니다
+- **참고** mp4 영상 속 빨간색 주행 경로는 기존 방식의 시뮬레이션, 초록색 주행 경로는 새로운 방식의 시뮬레이션을 의미합니다.
 ## steer 제어 도출 파이프라인
 
 ### 1. 차체 forward 방향 계산
@@ -106,5 +107,13 @@ https://github.com/user-attachments/assets/7af3d1cb-21d6-4101-9ee4-d9a160d61f08
 - 이전 피드백에서 기존 MLP(main MLP)의 출력에 bledner와 genesis의 차이를 보정해주는 filter MLP를 넣으라는 내용이 있었는데, 제 생각에는 현재 이 정답 data에 filter MLP를 적용시켜 차이를 먼저 보정하고 그렇게 blender와 비슷한 깔끔한 주행이 만들어지면 이를 정답데이터 삼아 Main MLP 학습을 진행하는게 맞지 않나 라는 의문이 듭니다.
 
 ### 조향 부호에 따른 움직임 변화
+
+![](./이미지/eight_reverse.png)
+
+![](./이미지/eight_actual.png)
+
+![](./이미지/slalom_reverse.png)
+
+![](./이미지/slalom_actual.png)
 
 - 조향을 반대로 주니 blender와 훨씬 움직임이 유사해짐 -> 원인을 찾기 힘들어 파악 중에 있음
