@@ -66,7 +66,9 @@ else:
 ```python
 throttle_norm_reverse = clamp(throttle_raw_reverse / THROTTLE_OMEGA_MAX, -1.0, 1.0)
 ```
-- spin = 바퀴 스핀 각속도
+
+- spin = 바퀴 스핀 각속도  
+
 ![](./이미지/step6_7.png)
 
 https://github.com/user-attachments/assets/cac973ae-bf8d-4742-adac-59dc6161abdf
