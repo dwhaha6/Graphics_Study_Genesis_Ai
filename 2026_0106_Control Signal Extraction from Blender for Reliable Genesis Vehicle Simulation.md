@@ -70,7 +70,11 @@ throttle_norm_reverse = clamp(throttle_raw_reverse / THROTTLE_OMEGA_MAX, -1.0, 1
 
 https://github.com/user-attachments/assets/cac973ae-bf8d-4742-adac-59dc6161abdf
 
+![](./이미지/eight_blender.png)
+
 https://github.com/user-attachments/assets/e08c512b-a576-4856-9912-f3999d0295d4
+
+![](./이미지/slalom_blender.png)
 
 - 기존 방식대로 구해낸 정답 제어값을 Genesis에 넣고 시뮬레이션(MLP 학습 움직임이 아닌, 그저 뽑아낸 데이터를 가지고 그대로 시뮬레이션한 것)
 
