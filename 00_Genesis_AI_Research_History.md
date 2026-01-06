@@ -80,5 +80,5 @@ Genesis 물리 시뮬레이터를 기반으로
 ---
 ## 2026.01 - Revisiting Control Data Extraction Pipelines for Blender-to-Genesis Vehicle Transfer
 
-- **Blender data 추출 방식 재점검 및 MLP 학습 파이프라인**
+- **Blender data 추출 방식 재점검 및 MLP 학습 파이프라인**  
 -> [Blender raw data를 이용한 Genesis 시뮬레이션](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0106_Control%20Signal%20Extraction%20from%20Blender%20for%20Reliable%20Genesis%20Vehicle%20Simulation.md)
