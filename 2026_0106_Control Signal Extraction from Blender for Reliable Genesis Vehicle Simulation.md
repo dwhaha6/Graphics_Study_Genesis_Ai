@@ -118,4 +118,4 @@ https://github.com/user-attachments/assets/7af3d1cb-21d6-4101-9ee4-d9a160d61f08
 
 ![](./이미지/slalom_actual.png)
 
-- 조향을 반대로 주니 blender와 훨씬 움직임이 유사해짐 -> 원인을 찾기 힘들어 파악 중에 있음
+
