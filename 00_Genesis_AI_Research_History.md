@@ -83,3 +83,9 @@ Genesis 물리 시뮬레이터를 기반으로
 - **Blender data 추출 방식 재점검 및 MLP 학습 파이프라인**
    
 -> [Blender raw data를 이용한 Genesis 시뮬레이션](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0106_Control%20Signal%20Extraction%20from%20Blender%20for%20Reliable%20Genesis%20Vehicle%20Simulation.md)
+
+- 현재까지 진행한 프로젝트 전체 파이프라인(ppt 형식)  
+-> [강동욱_report](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0116_%EA%B0%95%EB%8F%99%EC%9A%B1_report.pdf)
+
+- 보상 함수 개선 및 재학습(진행중)
+-> [보상 함수 최적화 시도](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0118_Optimization%20of%20PPO-based%20Autonomous%20Driving%20Control%20via%20Reward%20Function%20Engineering.md)
