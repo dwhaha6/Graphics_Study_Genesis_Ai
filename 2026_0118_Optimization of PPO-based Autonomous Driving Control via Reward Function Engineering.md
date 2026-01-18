@@ -39,7 +39,7 @@ wring_train 영상
 
 ### 3. Path Reward(경로 유지 보상)
 - Huber Loss(휴버 손실 함수)의 원리를 이용: 큰 오차는 1차함수로, 작은 오차는 2차 함수로 처리
-- 
+
 $$
 R_{path} = 
 \begin{cases} 
@@ -47,8 +47,8 @@ R_{path} =
 0.5 - 0.33 \times (e_{lat} - 0.5) & (0.5m \le \text{오차} < 2.0m, \text{완충 구간}) \\
 -0.5 \times (e_{lat} - 2.0) & (\text{오차} \ge 2.0m, \text{페널티 구간})
 \end{cases}
-
 $$
+
 $$
 e_{lat}: 횡방향오차
 $$
@@ -63,7 +63,7 @@ $$
 - 의도: 차량의 주행이 최대한 트랙 정중앙에 오도록 유도
 ### 4. Direction Reward(방향 유지 보상)
 - Huber Loss(휴버 손실 함수)의 원리를 이용: 큰 오차는 1차함수로, 작은 오차는 2차 함수로 처리
-- 
+ 
 $$
 R_{dir} = 
 \begin{cases} 
@@ -71,8 +71,8 @@ R_{dir} =
 0.5 - 0.5 \times (e_{yaw} - 0.2) & (0.2 \le \text{오차} < 0.5\text{rad}, \text{약 } 29^\circ) \\
 -0.5 \times (e_{yaw} - 0.5) & (\text{오차} \ge 0.5\text{rad})
 \end{cases}
-
 $$
+
 $$
 e_{yaw}^: 각도오차(단위: 라디안)
 $$
