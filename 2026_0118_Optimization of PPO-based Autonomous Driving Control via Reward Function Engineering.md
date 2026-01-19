@@ -152,7 +152,7 @@ https://github.com/user-attachments/assets/b05f1b4a-b7d1-4800-a90a-405f54fbd423
 - 경로를 따라 얼추 가긴 하지만 직진 구간에서 무의미한 핸들링을 하고 있음
 - 핸들을 중앙에만 두어도 +0.1 점을 주는 reward를 추가해 직진 구간에서는 직진만 하는 것이 이득이 되도록 설계 후 재학습
 
-https://github.com/user-attachments/assets/58aa0468-588d-4941-8c4b-36be96426536
+https://github.com/user-attachments/assets/30bb86c0-b362-4aa4-b2f8-4ad03f1e4ee4
 
 - 재학습 결과
 
