@@ -171,7 +171,8 @@ Completion Status  : FAILED (Collision/Off-track)
    - RMSE          : 1.2183 m
 ------------------------------------------------------------
 2. SPEED ERROR (Velocity Tracking Accuracy)
-   - Average       : 1.2126 m/s
+   - Abs Average   : 1.2126 m/s
+   - Average Diff  : -0.1235 m/s  (+: Faster, -: Slower)
    - Max           : 3.6851 m/s
 ------------------------------------------------------------
 3. YAW ERROR (Heading Stability)
@@ -200,7 +201,8 @@ Completion Status  : FAILED (Collision/Off-track)
    - RMSE          : 1.3055 m
 ------------------------------------------------------------
 2. SPEED ERROR (Velocity Tracking Accuracy)
-   - Average       : 1.1291 m/s
+   - Abs Average   : 1.1291 m/s
+   - Average Diff  : -0.3223 m/s  (+: Faster, -: Slower)
    - Max           : 3.6851 m/s
 ------------------------------------------------------------
 3. YAW ERROR (Heading Stability)
