@@ -179,8 +179,33 @@ Completion Status  : FAILED (Collision/Off-track)
    - Max           : 59.91 degrees
 ============================================================
 ```
-- 정량적 평균 오차 정리
+- 정량적 평균 오차 정리(best model)
 
 https://github.com/user-attachments/assets/ec258b21-53d6-437c-bea5-b663a109fc32
 
 - 학습을 500 iteration까지 돌리자 steer를 극단적으로 주려는 움직임이 다시 보이기 시작했음
+
+```python
+============================================================
+  QUANTITATIVE EVALUATION REPORT
+  Model: pure_ppo_latest.pt
+============================================================
+Total Steps        : 519
+Total Reward       : 231.1140
+Completion Status  : FAILED (Collision/Off-track)
+------------------------------------------------------------
+1. LATERAL ERROR (Path Tracking Accuracy)
+   - Average       : 1.0027 m
+   - Max           : 3.9512 m
+   - RMSE          : 1.3055 m
+------------------------------------------------------------
+2. SPEED ERROR (Velocity Tracking Accuracy)
+   - Average       : 1.1291 m/s
+   - Max           : 3.6851 m/s
+------------------------------------------------------------
+3. YAW ERROR (Heading Stability)
+   - Average       : 13.14 degrees
+   - Max           : 41.65 degrees
+============================================================
+```
+- 정량적 평균 오차 정리(latest model)
