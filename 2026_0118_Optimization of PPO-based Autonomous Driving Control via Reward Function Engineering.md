@@ -147,7 +147,7 @@ $\delta_{t}$: 현재 프레임의 조향값 (-1.0 ~ 1.0)
 
 ## 학습 결과
 
-(https://github.com/user-attachments/assets/b05f1b4a-b7d1-4800-a90a-405f54fbd423)
+https://github.com/user-attachments/assets/b05f1b4a-b7d1-4800-a90a-405f54fbd423
 
 - 경로를 따라 얼추 가긴 하지만 직진 구간에서 무의미한 핸들링을 하고 있음
 - 핸들을 중앙에만 두어도 +0.1 점을 주는 reward를 추가해 직진 구간에서는 직진만 하는 것이 이득이 되도록 설계 후 재학습
