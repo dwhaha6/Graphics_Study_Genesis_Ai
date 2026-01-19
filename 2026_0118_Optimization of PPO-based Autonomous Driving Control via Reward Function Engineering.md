@@ -180,3 +180,7 @@ Completion Status  : FAILED (Collision/Off-track)
 ============================================================
 ```
 - 정량적 평균 오차 정리
+
+https://github.com/user-attachments/assets/ec258b21-53d6-437c-bea5-b663a109fc32
+
+- 학습을 500 iteration까지 돌리자 steer를 극단적으로 주려는 움직임이 다시 보이기 시작했음
