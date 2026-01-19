@@ -1,7 +1,7 @@
 # 1_16 이후 수정 사항 정리
 ## 지난 리포트의 reward 정책으로 train한 결과
 
-wring_train 영상
+https://github.com/user-attachments/assets/538dbfab-18ac-4481-a2d8-89182b899b61
 
 - 급격한 조향시 감점이라는 정책으로 인해 차량이 한번 steer를 정하면 그 값을 유지하려고만 함
 - 결국 왼쪽 혹은 오른쪽으로만 계속해서 가서 죽는 모습
@@ -146,7 +146,12 @@ $\delta_{t}$: 현재 프레임의 조향값 (-1.0 ~ 1.0)
 - 만일 현재 150 iteration인데 30 iteration부터 쭉 차량이 같은 움직임(계속 시작하자마자 왼쪽으로 가서 사망)만 보인다면? 500 tieration까지 학습시키지 않고 원인 파악 후 보상 정책 혹은 기타 코드 수정 후 재학습
 
 ## 학습 결과
-snake_moving mp4
+
+(https://github.com/user-attachments/assets/b05f1b4a-b7d1-4800-a90a-405f54fbd423)
 
 - 경로를 따라 얼추 가긴 하지만 직진 구간에서 무의미한 핸들링을 하고 있음
 - 핸들을 중앙에만 두어도 +0.1 점을 주는 reward를 추가해 직진 구간에서는 직진만 하는 것이 이득이 되도록 설계 후 재학습
+
+https://github.com/user-attachments/assets/58aa0468-588d-4941-8c4b-36be96426536
+
+- 재학습 결과
