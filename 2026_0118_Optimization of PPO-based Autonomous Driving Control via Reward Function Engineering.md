@@ -155,3 +155,28 @@ https://github.com/user-attachments/assets/b05f1b4a-b7d1-4800-a90a-405f54fbd423
 https://github.com/user-attachments/assets/58aa0468-588d-4941-8c4b-36be96426536
 
 - 재학습 결과
+
+```python
+============================================================
+  QUANTITATIVE EVALUATION REPORT
+  Model: pure_ppo_uturn_final_scratch.pt
+============================================================
+Total Steps        : 451
+Total Reward       : 234.3205
+Completion Status  : FAILED (Collision/Off-track)
+------------------------------------------------------------
+1. LATERAL ERROR (Path Tracking Accuracy)
+   - Average       : 0.8570 m
+   - Max           : 3.8494 m
+   - RMSE          : 1.2183 m
+------------------------------------------------------------
+2. SPEED ERROR (Velocity Tracking Accuracy)
+   - Average       : 1.2126 m/s
+   - Max           : 3.6851 m/s
+------------------------------------------------------------
+3. YAW ERROR (Heading Stability)
+   - Average       : 11.17 degrees
+   - Max           : 59.91 degrees
+============================================================
+```
+- 정량적 평균 오차 정리
