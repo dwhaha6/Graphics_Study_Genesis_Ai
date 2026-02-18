@@ -83,7 +83,7 @@ v축과 a/k축 모두 선형 보간하여 sweep 격자점 사이 값도 정확�
 
 ### step2 요약
 ```
-step1 에서 추출한 각 1313개의 a와 305개의 k로는 부족하기에 step2에서 그 사이 값들도 구하기위해 선형 interplation을 진행한 것
+step1 에서 추출한 각 1313개의 a와 305개의 k로는 부족하기에 step2에서 그 사이 값들도 구하기위해 선형 interpolation을 진행한 것
 ```
 
 ### Step 3: Closed-Loop Feedforward + Feedback
