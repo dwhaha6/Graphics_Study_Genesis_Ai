@@ -73,7 +73,7 @@ a = (v_final - 8.0) / 0.2 = 4.2 m/s²
 
 #### 여기까지 genesis의 a,k 값 추출 완료
 
-### Step 2: 역매핑 구축 (`compute_controls.py`)
+### Step 2: 역매핑 구축
 
 Sweep 데이터로 2D 선형 보간 역함수 구축:
 - `throttle = f(v, target_a)` — throttle sweep 역산
