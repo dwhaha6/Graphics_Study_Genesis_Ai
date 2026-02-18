@@ -21,7 +21,7 @@ Blender 차량 궤적을 Genesis 물리엔진에서 재현하는 Sim2Sim 과제.
 Genesis 물리엔진의 제어-동역학 매핑을 직접 측정, 
 
 **Throttle Sweep (직선)**
-- 13 velocities (2~14 m/s) × 101 throttle values (0~1.0) = 1,313 조합
+- 13 velocities (2\~14 m/s) × 101 throttle values (0\~1.0) = 1,313 조합
 #### 예시: v_init=8, throttle=0.3일 때
 
 8 m/s로 출발 → throttle 0.3으로 10프레임 → v_final 측정
