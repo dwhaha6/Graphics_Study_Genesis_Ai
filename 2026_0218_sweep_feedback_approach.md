@@ -143,11 +143,11 @@ s = s_ff - kp_yaw * yaw_error      # kp_yaw = 0.5
 
 ### 각 방식 결과 이미지
 
-| Case A | Case B |
+| MPC (L-BFGS-B) | Sweep open-loop |
 |--------|--------|
 | ![](./이미지/MPC_result.png) | ![](./이미지/sweep_openloop.png) |
 
-| Case C | Case D |
+| Sweep + v feedback only | **Sweep + full feedback** |
 |--------|--------|
 | ![](./이미지/sweep_v.png) | ![](./이미지/sweep_full.png) |
 
