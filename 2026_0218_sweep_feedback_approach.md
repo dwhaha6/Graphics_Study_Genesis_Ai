@@ -175,3 +175,9 @@ https://github.com/user-attachments/assets/bd3fb5ec-692a-4194-afff-1f2f62bd9d07
 
 ---
 
+
+## 추가 개선사항
+
+![](./이미지/최적화작업2.png)
+
+- 위 방식을 유지하되, 코너 구간에서만 yaw 오차와 cross-track 오차에 더 강하게 반응하도록 kp_yaw와 kp_ct를 2배 강화한 결과 
