@@ -87,5 +87,12 @@ Genesis 물리 시뮬레이터를 기반으로
 - 현재까지 진행한 프로젝트 전체 파이프라인(ppt 형식)  
 -> [강동욱_report](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0116_%EA%B0%95%EB%8F%99%EC%9A%B1_report.pdf)
 
-- 보상 함수 개선 및 재학습(진행중)  
+- 보상 함수 개선 및 재학습  
 -> [보상 함수 최적화 시도](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0118_Optimization%20of%20PPO-based%20Autonomous%20Driving%20Control%20via%20Reward%20Function%20Engineering.md)
+
+## 2026.02 - Ground Truth Generation
+
+- **Ground Truth를 위한 다양한 시도**
+
+-> [MPC를 활용한 Ground Truth 시도](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0208_Sim2Sim%20Control%20Optimization%20Report.md)
+(https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0215_MPC%20Optimization%20Progress%20and%20Divergence%20Handling%20Strategy.md)
