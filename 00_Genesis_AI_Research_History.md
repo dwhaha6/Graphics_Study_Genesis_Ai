@@ -81,4 +81,4 @@
 | 02.08 | MPC를 활용한 Ground Truth 시도 1(실패) | 📎 [Sim2Sim Control 최적화](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0208_Sim2Sim%20Control%20Optimization%20Report.md) |
 | 02.15 | MPC를 활용한 Ground Truth 시도 2 *(실패)* | 📎 [MPC 최적화 & Divergence](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0215_MPC%20Optimization%20Progress%20and%20Divergence%20Handling%20Strategy.md) |
 | 02.18 | Sweep + Feedback 제어 방식 시도 | 📎 [Sweep Feedback 접근](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0218_sweep_feedback_approach.md) |
-| 02.21 | Ground Truth 이후 지도 학습 결과 정리 | [MLP 지도 학습 포함 전반적인 파이프라인 정리](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0220_MLP%20supervised%20learning%20after%20ground%20truth.md)
+| 02.21 | Ground Truth 이후 지도 학습 결과 정리 |📎 [MLP 지도 학습 포함 전반적인 파이프라인 정리](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0220_MLP%20supervised%20learning%20after%20ground%20truth.md)
