@@ -179,6 +179,3 @@ https://github.com/user-attachments/assets/6e6736b1-3994-447c-aab9-ccb4a39b1b53
 
 ---
 
-## 7. Conclusion
-
-본 연구에서는 Blender와 Genesis 간의 물리 엔진 차이를 극복하기 위한 Sim-to-Sim 전이 파이프라인을 구축하였습니다. Sweep test 기반 동역학 특성화, PD 피드백 제어를 통한 Golden Control 생성, 그리고 MLP 지도학습을 통한 실시간 제어 보정기 학습까지의 전 과정을 완성하였습니다. 최종 MLP 추론 결과는 평균 위치 오차 0.3120 m로, Ground Truth Replay에 근접한 수준의 궤적 재현을 달성하였습니다.
