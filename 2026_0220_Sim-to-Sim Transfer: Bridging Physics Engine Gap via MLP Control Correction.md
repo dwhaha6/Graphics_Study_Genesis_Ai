@@ -144,7 +144,7 @@ Ground truth 생성 파이프라인(sweep + PD feedback)은 매 시나리오마�
 
 ---
 
-## 5. Results
+## 5. MLP Results
 
 https://github.com/user-attachments/assets/6e6736b1-3994-447c-aab9-ccb4a39b1b53
 
