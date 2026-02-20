@@ -94,5 +94,8 @@ Genesis 물리 시뮬레이터를 기반으로
 
 - **Ground Truth를 위한 다양한 시도**
 
--> [MPC를 활용한 Ground Truth 시도](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0208_Sim2Sim%20Control%20Optimization%20Report.md)
-(https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0215_MPC%20Optimization%20Progress%20and%20Divergence%20Handling%20Strategy.md)
+-> [MPC를 활용한 Ground Truth 시도1](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0208_Sim2Sim%20Control%20Optimization%20Report.md)
+-> [MPC를 활용한 Ground Truth 시도2](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0215_MPC%20Optimization%20Progress%20and%20Divergence%20Handling%20Strategy.md)
+- (MPC 방식은 모두 실패)
+
+-> [Sweep + Feedback 제어 방식 시도](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0218_sweep_feedback_approach.md)
