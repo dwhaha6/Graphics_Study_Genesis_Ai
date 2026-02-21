@@ -119,7 +119,12 @@ Ground truth 생성 파이프라인(sweep + PD feedback)은 매 시나리오마�
 | 2 | S_B | Blender 조향각 (rad) | −0.586 ~ 0.505 |
 | 3 | v_B | Blender 종방향 속도 (m/s) | 2.133 ~ 11.176 |
 | 4 | v_lat_B | Blender 횡방향 속도 (m/s) | −2.487 ~ 3.060 |
-| 5 | r_B | Blender 요레이트 (rad/s) | −1.790 ~ 2.203 |
+| 5 | r_B | Blender yaw rate (rad/s) | −1.790 ~ 2.203 |
+
+### 4.4 Ground Truth에서 정의한 state와 MLP input이 다른 이유
+
+- v_lat의 경우 T,S로 조절이 불가한 값이기에 간접적으로만 다루었었음
+- r(yaw 변화율)의 경우 yaw_err로 이미 heading 오차를 잡고 있었음 -> 사실상 yaw PD와 중복되는 효과
 
 **출력 (2개)**
 
@@ -179,3 +184,34 @@ https://github.com/user-attachments/assets/6e6736b1-3994-447c-aab9-ccb4a39b1b53
 
 ---
 
+## 7. 비슷한 또 다른 경로에 대한 시뮬레이션
+
+https://github.com/user-attachments/assets/70e7deca-3531-4782-a6c8-7e1bfd49d612
+
+### 정량적 지표
+
+```
+=== Cross-Track Position Error ===
+Mean pos_err:  3.7497 m
+Max  pos_err:  16.5230 m
+=== Velocity Error (signed: + = Genesis 빠름) ===
+Mean signed:   -1.8181 m/s
+Mean abs:      3.8918 m/s
+```
+
+### 오차가 생기는 이유
+
+1. input mapper는 딱 1가지 움직임에 대해서만 학습시킨 NN -> 즉 2000에폭 동안 단일 궤적에 특화되었다고 봐도 무방
+2. input data의 범위가 기존 훈련 data 범위보다 살짝 벗어남
+
+**예시**
+
+|변수	|학습 범위|	새 데이터|
+|---|---|---|
+|S_B|	-0.586 ~ 0.505|	-0.611 ~ ...|
+
+- steer 값이 훈련 범위를 약간 벗어남 → 외삽(extrapolation) 구간 발생.
+
+### 해결법
+
+- 현재로서는 실질적으로 오차를 개선하려면 다양한 경로로 학습 데이터를 늘리는 것이 유일한 근본 해결책이라고 생각됨
