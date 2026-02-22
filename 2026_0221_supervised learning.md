@@ -88,7 +88,7 @@ gain_boost = 1.0 + min(max_upcoming_k × 10.0, 1.0)   # 1.0 ~ 2.0×
 
 ## 4. MLP Control Corrector
 
-### 4.1 설계 동기
+### 4.1 MLP 설계 목적
 
 Ground truth 생성 파이프라인(sweep + PD feedback)은 매 시나리오마다 전체 시뮬레이션을 재실행해야 합니다. MLP는 이 과정을 학습하여 **새로운 Blender 궤적에 대해 실시간으로 Genesis 제어를 보정**하는 범용 보정기 역할을 합니다.
 
