@@ -158,7 +158,7 @@ https://github.com/user-attachments/assets/6e6736b1-3994-447c-aab9-ccb4a39b1b53
 | 방법 | Mean error | Max error | 비고 |
 |------|-----------|----------|------|
 | Blender 제어 직접 적용 (baseline) | 5.013m | 24.198m | 물리 엔진 차이로 경로를 많이 벗어남 |
-| Ground Truth Replay | **0.2291m** | 1.5696 m | 사전 계산된 golden controls 재생 |
+| Ground Truth Replay | **1.332 m** | 3.274 m | 사전 계산된 golden controls 재생 |
 | **MLP Inference (Blender 상태 입력)** | **0.3120 m** | 1.5633 m | 실시간 보정, 안정적 주행 |
 
 ### 5.2 방법별 속력 오차 비교
