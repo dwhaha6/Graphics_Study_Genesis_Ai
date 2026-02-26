@@ -64,7 +64,7 @@
 
 ---
 
-## Phase 5 · 2026.01 — Revisiting Control Data Extraction Pipelines
+## Phase 5 · 2026.01 — Revisiting Control Data Extraction Pipelines -> 1가지 움직임 overfitting 시작
 
 | Date | Topic | Link |
 |:-----|:------|:-----|
