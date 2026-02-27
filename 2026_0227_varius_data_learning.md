@@ -8,6 +8,8 @@
 
 ## Ground Truth 결과
 
+[![](이미지/best_rightLeft.png)](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/video/gt_rightLeft.mp4)
+
 | 직선+우+좌 | N커브 | S커브 | 3코너 | 저속 좌유턴 |
 |:-----------:|:-----------:|:-----:|:-----:|:-----------:|
 | <a href="https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/video/gt_rightLeft.mp4"><img src="이미지/best_rightLeft.png" width="180"></a> | <a href="https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/video/gt_n.mp4"><img src="이미지/best_n.png" width="180"></a> | <a href="https://raw.githubusercontent.com/dwhaha6/Graphics_Study_Genesis_Ai/main/video/gt_s.mp4"><img src="이미지/best_s.png" width="180"></a> | <a href="https://raw.githubusercontent.com/dwhaha6/Graphics_Study_Genesis_Ai/main/video/gt_3corner.mp4"><img src="이미지/best_3corner.png" width="180"></a> | <a href="https://raw.githubusercontent.com/dwhaha6/Graphics_Study_Genesis_Ai/main/video/gt_leftU.mp4"><img src="이미지/best_leftU.png" width="180"></a> |
