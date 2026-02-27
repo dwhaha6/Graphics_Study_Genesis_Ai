@@ -18,11 +18,11 @@
 |:-----------:|:------:|:--------------:|:--------------:|:-----------:|
 | <a href="https://github.com/user-attachments/assets/d8e6af30-1ea0-44c0-98d2-0c0c260af716"><img src="이미지/best_rightU.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/fad77c58-995e-489f-be7c-e1fc2fbe40a3"><img src="이미지/best_slalom.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/f2e2d760-40f4-40fa-b0c7-7a2e172821ed"><img src="이미지/best_straight_sfs.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/ba5649e1-2e63-455e-9b21-f1da11556839"><img src="이미지/best_straight_fsf.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/263cdb29-4393-46e3-8212-0410ebd7ed60"><img src="이미지/best_tight_corner.png" width="180"></a> |
 
-- Ground Truth 완료, MLP 지도학습 진행
+- 다양한 움직임에 대한 Ground Truth 완료
 
 ---
 
-## MLP 지도학습 결과
+## MLP 지도학습 결과(진행중)
 
 | 직선+우코너 | 직선+좌코너 | S커브 | 3코너 | 저속 좌유턴 |
 |:-----------:|:-----------:|:-----:|:-----:|:-----------:|
@@ -34,7 +34,7 @@
 
 ---
 
-## 학습시키지 않은 새로운 움직임 실험
+## 학습시키지 않은 새로운 움직임 실험(진행중)
 
 - 10개의 움직임을 학습
 - 새로운 경로에 대해 Blender raw 제어 및 state 입력
