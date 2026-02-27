@@ -6,7 +6,7 @@
 
 ---
 
-## Ground Truth 결과
+## Ground Truth 결과(이미지 클릭시 Ground Truth 영상 재생 됩니다.)
 
 
 
