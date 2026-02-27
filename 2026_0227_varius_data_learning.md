@@ -8,7 +8,7 @@
 
 ## Ground Truth 결과
 
-[![](이미지/best_rightLeft.png)](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/raw/main/video/gt_rightLeft.mp4)
+[![](이미지/best_rightLeft.png)](https://github.com/user-attachments/assets/fd8e22ee-9496-421a-b9b3-7bf837660745)
 
 | 직선+우+좌 | N커브 | S커브 | 3코너 | 저속 좌유턴 |
 |:-----------:|:-----------:|:-----:|:-----:|:-----------:|
