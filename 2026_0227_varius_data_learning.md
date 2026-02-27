@@ -16,7 +16,7 @@
 
 | 우측 유턴 | 슬라롬 | 직진(저속->고속->저속) | 직진(고속→저속→고) | 타이트 코너 |
 |:-----------:|:------:|:--------------:|:--------------:|:-----------:|
-| <a href="https://github.com/user-attachments/assets/2e4f2f95-8b49-46bc-b1a7-9b389e25cbca"><img src="images/gt_rightU.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/fad77c58-995e-489f-be7c-e1fc2fbe40a3"><img src="images/gt_slalom.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/f2e2d760-40f4-40fa-b0c7-7a2e172821ed"><img src="images/gt_sfs.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/ba5649e1-2e63-455e-9b21-f1da11556839"><img src="images/gt_fsf.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/263cdb29-4393-46e3-8212-0410ebd7ed60"><img src="images/gt_tight.png" width="180"></a> |
+| <a href="https://github.com/user-attachments/assets/2e4f2f95-8b49-46bc-b1a7-9b389e25cbca"><img src="이미지/gt_rightU.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/fad77c58-995e-489f-be7c-e1fc2fbe40a3"><img src="이미지/gt_slalom.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/f2e2d760-40f4-40fa-b0c7-7a2e172821ed"><img src="이미지/gt_sfs.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/ba5649e1-2e63-455e-9b21-f1da11556839"><img src="이미지/gt_fsf.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/263cdb29-4393-46e3-8212-0410ebd7ed60"><img src="이미지/gt_tight.png" width="180"></a> |
 
 - Ground Truth 완료, MLP 지도학습 진행
 
