@@ -14,9 +14,9 @@
 |:-----------:|:-----------:|:-----:|:-----:|:-----------:|
 | <a href="https://github.com/user-attachments/assets/fd8e22ee-9496-421a-b9b3-7bf837660745"><img src="이미지/best_rightLeft.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/9935096d-d20b-4336-bbca-c90486ef9bdc"><img src="이미지/best_n.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/66f6d5d9-0b65-46b0-b378-c858ed37f1cf"><img src="이미지/best_s.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/021965da-b7be-473e-a6ba-741b2c44bdab"><img src="이미지/best_3corner.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/2e4f2f95-8b49-46bc-b1a7-9b389e25cbca"><img src="이미지/best_leftU.png" width="180"></a> |
 
-| 중속 우유턴 | 슬라롬 | 직진(저→고→저) | 직진(고→저→고) | 타이트 코너 |
+| 우측 유턴 | 슬라롬 | 직진(저속->고속->저속) | 직진(고속→저속→고) | 타이트 코너 |
 |:-----------:|:------:|:--------------:|:--------------:|:-----------:|
-| <a href="https://raw.githubusercontent.com/USERNAME/REPO/main/videos/gt_rightU.mp4"><img src="images/gt_rightU.png" width="180"></a> | <a href="https://raw.githubusercontent.com/USERNAME/REPO/main/videos/gt_slalom.mp4"><img src="images/gt_slalom.png" width="180"></a> | <a href="https://raw.githubusercontent.com/USERNAME/REPO/main/videos/gt_sfs.mp4"><img src="images/gt_sfs.png" width="180"></a> | <a href="https://raw.githubusercontent.com/USERNAME/REPO/main/videos/gt_fsf.mp4"><img src="images/gt_fsf.png" width="180"></a> | <a href="https://raw.githubusercontent.com/USERNAME/REPO/main/videos/gt_tight.mp4"><img src="images/gt_tight.png" width="180"></a> |
+| <a href="https://github.com/user-attachments/assets/2e4f2f95-8b49-46bc-b1a7-9b389e25cbca"><img src="images/gt_rightU.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/fad77c58-995e-489f-be7c-e1fc2fbe40a3"><img src="images/gt_slalom.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/f2e2d760-40f4-40fa-b0c7-7a2e172821ed"><img src="images/gt_sfs.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/ba5649e1-2e63-455e-9b21-f1da11556839"><img src="images/gt_fsf.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/263cdb29-4393-46e3-8212-0410ebd7ed60"><img src="images/gt_tight.png" width="180"></a> |
 
 - Ground Truth 완료, MLP 지도학습 진행
 
