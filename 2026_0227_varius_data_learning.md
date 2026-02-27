@@ -10,7 +10,7 @@
 
 | 직선+우+좌 | N커브 | S커브 | 3코너 | 저속 좌유턴 |
 |:-----------:|:-----------:|:-----:|:-----:|:-----------:|
-| <a href="https://raw.githubusercontent.com/dwhaha6/Graphics_Study_Genesis_Ai/main/video/gt_export.mp4"><img src="images/best_export.png" width="180"></a> | <a href="https://raw.githubusercontent.com/dwhaha6/Graphics_Study_Genesis_Ai/main/video/gt_n.mp4"><img src="images/best_n.png" width="180"></a> | <a href="https://raw.githubusercontent.com/dwhaha6/Graphics_Study_Genesis_Ai/main/video/gt_s.mp4"><img src="images/best_s.png" width="180"></a> | <a href="https://raw.githubusercontent.com/dwhaha6/Graphics_Study_Genesis_Ai/main/video/gt_3corner.mp4"><img src="images/best_3corner.png" width="180"></a> | <a href="https://raw.githubusercontent.com/dwhaha6/Graphics_Study_Genesis_Ai/main/video/gt_leftU.mp4"><img src="images/best_leftU.png" width="180"></a> |
+| <a href="https://raw.githubusercontent.com/dwhaha6/Graphics_Study_Genesis_Ai/main/video/gt_export.mp4"><img src="이미지/best_export.png" width="180"></a> | <a href="https://raw.githubusercontent.com/dwhaha6/Graphics_Study_Genesis_Ai/main/video/gt_n.mp4"><img src="이미지/best_n.png" width="180"></a> | <a href="https://raw.githubusercontent.com/dwhaha6/Graphics_Study_Genesis_Ai/main/video/gt_s.mp4"><img src="이미지/best_s.png" width="180"></a> | <a href="https://raw.githubusercontent.com/dwhaha6/Graphics_Study_Genesis_Ai/main/video/gt_3corner.mp4"><img src="이미지/best_3corner.png" width="180"></a> | <a href="https://raw.githubusercontent.com/dwhaha6/Graphics_Study_Genesis_Ai/main/video/gt_leftU.mp4"><img src="이미지/best_leftU.png" width="180"></a> |
 
 | 중속 우유턴 | 슬라롬 | 직진(저→고→저) | 직진(고→저→고) | 타이트 코너 |
 |:-----------:|:------:|:--------------:|:--------------:|:-----------:|
