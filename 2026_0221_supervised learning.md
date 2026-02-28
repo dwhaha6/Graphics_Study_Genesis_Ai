@@ -163,11 +163,11 @@ https://github.com/user-attachments/assets/6e6736b1-3994-447c-aab9-ccb4a39b1b53
 
 ### 5.2 방법별 속력 오차 비교
 
-|방법|	Mean signed (m/s)|	Mean abs (m/s)|	Max abs (m/s)|
-|------|------|------|------|
-|Blender raw 직접 적용|	−4.029|	4.735	|14.277	|
-|Ground Truth Replay|	−0.209|	0.350|	1.225|
-|MLP Inference|	−3.975|	4.110	|12.126|
+|방법|	Mean signed (m/s)|	Mean abs (m/s)|
+|------|------|------|
+|Blender raw 직접 적용|	−4.029|	4.735	|
+|Ground Truth Replay|	−0.209|	0.350|	
+|MLP Inference|	0.1200m/s |	0.5855m/s	|
 
 
 - 세 방법 모두 Genesis가 Blender보다 느린 경향을 띔
