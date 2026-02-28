@@ -22,7 +22,7 @@
 
 ---
 
-## MLP 지도학습 결과
+## MLP 지도학습 결과(이미지 클릭시 MLP 결과 영상 재생)
 
 | 직선+우+좌 | N커브 | S커브 | 3코너 | 저속 좌유턴 |
 |:-----------:|:-----------:|:-----:|:-----:|:-----------:|
@@ -36,10 +36,9 @@
 
 ## 학습시키지 않은 새로운 움직임 실험(진행중)
 
-- 10개의 움직임을 학습
 - 새로운 경로에 대해 Blender raw 제어 및 state 입력
 - 학습 범위 내 속도·곡률 영역에서 일반화 성능 검증
 
-<a href="https://raw.githubusercontent.com/USERNAME/REPO/main/videos/mlp_new.mp4">
-  <img src="images/mlp_new.png" width="300">
-</a>
+| 시도1 | 시도2 | 시도3 |
+|:-----------:|:------:|:--------------:|
+| <a href="https://github.com/user-attachments/assets/53e9daab-df20-46ad-8033-3ab87817747e"><img src="이미지/try1.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/7d9e59be-409d-4e87-9ee7-7a120a03ea43"><img src="이미지/try2.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/85e47ad6-02f4-467a-8690-1fcc33f85809"><img src="이미지/try3.png" width="180"></a> |
