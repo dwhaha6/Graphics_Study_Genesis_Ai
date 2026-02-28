@@ -24,9 +24,9 @@
 
 ## MLP 지도학습 결과(진행중)
 
-| 직선+우코너 | 직선+좌코너 | S커브 | 3코너 | 저속 좌유턴 |
+| 직선+우+좌 | N커브 | S커브 | 3코너 | 저속 좌유턴 |
 |:-----------:|:-----------:|:-----:|:-----:|:-----------:|
-| <a href="https://github.com/user-attachments/assets/c01ab093-27d3-4078-9fca-889afcf7a32f"><img src="images/mlp_export.png" width="180"></a> | <a href="https://raw.githubusercontent.com/USERNAME/REPO/main/videos/mlp_n.mp4"><img src="images/mlp_n.png" width="180"></a> | <a href="https://raw.githubusercontent.com/USERNAME/REPO/main/videos/mlp_s.mp4"><img src="images/mlp_s.png" width="180"></a> | <a href="https://raw.githubusercontent.com/USERNAME/REPO/main/videos/mlp_3corner.mp4"><img src="images/mlp_3corner.png" width="180"></a> | <a href="https://raw.githubusercontent.com/USERNAME/REPO/main/videos/mlp_leftU.mp4"><img src="images/mlp_leftU.png" width="180"></a> |
+| <a href="https://github.com/user-attachments/assets/fd8e22ee-9496-421a-b9b3-7bf837660745"><img src="이미지/best_rightLeft.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/9935096d-d20b-4336-bbca-c90486ef9bdc"><img src="이미지/best_n.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/c01ab093-27d3-4078-9fca-889afcf7a32f"><img src="이미지/best_s.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/021965da-b7be-473e-a6ba-741b2c44bdab"><img src="이미지/best_3corner.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/420e65b6-9254-4d79-9cc6-6c5353f3106b"><img src="이미지/best_leftU.png" width="180"></a> |
 
 | 중속 우유턴 | 슬라롬 | 직진(저→고→저) | 직진(고→저→고) | 타이트 코너 |
 |:-----------:|:------:|:--------------:|:--------------:|:-----------:|
