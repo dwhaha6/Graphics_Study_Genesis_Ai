@@ -26,7 +26,7 @@
 
 | 직선+우+좌 | N커브 | S커브 | 3코너 | 저속 좌유턴 |
 |:-----------:|:-----------:|:-----:|:-----:|:-----------:|
-| <a href="https://github.com/user-attachments/assets/fd8e22ee-9496-421a-b9b3-7bf837660745"><img src="이미지/best_rightLeft.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/9935096d-d20b-4336-bbca-c90486ef9bdc"><img src="이미지/best_n.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/c01ab093-27d3-4078-9fca-889afcf7a32f"><img src="이미지/mlp_s.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/021965da-b7be-473e-a6ba-741b2c44bdab"><img src="이미지/best_3corner.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/420e65b6-9254-4d79-9cc6-6c5353f3106b"><img src="이미지/best_leftU.png" width="180"></a> |
+| <a href="https://github.com/user-attachments/assets/8822b801-3b97-4dfc-8193-d31f424028d5"><img src="이미지/best_rightLeft.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/51aacd5a-37ed-4ec4-b7cf-a14c3bf264b1"><img src="이미지/best_n.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/4d40fd7e-2c26-4f4d-b1a2-6676560331fa"><img src="이미지/mlp_s.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/1f979491-1594-4e5f-9580-2dc2efc7add4"><img src="이미지/best_3corner.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/5fa0d3c8-095d-4a2f-8363-1d862aa8d8cc"><img src="이미지/best_leftU.png" width="180"></a> |
 
 | 중속 우유턴 | 슬라롬 | 직진(저→고→저) | 직진(고→저→고) | 타이트 코너 |
 |:-----------:|:------:|:--------------:|:--------------:|:-----------:|
