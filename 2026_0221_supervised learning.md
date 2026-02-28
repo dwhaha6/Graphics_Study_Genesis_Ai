@@ -159,7 +159,7 @@ https://github.com/user-attachments/assets/6e6736b1-3994-447c-aab9-ccb4a39b1b53
 |------|-----------|----------|------|
 | Blender 제어 직접 적용 (baseline) | 5.013m | 24.198m | 물리 엔진 차이로 경로를 많이 벗어남 |
 | Ground Truth Replay | **1.332 m** | 3.274 m | 사전 계산된 golden controls 재생 |
-| **MLP Inference (Blender 상태 입력)** | **0.3120 m** | 1.5633 m | 실시간 보정, 안정적 주행 |
+| **MLP Inference (Blender 상태 입력)** | **0.1667 m** | 0.8075 m | 실시간 보정, 안정적 주행 |
 
 ### 5.2 방법별 속력 오차 비교
 
@@ -169,10 +169,6 @@ https://github.com/user-attachments/assets/6e6736b1-3994-447c-aab9-ccb4a39b1b53
 |Ground Truth Replay|	−0.209|	0.350|	
 |MLP Inference|	0.12 |	0.5855	|
 
-
-- 세 방법 모두 Genesis가 Blender보다 느린 경향을 띔
--  MLP의 위치 오차는 Ground Truth와 비슷하지만, 속도 오차는 baseline 수준으로 큰 것이 확인
-- Ground Truth는 PD 피드백으로 매 프레임 속도를 보정하기 때문에 속도 오차가 크게 줄어든 것
 
 ---
 
