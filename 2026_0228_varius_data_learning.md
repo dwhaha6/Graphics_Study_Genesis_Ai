@@ -6,7 +6,7 @@
 
 ---
 
-## Ground Truth 결과(이미지 클릭시 Ground Truth 영상 재생 됩니다.)
+## Ground Truth 결과(이미지 클릭시 Ground Truth 영상 재생)
 
 
 
@@ -23,6 +23,8 @@
 ---
 
 ## MLP 지도학습 결과(진행중)
+
+https://github.com/user-attachments/assets/c01ab093-27d3-4078-9fca-889afcf7a32f
 
 | 직선+우+좌 | N커브 | S커브 | 3코너 | 저속 좌유턴 |
 |:-----------:|:-----------:|:-----:|:-----:|:-----------:|
