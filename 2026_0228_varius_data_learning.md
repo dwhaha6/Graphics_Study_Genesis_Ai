@@ -28,9 +28,9 @@
 |:-----------:|:-----------:|:-----:|:-----:|:-----------:|
 | <a href="https://github.com/user-attachments/assets/8822b801-3b97-4dfc-8193-d31f424028d5"><img src="이미지/mlp_rightLeft.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/51aacd5a-37ed-4ec4-b7cf-a14c3bf264b1"><img src="이미지/mlp_n.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/4d40fd7e-2c26-4f4d-b1a2-6676560331fa"><img src="이미지/mlp_s.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/1f979491-1594-4e5f-9580-2dc2efc7add4"><img src="이미지/mlp_3corner.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/5fa0d3c8-095d-4a2f-8363-1d862aa8d8cc"><img src="이미지/mlp_leftU.png" width="180"></a> |
 
-| 중속 우유턴 | 슬라롬 | 직진(저→고→저) | 직진(고→저→고) | 타이트 코너 |
+| 우측 유턴 | 슬라롬 | 직진(저속->고속->저속) | 직진(고속→저속→고속) | 타이트 코너 |
 |:-----------:|:------:|:--------------:|:--------------:|:-----------:|
-| <a href="https://raw.githubusercontent.com/USERNAME/REPO/main/videos/mlp_rightU.mp4"><img src="images/mlp_rightU.png" width="180"></a> | <a href="https://raw.githubusercontent.com/USERNAME/REPO/main/videos/mlp_slalom.mp4"><img src="images/mlp_slalom.png" width="180"></a> | <a href="https://raw.githubusercontent.com/USERNAME/REPO/main/videos/mlp_sfs.mp4"><img src="images/mlp_sfs.png" width="180"></a> | <a href="https://raw.githubusercontent.com/USERNAME/REPO/main/videos/mlp_fsf.mp4"><img src="images/mlp_fsf.png" width="180"></a> | <a href="https://raw.githubusercontent.com/USERNAME/REPO/main/videos/mlp_tight.mp4"><img src="images/mlp_tight.png" width="180"></a> |
+| <a href="https://github.com/user-attachments/assets/2129179e-8eae-41bb-9a05-3ecbb1fef9d8"><img src="이미지/mlp_rightU.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/50a16cce-22c0-4da4-a592-d0752d17b5f6"><img src="이미지/mlp_slalom.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/acffaa71-1a44-494f-8a5c-48051236c93e"><img src="이미지/mlp_straight_sfs.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/a8f27a16-2b62-4f7d-a38d-76bba74ede45"><img src="이미지/mlp_straight_fsf.png" width="180"></a> | <a href="https://github.com/user-attachments/assets/179adbb2-a176-4ff6-b70f-3efc8a4711ad"><img src="이미지/mlp_tight_corner.png" width="180"></a> |
 
 ---
 
