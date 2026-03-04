@@ -50,7 +50,7 @@
 
 ## 전체 평균 오차 요약
 
-| Category | Motion Count | Avg PosErr (m) | Avg VErr |
+| Category | Motion Count | Avg PosErr (m) | Avg VErr(m/s) |
 |:--------|:------------:|:--------------:|:--------:|
 | Ground Truth (Blender → Genesis 최적 제어) | 10 | 0.0590 | 0.1151 |
 | MLP (학습된 움직임) | 10 | 0.0655 | 0.1093 |
