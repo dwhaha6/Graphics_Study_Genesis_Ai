@@ -3,6 +3,7 @@
 - 이전에 진행한 것과 방식은 동일
 - 다양한 Blender 움직임을 만들어 데이터를 추출
 - Ground Truth 생성 후 MLP 지도학습 진행
+- 아래 정량 지표의 단위는 pos(m), v(m/s)
 
 ---
 
@@ -43,3 +44,16 @@
 | 시도1 | 시도2 | 시도3 |
 |:-----------:|:------:|:--------------:|
 | <a href="https://github.com/user-attachments/assets/53e9daab-df20-46ad-8033-3ab87817747e"><img src="이미지/try1.png" width="180"></a><br>-----------------<br>PosErr μ=0.0424m <br> max=0.1323m<br>VErr μ=0.0558 <br> max=0.1492 | <a href="https://github.com/user-attachments/assets/7d9e59be-409d-4e87-9ee7-7a120a03ea43"><img src="이미지/try2.png" width="180"></a><br>-----------------<br>PosErr μ=0.0405m <br> max=0.0855m<br>VErr μ=0.0577 <br> max=0.1482 | <a href="https://github.com/user-attachments/assets/85e47ad6-02f4-467a-8690-1fcc33f85809"><img src="이미지/try3.png" width="180"></a><br>-----------------<br>PosErr μ=0.2540m <br> max=0.9366m<br>VErr μ=0.1579 <br> max=0.9549 |
+
+## 정량적 오차 지표 정리
+
+---
+
+## 전체 평균 오차 요약
+
+| Category | Motion Count | Avg PosErr (m) | Avg VErr |
+|:--------|:------------:|:--------------:|:--------:|
+| Ground Truth (Blender → Genesis 최적 제어) | 10 | 0.0590 | 0.1151 |
+| MLP (학습된 움직임) | 10 | 0.0655 | 0.1093 |
+| MLP (비학습 새로운 움직임) | 3 | 0.1123 | 0.0905 |
+
