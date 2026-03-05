@@ -82,3 +82,4 @@
 | 02.15 | MPC를 활용한 Ground Truth 시도 2 *(실패)* | 📎 [MPC 최적화 & Divergence](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0215_MPC%20Optimization%20Progress%20and%20Divergence%20Handling%20Strategy.md) |
 | 02.18 | Sweep + Feedback 제어 방식 시도 | 📎 [Sweep Feedback 접근](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0218_sweep_feedback_approach.md) |
 | 02.21 | Ground Truth -> MLP 시도1 |📎[input mapper 설계](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0221_supervised%20learning.md) |
+| 02.28| MLP 성능 검증 | [10개의 움직임 데이터 학습](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0228_varius_data_learning.md)| 
