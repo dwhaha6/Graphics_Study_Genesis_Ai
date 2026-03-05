@@ -1,4 +1,4 @@
-# Sim-to-Sim Transfer: Ground Truth → MLP 지도학습 → Residual RL
+# Sim-to-Sim Transfer: Ground Truth → MLP 지도학습
 
 **Date:** 2026-02-27
 **Project:** Genesis Car Simulation — Sim2Sim Trajectory Matching
