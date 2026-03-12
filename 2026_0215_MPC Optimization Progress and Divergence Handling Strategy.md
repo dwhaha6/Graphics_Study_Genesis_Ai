@@ -70,7 +70,7 @@
 ### 핵심 원인
 - `w_pos=5.0`이 너무 높아 optimizer가 pos만 맞추고 a,k를 희생
 - a_err mean=1.48 m/s² → v가 200프레임에 걸쳐 1.8 m/s 드리프트
-- vlat 부족 (genesis -0.5 vs target -2.5) → 코너에서 언더스티어
+
 
 ### 기존 설정 (실패)
 | term | scale | weight | 비고 |
