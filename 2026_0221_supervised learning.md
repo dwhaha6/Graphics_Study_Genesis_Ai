@@ -6,7 +6,7 @@
 
 ## 1. Problem Statement
 
-Blender (Bullet physics)와 Genesis 물리 엔진은 동일한 제어 입력(throttle, steer)에 대해 서로 다른 차량 거동을 보입니다. 구체적으로:
+Blender (Bullet physics)와 Genesis 물리 엔진은 동일한 제어 입력(throttle, steer)에 대해 서로 다른 차량 거동임, 구체적으로:
 
 - **속도 불일치**: Blender throttle 0.36 → Blender v ≈ 9.7 m/s, Genesis v ≈ 12.0 m/s
 - **횡방향 속도 차이**: 타이어 모델 차이(Bullet RaycastVehicle vs Genesis Coulomb contact)로 인해 코너링 시 v_lat 거동이 다름
