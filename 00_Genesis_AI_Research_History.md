@@ -26,13 +26,13 @@
 
 | Date | Topic | Link | Highlight✨ |
 |:-----|:------|:-----|:----------|
-| 09.10 | Genesis 시뮬레이터 설치 및 예제 실행 | [샘플 실행 보고서](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0910_genesis%20%EC%83%98%ED%94%8C%20%EC%8B%A4%ED%96%89%20%EB%B3%B4%EA%B3%A0%EC%84%9C.md) | Genesis AI 설치 Guide Line이 잘 정리되어 있음 |
+| 09.10 | Genesis 시뮬레이터 설치 및 예제 실행 | [Genesis 환경 구축 가이드](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0910_genesis%20%EC%83%98%ED%94%8C%20%EC%8B%A4%ED%96%89%20%EB%B3%B4%EA%B3%A0%EC%84%9C.md) | Genesis AI 설치 Guide Line이 잘 정리되어 있음 |
 | 09.16 | Go2 로봇 PPO 학습 코드 흐름 및 신경망 구조 분석 | [PPO 학습 코드 분석](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0916_train%EC%BD%94%EB%93%9C%20%EB%B6%84%EC%84%9D%20%EB%B0%8F%20%ED%95%99%EC%8A%B5%20%EA%B5%AC%EC%A1%B0%20%ED%8C%8C%EC%95%85.md) | |
 | 09.18 | 외부 시뮬레이터 조사: CARLA 자율주행 환경 분석 | [CARLA 환경 조사](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0918_%EC%99%B8%EB%B6%80%20%EC%9E%90%EB%8F%99%EC%B0%A8%20%EB%AC%BC%EB%A6%AC%20%EC%97%94%EC%A7%84%20%EC%A1%B0%EC%82%AC.md) | |
 | 09.22 | Go2 백플립 동작 생성 파이프라인 정리 | [Backflip 동작 흐름 분석](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0922_backflip%EB%B3%B4%EA%B3%A0%EC%84%9C.md) | |
 | 09.22 | Genesis 물리 엔진 기반 간단한 toy car sample 만들어보기 | [자동차 시뮬레이션 기초 실험](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0922_car_simulate%EB%B3%B4%EA%B3%A0%EC%84%9C.md) | |
 | 09.25 | Go2 백플립 환경의 좌표계·URDF·센서 구조 분석 | [URDF 및 좌표계 분석](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0925_backflip_URDF.md) | Genesis 예제 중 하나인 Backflip의 환경(좌표계, 중력 방향 등)과 Go2 Robot URDF를 상세히 분석 |
-| 09.30 | 보행 학습에서 step/rollout/iteration 등 용어 정리 | [Walking 학습 데이터 구조](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0930_walking_train.md) | 처음 접하면 난해하게 느껴지는 RL 용어들을 이해하기 쉽게 정리 |
+| 09.30 | 보행 학습에서 step/rollout/iteration 등 용어 정리 | [강화학습 용어정리](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0930_walking_train.md) | 처음 접하면 난해하게 느껴지는 RL 용어들을 이해하기 쉽게 정리 |
 
 ---
 
@@ -49,7 +49,7 @@
 
 | Date | Topic | Link | Highlight✨ |
 |:-----|:------|:-----|:----------|
-| 11.03 | Blender 지형 기반 차량 주행 및 CSV 데이터 수집 | [데이터 수집 파이프라인](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1103_blender_car_data.md) | Blender에서 차량을 주행해보며 최초로 Data를 추출 |
+| 11.03 | Blender 지형 기반 차량 주행 및 CSV 데이터 수집 | [Blender 데이터 수집](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1103_blender_car_data.md) | Blender에서 차량을 주행해보며 최초로 Data를 추출 |
 | 11.18 | URDF 무게중심·관성·충돌 박스 조정으로 주행 안정화 | [물리 파라미터 튜닝](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1118_Running%20a%20car%20in%20the%20Genesis%20environment.md) | |
 | 11.21 | 직진 주행 데이터 기반 MLP 차량 제어 실험 | [Straight Driving MLP](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1121_Genesis_Straight_train_MLP.md) | 매우 간단한 움직임에 대해 MLP를 정의해 Blender→Genesis를 최초로 시도 |
 | 11.24 | 조향 포함 주행 데이터 학습 및 회전 동작 재현 | [Steer 포함 학습 실험](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1124_train_car_including_steer.md) | |
@@ -90,7 +90,7 @@
 | Date | Topic | Link | Highlight✨ |
 |:-----|:------|:-----|:----------|
 | 01.06 | Blender data 추출 방식 재점검 및 MLP 학습 파이프라인 | [Blender→Genesis 시뮬레이션](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0106_Control%20Signal%20Extraction%20from%20Blender%20for%20Reliable%20Genesis%20Vehicle%20Simulation.md) | |
-| 01.16 | 현재까지 진행한 프로젝트 전체 파이프라인 | [강동욱_report (PDF)](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0116_%EA%B0%95%EB%8F%99%EC%9A%B1_report.pdf) | |
+| 01.16 | 현재까지 진행한 프로젝트 전체 파이프라인 | [중간점검 report (PDF)](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0116_%EA%B0%95%EB%8F%99%EC%9A%B1_report.pdf) | |
 | 01.18 | 보상 함수 개선 및 재학습 | [보상 함수 최적화](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0118_Optimization%20of%20PPO-based%20Autonomous%20Driving%20Control%20via%20Reward%20Function%20Engineering.md) | |
 
 ---
@@ -113,4 +113,4 @@
 | 02.18 | Sweep + Feedback 제어 방식 시도 | [Sweep Feedback 접근](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0218_sweep_feedback_approach.md) | MPC 폐기 후 Sweep Table + PD Feedback 방식으로 전환한 전환점 |
 | 02.21 | Ground Truth → MLP 최초 지도학습 시도 | [Input Mapper 설계](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0221_supervised%20learning.md) | 현재 기준으로는 다소 부정확한 GT Data였으나, 지도학습을 최초로 시도 |
 | 02.27 | 1개 움직임에 대한 파이프라인 완성 | [1개 움직임 학습 과정](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0227_pipeline%20update_residual%20RL.md) | |
-| 02.28 | MLP 성능 검증 — 10가지 움직임 통합 학습 | [10개 움직임 데이터 학습](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0228_varius_data_learning.md) | 10가지 움직임에 대해 평균 거리 오차 0.05m의 GT 달성. GT뿐만 아니라 MLP Sim2Sim 출력 결과까지 모두 포함 |
+| 02.28 | MLP 성능 검증 — 10가지 움직임 통합 학습 | [Sim2Sim 결과 정리](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0228_varius_data_learning.md) | 10가지 움직임에 대해 평균 거리 오차 0.05m의 GT 달성. GT뿐만 아니라 MLP Sim2Sim 출력 결과까지 모두 포함 |
