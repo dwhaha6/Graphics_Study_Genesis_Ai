@@ -4,7 +4,7 @@
 > 로봇 제어, 강화학습 구조 분석, 자동차 시뮬레이션 및 데이터 기반 제어까지
 > 단계적으로 확장해 온 개인 연구 기록
 
-**[Sim2Sim 결과 바로보기](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0228_varius_data_learning.md)**
+**[Sim2Sim 결과 바로보기🚗](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0228_varius_data_learning.md)**
 
 ---
 
