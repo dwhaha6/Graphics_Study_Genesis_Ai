@@ -104,9 +104,6 @@ https://github.com/user-attachments/assets/7af3d1cb-21d6-4101-9ee4-d9a160d61f08
 - 기존 방식으로 진행했을 때와 움직임이 유사
 
 - 2가지 움직임 전부 blender와 genesis의 물리엔진 차이 + 시뮬레이션 step 수 차이로 인해 움직임에 오차가 존재하는 상황
-## 궁금한 사항들 정리
-### Main MLP -> filter MLP?
-- 이전 피드백에서 기존 MLP(main MLP)의 출력에 bledner와 genesis의 차이를 보정해주는 filter MLP를 넣으라는 내용이 있었는데, 제 생각에는 현재 이 정답 data에 filter MLP를 적용시켜 차이를 먼저 보정하고 그렇게 blender와 비슷한 깔끔한 주행이 만들어지면 이를 정답데이터 삼아 Main MLP 학습을 진행하는게 맞지 않나 라는 의문이 듭니다.
 
 ### 조향 부호에 따른 움직임 변화
 
