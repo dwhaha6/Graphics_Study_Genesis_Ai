@@ -29,7 +29,7 @@
 | 09.22 | Go2 백플립 동작 생성 파이프라인 정리 | 📎 [Backflip 동작 흐름 분석](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0922_backflip%EB%B3%B4%EA%B3%A0%EC%84%9C.md) |
 | 09.22 | Genesis 물리 엔진 기반 간단한 toy car sample 만들어보기 | 📎 [자동차 시뮬레이션 기초 실험](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0922_car_simulate%EB%B3%B4%EA%B3%A0%EC%84%9C.md) |
 | 09.25 | Go2 백플립 환경의 좌표계·URDF·센서 구조 분석 | 📎 [URDF 및 좌표계 분석](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0925_backflip_URDF.md) |
-| 09.30 | 보행 학습에서 step/rollout/iteration 데이터 흐름 정리 | 📎 [Walking 학습 데이터 구조](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0930_walking_train.md) |
+| 09.30 | 보행 학습에서 step/rollout/iteration 등 용어 정리 | 📎 [Walking 학습 데이터 구조](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0930_walking_train.md) |
 
 ---
 
