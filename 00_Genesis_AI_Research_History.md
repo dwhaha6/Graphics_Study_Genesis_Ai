@@ -2,7 +2,8 @@
 
 > Genesis 물리 시뮬레이터를 기반으로
 > 로봇 제어, 강화학습 구조 분석, 자동차 시뮬레이션 및 데이터 기반 제어까지
-> 단계적으로 확장해 온 개인 연구 기록
+> 단계적으로 확장해 온 개인 연구 기록입니다.
+> 주요 report md들은 Highlight에 그 내용을 요약해두었습니다.
 
 **[Sim2Sim 결과 바로보기🚗](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0228_varius_data_learning.md)**
 
@@ -23,7 +24,7 @@
 
 ## Phase 1 · 2025.09 — Genesis & Robot Simulation Fundamentals
 
-| Date | Topic | Link | Highlight |
+| Date | Topic | Link | Highlight✨ |
 |:-----|:------|:-----|:----------|
 | 09.10 | Genesis 시뮬레이터 설치 및 예제 실행 | [샘플 실행 보고서](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0910_genesis%20%EC%83%98%ED%94%8C%20%EC%8B%A4%ED%96%89%20%EB%B3%B4%EA%B3%A0%EC%84%9C.md) | Genesis AI 설치 Guide Line이 잘 정리되어 있음 |
 | 09.16 | Go2 로봇 PPO 학습 코드 흐름 및 신경망 구조 분석 | [PPO 학습 코드 분석](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0916_train%EC%BD%94%EB%93%9C%20%EB%B6%84%EC%84%9D%20%EB%B0%8F%20%ED%95%99%EC%8A%B5%20%EA%B5%AC%EC%A1%B0%20%ED%8C%8C%EC%95%85.md) | |
@@ -37,7 +38,7 @@
 
 ## Phase 2 · 2025.10 — Reinforcement Learning Scaling & Performance
 
-| Date | Topic | Link | Highlight |
+| Date | Topic | Link | Highlight✨ |
 |:-----|:------|:-----|:----------|
 | 10.14 | Rollout 및 Mini-batch 기준 GPU 메모리 사용량 계산 | [메모리 분석 보고서](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1014_backflip_data_size_report.md) | |
 | 10.16 | 다중 ckpt 로봇 동시 관찰 및 GPU 이슈 해결 | [다중 로봇 성능 이슈](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1016_walk_report.md) | |
@@ -46,7 +47,7 @@
 
 ## Phase 3 · 2025.11 — Vehicle Simulation & Data Collection
 
-| Date | Topic | Link | Highlight |
+| Date | Topic | Link | Highlight✨ |
 |:-----|:------|:-----|:----------|
 | 11.03 | Blender 지형 기반 차량 주행 및 CSV 데이터 수집 | [데이터 수집 파이프라인](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1103_blender_car_data.md) | Blender에서 차량을 주행해보며 최초로 Data를 추출 |
 | 11.18 | URDF 무게중심·관성·충돌 박스 조정으로 주행 안정화 | [물리 파라미터 튜닝](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1118_Running%20a%20car%20in%20the%20Genesis%20environment.md) | |
@@ -66,7 +67,7 @@
 
 > 1개의 MLP만으로 Blender→Genesis 직접 제어를 시도하던 시기입니다.
 
-| Date | Topic | Link | Highlight |
+| Date | Topic | Link | Highlight✨ |
 |:-----|:------|:-----|:----------|
 | 12.17 | 바퀴별 데이터 → Genesis 제어 인터페이스 통합 | [NN Steering & Throttle 제어](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1217_Neural%20Network%E2%80%93Based%20Steering%20and%20Throttle%20Control%20for%20a%20Vehicle%20in%20Genesis.md) | |
 | 12.26 | 24가지 data 기반 MLP 학습 및 시뮬레이션 | [MLP 구조 및 제어 파이프라인](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_1226_MLP_Architecture_and_Training.md) | |
@@ -86,7 +87,7 @@
 
 > 1개 움직임에 대한 overfitting을 시작으로, 파이프라인 재설계를 모색하던 시기입니다.
 
-| Date | Topic | Link | Highlight |
+| Date | Topic | Link | Highlight✨ |
 |:-----|:------|:-----|:----------|
 | 01.06 | Blender data 추출 방식 재점검 및 MLP 학습 파이프라인 | [Blender→Genesis 시뮬레이션](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0106_Control%20Signal%20Extraction%20from%20Blender%20for%20Reliable%20Genesis%20Vehicle%20Simulation.md) | |
 | 01.16 | 현재까지 진행한 프로젝트 전체 파이프라인 | [강동욱_report (PDF)](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0116_%EA%B0%95%EB%8F%99%EC%9A%B1_report.pdf) | |
@@ -105,7 +106,7 @@
 
 ## Phase 6 · 2026.02 ~ 03 — Ground Truth Generation & Supervised Learning
 
-| Date | Topic | Link | Highlight |
+| Date | Topic | Link | Highlight✨ |
 |:-----|:------|:-----|:----------|
 | 02.08 | MPC를 활용한 Ground Truth 시도 1 *(실패)* | [Sim2Sim Control 최적화](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0208_Sim2Sim%20Control%20Optimization%20Report.md) | |
 | 02.15 | MPC를 활용한 Ground Truth 시도 2 *(실패)* | [MPC 최적화 & Divergence](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0215_MPC%20Optimization%20Progress%20and%20Divergence%20Handling%20Strategy.md) | |
