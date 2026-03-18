@@ -27,7 +27,7 @@
 | 09.16 | Go2 로봇 PPO 학습 코드 흐름 및 신경망 구조 분석 | 📎 [PPO 학습 코드 분석](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0916_train%EC%BD%94%EB%93%9C%20%EB%B6%84%EC%84%9D%20%EB%B0%8F%20%ED%95%99%EC%8A%B5%20%EA%B5%AC%EC%A1%B0%20%ED%8C%8C%EC%95%85.md) |
 | 09.18 | 외부 시뮬레이터 조사: CARLA 자율주행 환경 분석 | 📎 [CARLA 환경 조사](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0918_%EC%99%B8%EB%B6%80%20%EC%9E%90%EB%8F%99%EC%B0%A8%20%EB%AC%BC%EB%A6%AC%20%EC%97%94%EC%A7%84%20%EC%A1%B0%EC%82%AC.md) |
 | 09.22 | Go2 백플립 동작 생성 파이프라인 정리 | 📎 [Backflip 동작 흐름 분석](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0922_backflip%EB%B3%B4%EA%B3%A0%EC%84%9C.md) |
-| 09.22 | Genesis 물리 엔진 기반 자동차 시뮬레이션 초기 실험 | 📎 [자동차 시뮬레이션 기초 실험](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0922_car_simulate%EB%B3%B4%EA%B3%A0%EC%84%9C.md) |
+| 09.22 | Genesis 물리 엔진 기반 간단한 toy car sample 만들어보기 | 📎 [자동차 시뮬레이션 기초 실험](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0922_car_simulate%EB%B3%B4%EA%B3%A0%EC%84%9C.md) |
 | 09.25 | Go2 백플립 환경의 좌표계·URDF·센서 구조 분석 | 📎 [URDF 및 좌표계 분석](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0925_backflip_URDF.md) |
 | 09.30 | 보행 학습에서 step/rollout/iteration 데이터 흐름 정리 | 📎 [Walking 학습 데이터 구조](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0930_walking_train.md) |
 
