@@ -5,6 +5,8 @@ import bmesh
 import numpy as np
 from mathutils import Vector
 
+# 비학습 움직임 중 3번째(8자 경로)에 대한 blender data 추출 코드 
+
 # ==============================================================================
 # BLENDER → GENESIS SIM2SIM EXPORT SCRIPT
 # ==============================================================================
