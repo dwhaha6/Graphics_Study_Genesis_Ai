@@ -290,9 +290,6 @@ print("이미지 폴더:", IMG_DIR)
 ### 그렇게 뽑아낸 데이터를 어떻게 Genesis에 적용할 것인가
 #### A. Physics Replay(강체 모델로 추종)
 - Genesis의 물리엔진을 켜두고, 차량이 CSV의 궤적을 PD제어로 따라가게 하는 방식
-  https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2025_0922_backflip%EB%B3%B4%EA%B3%A0%EC%84%9C.md#64-pd%EC%A0%9C%EC%96%B4
-
-    - PD 제어와 관련해서는 이전에 정리해둔 내용이 있음
 - 정리하자면 PD제어를 설정해두어 매 프레임마다 CSV의 목표 위치,회전각을 타겟값으로 보냄으로써 실제 동역학(관성,마찰,질량)이 적용되며 목표궤적을 따라가는 형태로 Genesis에서 재현될 것임
 #### B. 정확한 물리 재현(Inverse Dunamic)
 - Blender에서 추출한 데이터를 학습 데이터로 사용해서, Genesis 차량이 같은 궤적을 **자체적으로 만들어내도록** 학습시키는 방식
