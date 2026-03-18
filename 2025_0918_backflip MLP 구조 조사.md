@@ -126,7 +126,6 @@ torch.sum(torch.square(self.last_actions - self.actions), dim=1)
 
 # 백플립 Go2 로봇의 움직임 원리(자세 제어)
 - single.pt 내부 구조
-    - 간단한 MLP구조
     - 60(관측값)만큼의 입력을 넣어 7단계를 거쳐 최종 12개의 출력을 뽑아냄
     - 이 12개의 값 = 12개 관절에 줄 액션 명령
     - 이 12개의 각 값들이 그대로 env.step(actions)에 들어가서 다리 관절이 움직임
