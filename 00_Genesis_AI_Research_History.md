@@ -64,8 +64,7 @@
 
 ## Phase 4 · 2025.12 — Neural Network-Based Vehicle Control *(탐색 단계)*
 
-> 1개의 MLP만으로 Blender→Genesis 직접 제어를 시도하던 시기.
-> 속도 제어 없이 경로라도 추종하는 것을 목표로 삼았었음
+> 1개의 MLP만으로 Blender→Genesis 직접 제어를 시도하던 시기입니다.
 
 | Date | Topic | Link | Highlight |
 |:-----|:------|:-----|:----------|
@@ -85,7 +84,7 @@
 
 ## Phase 5 · 2026.01 — Revisiting Control Data Extraction Pipelines *(전환기)*
 
-> 1개 움직임에 대한 overfitting을 시작으로, 파이프라인 재설계를 모색하던 시기.
+> 1개 움직임에 대한 overfitting을 시작으로, 파이프라인 재설계를 모색하던 시기입니다.
 
 | Date | Topic | Link | Highlight |
 |:-----|:------|:-----|:----------|
@@ -98,9 +97,9 @@
 > **Trial & Error** · 2026.01.18 ~ 02.18
 >
 > Ground Truth를 얻기 위해 강화학습, MPC기반 등의 최적화를 시도하였으나, loss term 간 coupling 충돌,  
-> 고속 구간 발산 등의 문제로 실패. 이 과정은 아래 PDF에 요약되어 있음
+> 고속 구간 발산 등의 문제로 실패. 이 과정은 아래 PDF에 요약되어 있습니다.
 >
-> [Ground Truth 시행착오 요약 (PDF)](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0317_Trial%20and%20Error%20about%20Ground%20Truth.pdf)
+> [Ground Truth 시행착오 🔍 (PDF)](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0317_Trial%20and%20Error%20about%20Ground%20Truth.pdf)
 
 ---
 
