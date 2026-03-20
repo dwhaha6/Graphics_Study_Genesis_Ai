@@ -43,7 +43,7 @@
 | 02.18 | Sweep + Feedback 제어 전환 | [📑 Report](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0218_sweep_feedback_approach.md) | MPC 한계 극복 |
 
 <details>
-<summary><b>이전 단계(Phase 1~5) 기록 보기 (클릭)</b></summary>
+<summary><b>이전 단계(Phase 1~5) 주요 기록 보기 (클릭)</b></summary>
 
 #### Phase 5: Pipeline Revision (2026.01)
 * [중간점검 전체 리포트 (PDF)](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0116_%EA%B0%95%EB%8F%99%EC%9A%B1_report.pdf)
