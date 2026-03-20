@@ -9,7 +9,7 @@
 
 ---
 
-## 🚀 Core Competencies (핵심 역량)
+## Core Competencies (핵심 역량)
 * **Physics Simulation:** Genesis AI 기반의 로봇(Go2) 및 차량 물리 엔진 최적화
 * **Sim2Sim Transfer:** Blender의 제어 신호를 물리 시뮬레이션 환경(Genesis)으로 전이하는 파이프라인 구축
 * **Control Optimization:** PPO, MPC 등의 시도, Sweep + Feedback 제어를 통한 주행 안정성 확보 (평균 거리 오차 0.05m 달성)
@@ -26,7 +26,7 @@
 
 ---
 
-## 🏆 Highlight: Sim2Sim Result
+## ✨Highlight: Sim2Sim Result
 > **[시연 결과 보고서 바로가기 🚗](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0228_varius_data_learning.md)**
 > *10가지 복합 움직임에 대해 평균 거리 오차 0.05m의 Ground Truth 달성 및 검증 완료*
 
