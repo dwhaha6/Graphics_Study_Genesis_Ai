@@ -5,7 +5,7 @@
 [![Tech Stack](https://img.shields.io/badge/Reinforcement_Learning-PPO_/_MPC-green)](#)
 [![Tech Stack](https://img.shields.io/badge/Framework-PyTorch_/_Blender-orange)](#)
 
-기업 협업 및 기술 프로모션을 위한 **Genesis AI 기반 물리 시뮬레이션 및 제어 최적화** 연구 기록입니다. 단순 구현을 넘어, 데이터 파이프라인 구축과 Sim2Sim 오차 극복 과정에 집중했습니다.
+**Genesis AI 기반 물리 시뮬레이션 및 제어 최적화** 연구 기록입니다. 데이터 파이프라인 구축과 Sim2Sim 오차 극복 과정에 집중했습니다.
 
 ---
 
