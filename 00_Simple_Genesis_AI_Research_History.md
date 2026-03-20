@@ -57,6 +57,5 @@
 ---
 
 ## 💡 Engineering Insight: "Turning Point"
-**"기존의 직접 Sim2Sim 접근법을 왜 폐기했는가?"**
-1개 MLP로 직접 제어 시 발생하는 고속 구간의 발산 문제와 오버피팅을 해결하기 위해, **'Ground Truth 생성 후 지도학습'**이라는 더 견고한 아키텍처로 선회했습니다. 이 과정에서의 실패 기록은 저의 가장 큰 자산입니다.
+Ground Truth를 구하기 위해 겪었던 시행착오를 정리한 보고서입니다. 
 > [Trial & Error 상세 분석 보고서](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0317_Trial%20and%20Error%20about%20Ground%20Truth.pdf)
