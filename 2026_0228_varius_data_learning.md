@@ -41,9 +41,9 @@
 - 새로운 경로에 대해 Blender raw 제어 및 state 입력
 - 학습 범위 내 속도·곡률 영역에서 일반화 성능 검증
 
-| 시도1 | 시도2 | 시도3 |
+| 시도1 | 시도2 | 시도3(학습시킴) |
 |:-----------:|:------:|:--------------:|
-| <a href="https://github.com/user-attachments/assets/53e9daab-df20-46ad-8033-3ab87817747e"><img src="이미지/try1.png" width="180"></a><br>-----------------<br>PosErr μ=0.0424m <br> max=0.1323m<br>VErr μ=0.0558 <br> max=0.1492 | <a href="https://github.com/user-attachments/assets/7d9e59be-409d-4e87-9ee7-7a120a03ea43"><img src="이미지/try2.png" width="180"></a><br>-----------------<br>PosErr μ=0.0405m <br> max=0.0855m<br>VErr μ=0.0577 <br> max=0.1482 | <a href="https://github.com/user-attachments/assets/85e47ad6-02f4-467a-8690-1fcc33f85809"><img src="이미지/try3.png" width="180"></a><br>-----------------<br>PosErr μ=0.2540m <br> max=0.9366m<br>VErr μ=0.1579 <br> max=0.9549 |
+| <a href="https://github.com/user-attachments/assets/53e9daab-df20-46ad-8033-3ab87817747e"><img src="이미지/try1.png" width="180"></a><br>-----------------<br>PosErr μ=0.0424m <br> max=0.1323m<br>VErr μ=0.0558 <br> max=0.1492 | <a href="https://github.com/user-attachments/assets/7d9e59be-409d-4e87-9ee7-7a120a03ea43"><img src="이미지/try2.png" width="180"></a><br>-----------------<br>PosErr μ=0.0405m <br> max=0.0855m<br>VErr μ=0.0577 <br> max=0.1482 | <a href="https://github.com/user-attachments/assets/418b82ae-1388-4732-87c5-ff2326df2c93"><img src="이미지/try3_1.png" width="180"></a><br>-----------------<br>PosErr μ=0.1628m <br> max=0.6566m<br>VErr μ=0.2717 <br> max=0.9157 |
 
 | 시도4 | 시도5 | 시도6 |
 |:-----------:|:------:|:--------------:|
