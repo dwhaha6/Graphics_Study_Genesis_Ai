@@ -114,4 +114,5 @@
 | 02.21 | Ground Truth → MLP 최초 지도학습 시도 | [Input Mapper 설계](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0221_supervised%20learning.md) | 현재 기준으로는 다소 부정확한 GT Data였으나, 지도학습을 최초로 시도 |
 | 02.27 | 1개 움직임에 대한 파이프라인 완성 | [1개 움직임 학습 과정](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0227_pipeline%20update_residual%20RL.md) | |
 | 02.28 | MLP 성능 검증 — 10가지 움직임 통합 학습 | [Sim2Sim 결과 정리](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0228_varius_data_learning.md) | 10가지 움직임에 대해 평균 거리 오차 0.05m의 GT 달성. GT뿐만 아니라 MLP Sim2Sim 출력 결과까지 모두 포함 |
-| 03.17 | 시행착오가 가장 많았던 Ground Truth 정리 | [Ground Truth 시행착오 보고서](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0317_Trial%20and%20Error%20about%20Ground%20Truth.pdf) |Trial & Error 정리, 위에 명시한 Ground Truth 시행착오와 동일한 보고서 |
+| 03.17 | Ground Truth 관련 내용 정리 | [Ground Truth 시행착오 보고서](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0317_Trial%20and%20Error%20about%20Ground%20Truth.pdf) |Trial & Error 정리, 위에 명시한 Ground Truth 시행착오와 동일한 보고서 |
+| 03.31 | GT 이후 지도학습 과정 정리 및 차원 확장 고려 | [지도학습 내용 정리 보고](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_03_31_GT%EC%9D%B4%ED%9B%84%20%EA%B3%BC%EC%A0%95%20%EC%A0%95%EB%A6%AC%20%EB%B0%8F%20%EC%B0%A8%EC%9B%90%20%ED%99%95%EC%9E%A5%20%EA%B3%A0%EB%A0%A4.pdf) |지도학습 내용 상세 정리 |
