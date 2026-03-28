@@ -149,7 +149,7 @@ throttle = clip(t_ff + Δthrottle, −1.0,  1.0)
 | Batch size | 64 |
 
 
-https://github.com/user-attachments/assets/6afa2e5f-b924-4611-be91-7d19c75cc402
+https://github.com/user-attachments/assets/8822b801-3b97-4dfc-8193-d31f424028d5
 
 ---
 
