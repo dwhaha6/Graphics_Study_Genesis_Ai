@@ -132,6 +132,7 @@ throttle = clip(t_ff + Δthrottle, −1.0,  1.0)
 | 1 | `Δsteer` | 조향각 보정값 (rad) |
 | 2 | `Δthrottle` | 스로틀 보정값 |
 
+- 이때 잔차는 sweep table에서 구했던 대략적인 제어에 대한 잔차를 의미
 ### MLP 구조 및 학습 설정
 
 ![](./이미지/MLP0227.png)
