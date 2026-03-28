@@ -38,8 +38,8 @@
 
 | Date | Topic | Deliverables | Key Point |
 |:---|:---|:---:|:---|
-| 03.31 | **지도학습 과정 정리 및 차원 확장에 대한 고려** | [📑 Report](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_03_31_GT%EC%9D%B4%ED%9B%84%20%EA%B3%BC%EC%A0%95%20%EC%A0%95%EB%A6%AC%20%EB%B0%8F%20%EC%B0%A8%EC%9B%90%20%ED%99%95%EC%9E%A5%20%EA%B3%A0%EB%A0%A4.pdf) | **Summary** |
-| 03.17 | **Ground Truth 과정 정리 및 시행착오 분석** | [📑 Report](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0317_Trial%20and%20Error%20about%20Ground%20Truth.pdf) | **Summary** |
+| 03.31 | **지도학습 과정 정리 및 차원 확장에 대한 고려** | [📑 Report](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_03_31_GT%EC%9D%B4%ED%9B%84%20%EA%B3%BC%EC%A0%95%20%EC%A0%95%EB%A6%AC%20%EB%B0%8F%20%EC%B0%A8%EC%9B%90%20%ED%99%95%EC%9E%A5%20%EA%B3%A0%EB%A0%A4.pdf) | **지도학습 상세 정리** |
+| 03.17 | **Ground Truth 과정 정리 및 시행착오 분석** | [📑 Report](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0317_Trial%20and%20Error%20about%20Ground%20Truth.pdf) | **GT 상세 정리 및 시행착오 분석** |
 | 02.28 | 10가지 움직임 통합 학습 결과 | [📑 Report](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0228_varius_data_learning.md) | 오차 0.05m 달성 |
 | 02.18 | Sweep + Feedback 제어 전환 | [📑 Report](https://github.com/dwhaha6/Graphics_Study_Genesis_Ai/blob/main/2026_0218_sweep_feedback_approach.md) | MPC 한계 극복 |
 
