@@ -45,6 +45,9 @@
 |:-----------:|:------:|:--------------:|
 | <a href="https://github.com/user-attachments/assets/53e9daab-df20-46ad-8033-3ab87817747e"><img src="이미지/try1.png" width="180"></a><br>-----------------<br>PosErr μ=0.0424m <br> max=0.1323m<br>VErr μ=0.0558 <br> max=0.1492 | <a href="https://github.com/user-attachments/assets/7d9e59be-409d-4e87-9ee7-7a120a03ea43"><img src="이미지/try2.png" width="180"></a><br>-----------------<br>PosErr μ=0.0405m <br> max=0.0855m<br>VErr μ=0.0577 <br> max=0.1482 | <a href="https://github.com/user-attachments/assets/85e47ad6-02f4-467a-8690-1fcc33f85809"><img src="이미지/try3.png" width="180"></a><br>-----------------<br>PosErr μ=0.2540m <br> max=0.9366m<br>VErr μ=0.1579 <br> max=0.9549 |
 
+| 시도4 | 시도5 | 시도6 |
+|:-----------:|:------:|:--------------:|
+| <a href="https://github.com/user-attachments/assets/822b6add-3eec-4bff-bb0a-6759e87e0ba6"><img src="이미지/try4.png" width="180"></a><br>-----------------<br>PosErr μ=0.0569m <br> max=0.0859m<br>VErr μ=0.0728 <br> max=0.8055 | <a href="https://github.com/user-attachments/assets/d16bb8da-d70e-4582-92d7-25557a51653d"><img src="이미지/try5.png" width="180"></a><br>-----------------<br>PosErr μ=0.0512m <br> max=0.1185m<br>VErr μ=0.0819 <br> max=0.7680 | <a href="https://github.com/user-attachments/assets/957508bc-68d6-4a93-8e0b-82a29c7f7ff4"><img src="이미지/try6.png" width="180"></a><br>-----------------<br>PosErr μ=0.0638m <br> max=0.2871m<br>VErr μ=0.0787 <br> max=0.6429 |
 
 ---
 
