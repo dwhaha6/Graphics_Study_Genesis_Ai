@@ -1,6 +1,6 @@
 # 3D Sim2Sim — 경사 지형 주행 데이터 추출 & 학습
 
-- 기존 2D Sim2Sim 파이프라인을 **3D 경사 지형(pitch, roll)**으로 확장
+- 기존 2D Sim2Sim 파이프라인을 3D 경사 지형(pitch, roll)으로 확장
 - Blender에서 경사/뱅크 지형 위 다양한 주행 데이터를 추출
 - Genesis에서 terrain heightfield를 로드하여 Ground Truth 생성
 - 10개 GT 데이터를 병합하여 MLP 지도학습 진행
