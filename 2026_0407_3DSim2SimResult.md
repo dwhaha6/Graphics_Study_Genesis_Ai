@@ -72,7 +72,7 @@
 
 ## 학습시키지 않은 새로운 경사 움직임 실험 (이미지 클릭시 영상 재생)
 
-| 완만 경사 U턴 | 급경사 U턴+커브 |
+| 완만 경사 U턴 | 내리막 직진→급커브  |
 |:-------------:|:--------------:|
 | <a href="https://github.com/user-attachments/assets/ced3c4a7-8738-41fd-bffb-7ff8e50f913d"><img src="./이미지/newgt1.png" width="160"></a><br>───────<br>PosErr μ=0.086m<br>max=0.359m<br>VErr μ=0.103<br>max=0.375 | <a href="https://github.com/user-attachments/assets/641f1480-dd72-4f24-b447-873e3e15870b"><img src="./이미지/newgt2.png" width="160"></a><br>───────<br>PosErr μ=0.170m<br>max=0.561m<br>VErr μ=0.245<br>max=1.396 |
 | pitch ±6°<br>roll ±2°<br>커브 30% (U턴) | pitch -0.8\~15°<br>roll ±4.2°<br>커브 46% (급경사 U턴) |
