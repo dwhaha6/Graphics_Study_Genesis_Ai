@@ -20,6 +20,11 @@
 | <a href="https://github.com/user-attachments/assets/6c6eb5f1-6526-4f91-b6d4-e5613a47a20c"><img src="./이미지/gt6.png" width="160"></a><br>───────<br>PosErr μ=0.056m<br>max=0.125m<br>VErr μ=0.176<br>max=0.799 | <a href="https://github.com/user-attachments/assets/c76f47cc-9c19-4313-b908-9a75ead37ef8"><img src="./이미지/gt7.png" width="160"></a><br>───────<br>PosErr μ=0.030m<br>max=0.124m<br>VErr μ=0.137<br>max=0.644 | <a href="https://github.com/user-attachments/assets/5b59c7b6-b036-4b68-b20f-bc3f08a4ab0a"><img src="./이미지/gt8.png" width="160"></a><br>───────<br>PosErr μ=0.052m<br>max=0.115m<br>VErr μ=0.149<br>max=0.643 | <a href="https://github.com/user-attachments/assets/2a922970-ff2e-46b1-8f34-0e57c49afda8"><img src="./이미지/gt9.png" width="160"></a><br>───────<br>PosErr μ=0.053m<br>max=0.134m<br>VErr μ=0.190<br>max=0.708 | <a href="https://github.com/user-attachments/assets/c471d527-cd89-436d-ba44-650e7e2490da"><img src="./이미지/gt10.png" width="160"></a><br>───────<br>PosErr μ=0.031m<br>max=0.083m<br>VErr μ=0.135<br>max=0.510 |
 | pitch -11.3\~23.2°<br>roll ±4.9°<br>커브 72% | pitch -12.5\~11.9°<br>roll -8.3\~0°<br>직진 100% | pitch -12.6\~17.2°<br>roll -11.5\~4.3°<br>커브 63% | pitch -22.3\~13.3°<br>roll -10.4\~6.3°<br>커브 68% | pitch -22.3\~16.1°<br>직진 100% |
 
+| 연속 S커브 |
+|:----------:|
+| <a href="https://github.com/user-attachments/assets/7d342e57-9aeb-4979-bc59-23fb0c70226e"><img src="./이미지/gt11.png" width="160"></a><br>───────<br>PosErr μ=0.073m<br>max=0.197m<br>VErr μ=0.173<br>max=0.367 |
+| pitch -16.6\~17.4°<br>roll -8.8\~0.5°<br>커브 85% |
+
 ---
 
 ## 데이터별 학습 기여 분석
@@ -36,6 +41,7 @@
 | 8 | Roll 커브 | 가장 극한 — 큰 pitch + roll + 커브 |
 | 9 | 급경사+커브 | 급경사(±22°)에서 조향 — 미커버 영역 보완 |
 | 10 | 급경사 직진 | 최대 pitch(±22°) — 급경사 throttle 한계 |
+| 11 | 연속 S커브 | 높은 커브 비율(85%) — 연속 조향 보정 강화 |
 
 ---
 
@@ -43,7 +49,7 @@
 
 | Category | Motion Count | Avg PosErr (m) | Avg VErr (m/s) |
 |:---------|:------------:|:--------------:|:--------------:|
-| 3D Ground Truth | 10 | 0.046 | 0.150 |
+| 3D Ground Truth | 11 | 0.048 | 0.152 |
 
 ---
 
@@ -57,6 +63,11 @@
 |:---------:|:---------:|:---------:|:----------:|:----------:|
 | <a href="https://github.com/user-attachments/assets/4c69a9f1-0a9f-452f-9b51-75eec13b7082"><img src="./이미지/gt6.png" width="160"></a><br>───────<br>PosErr μ=0.126m<br>max=1.006m<br>VErr μ=0.154<br>max=0.849 | <a href="https://github.com/user-attachments/assets/d70571cf-1e55-4ccb-bddd-486523c1770e"><img src="./이미지/gt7.png" width="160"></a><br>───────<br>PosErr μ=0.047m<br>max=0.121m<br>VErr μ=0.116<br>max=0.336 | <a href="https://github.com/user-attachments/assets/d807eba5-7fd1-488a-b37f-1a0c62e22f56"><img src="./이미지/gt8.png" width="160"></a><br>───────<br>PosErr μ=0.059m<br>max=0.183m<br>VErr μ=0.133<br>max=0.682 | <a href="https://github.com/user-attachments/assets/075c1f05-67b6-4954-85d2-71aa0cfa09bf"><img src="./이미지/gt9.png" width="160"></a><br>───────<br>PosErr μ=0.071m<br>max=0.225m<br>VErr μ=0.182<br>max=0.842 | <a href="https://github.com/user-attachments/assets/495ebfc2-6806-4efa-afc3-68070da7abc7"><img src="./이미지/gt10.png" width="160"></a><br>───────<br>PosErr μ=0.034m<br>max=0.088m<br>VErr μ=0.134<br>max=0.780 |
 
+| 연속 S커브 |
+|:----------:|
+| <a href="https://github.com/user-attachments/assets/4a0f37ed-6505-48c0-89bb-adb17c77bda2"><img src="./이미지/gt11.png" width="160"></a><br>───────<br>PosErr μ=0.068m<br>max=0.178m<br>VErr μ=0.164<br>max=0.482 |
+| pitch -16.6\~17.4°<br>roll -8.8\~0.5°<br>커브 85% |
+
 ---
 
 ## 학습시키지 않은 새로운 경사 움직임 실험 (이미지 클릭시 영상 재생)
@@ -69,6 +80,6 @@
 
 | Category | Motion Count | Avg PosErr (m) | Avg VErr (m/s) |
 |:---------|:------------:|:--------------:|:--------------:|
-| 3D Ground Truth | 10 | 0.046 | 0.150 |
-| MLP (학습된 움직임) | 10 | 0.059 | 0.133 |
+| 3D Ground Truth | 11 | 0.048 | 0.152 |
+| MLP (학습된 움직임) | 11 | 0.060 | 0.136 |
 | MLP (비학습 새로운 움직임) | — | — | — |
