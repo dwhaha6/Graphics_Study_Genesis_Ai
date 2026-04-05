@@ -51,11 +51,11 @@
 
 | 저속 오르막 | 저속 내리막 | 오르막→내리막 | 조향 오르막 | 조향 내리막 |
 |:-----------:|:-----------:|:------------:|:-----------:|:-----------:|
-| <a href="#"><img src="./이미지/mlp1.png" width="160"></a><br>───────<br>PosErr μ=<br>max=<br>VErr μ=<br>max= | <a href="#"><img src="./이미지/mlp2.png" width="160"></a><br>───────<br>PosErr μ=<br>max=<br>VErr μ=<br>max= | <a href="#"><img src="./이미지/mlp3.png" width="160"></a><br>───────<br>PosErr μ=<br>max=<br>VErr μ=<br>max= | <a href="#"><img src="./이미지/mlp4.png" width="160"></a><br>───────<br>PosErr μ=<br>max=<br>VErr μ=<br>max= | <a href="#"><img src="./이미지/mlp5.png" width="160"></a><br>───────<br>PosErr μ=<br>max=<br>VErr μ=<br>max= |
+| <a href="https://github.com/user-attachments/assets/cc74f5b7-0c2f-48dd-9d2f-1ff6c2a0c702"><img src="./이미지/gt1.png" width="160"></a><br>───────<br>PosErr μ=0.040m<br>max=0.083m<br>VErr μ=0.100<br>max=0.217 | <a href="https://github.com/user-attachments/assets/8be64310-85d3-48d3-aba4-6700ef7bd8a2"><img src="./이미지/gt2.png" width="160"></a><br>───────<br>PosErr μ=0.026m<br>max=0.084m<br>VErr μ=0.155<br>max=0.429 | <a href="https://github.com/user-attachments/assets/ec80c78b-3633-4875-a10a-78b231d940fc"><img src="./이미지/gt3.png" width="160"></a><br>───────<br>PosErr μ=0.026m<br>max=0.066m<br>VErr μ=0.079<br>max=0.188 | <a href="https://github.com/user-attachments/assets/988d0e0b-771c-4fd8-8132-04bfd8c46559"><img src="./이미지/gt4.png" width="160"></a><br>───────<br>PosErr μ=0.064m<br>max=0.185m<br>VErr μ=0.142<br>max=0.681 | <a href="https://github.com/user-attachments/assets/c443534a-ad99-4c63-9651-4923ef1a8d2e"><img src="./이미지/gt5.png" width="160"></a><br>───────<br>PosErr μ=0.098m<br>max=0.324m<br>VErr μ=0.138<br>max=0.777 |
 
 | S자+조향 | Roll 직진 | Roll 커브 | 급경사+커브 | 급경사 직진 |
 |:---------:|:---------:|:---------:|:----------:|:----------:|
-| <a href="#"><img src="./이미지/mlp6.png" width="160"></a><br>───────<br>PosErr μ=<br>max=<br>VErr μ=<br>max= | <a href="#"><img src="./이미지/mlp7.png" width="160"></a><br>───────<br>PosErr μ=<br>max=<br>VErr μ=<br>max= | <a href="#"><img src="./이미지/mlp8.png" width="160"></a><br>───────<br>PosErr μ=<br>max=<br>VErr μ=<br>max= | <a href="#"><img src="./이미지/mlp9.png" width="160"></a><br>───────<br>PosErr μ=<br>max=<br>VErr μ=<br>max= | <a href="#"><img src="./이미지/mlp10.png" width="160"></a><br>───────<br>PosErr μ=<br>max=<br>VErr μ=<br>max= |
+| <a href="https://github.com/user-attachments/assets/4c69a9f1-0a9f-452f-9b51-75eec13b7082"><img src="./이미지/gt6.png" width="160"></a><br>───────<br>PosErr μ=0.126m<br>max=1.006m<br>VErr μ=0.154<br>max=0.849 | <a href="https://github.com/user-attachments/assets/d70571cf-1e55-4ccb-bddd-486523c1770e"><img src="./이미지/gt7.png" width="160"></a><br>───────<br>PosErr μ=0.047m<br>max=0.121m<br>VErr μ=0.116<br>max=0.336 | <a href="https://github.com/user-attachments/assets/d807eba5-7fd1-488a-b37f-1a0c62e22f56"><img src="./이미지/gt8.png" width="160"></a><br>───────<br>PosErr μ=0.059m<br>max=0.183m<br>VErr μ=0.133<br>max=0.682 | <a href="https://github.com/user-attachments/assets/075c1f05-67b6-4954-85d2-71aa0cfa09bf"><img src="./이미지/gt9.png" width="160"></a><br>───────<br>PosErr μ=0.071m<br>max=0.225m<br>VErr μ=0.182<br>max=0.842 | <a href="https://github.com/user-attachments/assets/495ebfc2-6806-4efa-afc3-68070da7abc7"><img src="./이미지/gt10.png" width="160"></a><br>───────<br>PosErr μ=0.034m<br>max=0.088m<br>VErr μ=0.134<br>max=0.780 |
 
 ---
 
@@ -70,5 +70,5 @@
 | Category | Motion Count | Avg PosErr (m) | Avg VErr (m/s) |
 |:---------|:------------:|:--------------:|:--------------:|
 | 3D Ground Truth | 10 | 0.046 | 0.150 |
-| MLP (학습된 움직임) | 10 | — | — |
+| MLP (학습된 움직임) | 10 | 0.059 | 0.133 |
 | MLP (비학습 새로운 움직임) | — | — | — |
