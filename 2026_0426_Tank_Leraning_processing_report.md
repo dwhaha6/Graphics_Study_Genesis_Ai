@@ -176,7 +176,7 @@ Stage 2에서 alive=1, hp=2로 바뀌면 NN이 본 적 없는 분포 → value f
 
 **대처**: 단계 전환 시 critic의 마지막 layer만 재초기화 (정책 layer는 보존). 첫 20 iter `value_loss_coef` 2배로 critic warm-up.
 
-![](./이미지/critic_output.png)
+
 
 #### 문제 3 — Stage 4 self-play 풀 다양성
 Stage 3까지는 frozen 상대 → 일관된 학습. Stage 4는 풀 self-play → 풀이 비어있으면 self-current와만 매치.
