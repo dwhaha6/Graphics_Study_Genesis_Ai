@@ -75,6 +75,8 @@ control_dofs_position(turret_target)
 - 회전 속도가 빨라질수록 진동 심함
 - 회전 속도 느리거나 정지 상태에선 안 떨림
 
+https://github.com/user-attachments/assets/fd40c05f-5f11-46f9-a123-e0a2a139647b
+
 ### 원인 추정 — 서스펜션 부재
 물리적으로 자연스러운 현상:
 - **고마찰 + 강체 + 평면 접촉** = 지우개를 책상에 강하게 누르고 끌 때의 stick-slip과 동일
