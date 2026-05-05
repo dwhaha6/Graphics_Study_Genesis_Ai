@@ -158,11 +158,9 @@ Bot Team은 화력 우위 (reload 5s), 적은 HP 우위 (총 HP +50%) 로 비대
 
 ## 실제 전투 영상
 
-[Bot Lose(근소한 차이)](https://github.com/user-attachments/assets/de2795fd-8d8c-46a6-b8c2-8101a2330b21)
-
-[Bot Lose](https://github.com/user-attachments/assets/74da7095-d153-4068-90a9-d25acff6e9d1)
-
-[Bot Win](https://github.com/user-attachments/assets/114ee1bb-4530-41ec-a825-cfb176883fb9)
+| Bot Lose (근소한 차이) | Bot Lose | Bot Win |
+|---|---|---|
+| [![Bot Lose close](./이미지/thumb_bot_close_game.png)](https://github.com/user-attachments/assets/de2795fd-8d8c-46a6-b8c2-8101a2330b21) | [![Bot Lose](./이미지/bot_lose.png)](https://github.com/user-attachments/assets/74da7095-d153-4068-90a9-d25acff6e9d1) | [![Bot Win](./이미지/bot_win.png)](https://github.com/user-attachments/assets/114ee1bb-4530-41ec-a825-cfb176883fb9) |
 
 ### 총 전적(총 256개 episode)
 | 결과                          |  횟수 |  비율 |
