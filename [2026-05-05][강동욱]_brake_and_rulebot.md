@@ -35,7 +35,7 @@ $F_{\mathrm{damping}} = -D \cdot v_{x,\mathrm{body}} \quad (D = 8000\ \mathrm{N 
 | 전진 $+5\,\mathrm{m/s}$ |                  $+5$ |   $-5 \times D = -40{,}000\,\mathrm{N}$  | 음의 힘 → 감속 (전진 방향 감속) |
 | 후진 $-5\,\mathrm{m/s}$ |                  $-5$ | $-(-5) \times D = +40{,}000\,\mathrm{N}$ | 양의 힘 → 감속 (후진 방향 감속) |
 
-https://github.com/user-attachments/assets/1076577a-841d-40bd-bf7b-902af93eabe7
+https://github.com/user-attachments/assets/150212d0-067b-430f-ad18-db0933a6a2e7
 
 - brake로 정지하는 영상
 ### 우려되는 사항
