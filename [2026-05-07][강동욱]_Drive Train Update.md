@@ -106,8 +106,9 @@ N = max(N, 0.0)
 **종방향 slip ratio:**
 
 $$
-\kappa = \frac{R \cdot \omega_{\text{wheel}} - v_{\text{long}}}{\max(|v_{\text{long}}|,\ \varepsilon)}
+\kappa = \frac{R \cdot \omega_{\text{wheel}} - v_{\text{long}}}{\mathrm{max}(|v_{\text{long}}|,\ \varepsilon)}
 $$
+
 - w_wheel은 바퀴 회전 속도(어떻게 구하는 지는 4번번에서)
 - 바퀴 회전 속력보다 탱크 차체 속력이 더 빠르다면 braking slip(멈추는 중)
 	- kappa > 0
@@ -117,8 +118,9 @@ $$
 **횡 slip angle:**
 
 $$
-\alpha = \operatorname{atan2}\!\left(v_{\text{lat}},\ \max(|v_{\text{long}}|,\ \varepsilon)\right)
+\alpha = \mathrm{atan2}\left(v_{\text{lat}},\ \mathrm{max}(|v_{\text{long}}|,\ \varepsilon)\right)
 $$
+
 - alpha는 바퀴 정면 방향과 실제 진행 방향의 각도 차이를 의미
 	- 0이면 직진 중 횡방향 slip X
 	- 11이면 좌측으로 살짝 미끄러지는 상황
@@ -224,6 +226,7 @@ T_brake = brake · T_BRAKE_MAX · tanh(ω / 0.5)
 - `ω ≈ 0`: T_brake ≈ 0 → sign이 아닌 tanh로 구현하여 w가 감소할 때 부드럽게 진동없이 정지
 ### Brake 영상
 https://github.com/user-attachments/assets/59dc7692-faf9-4213-80e6-72501ad78dd0
+
 ---
 
 ## A5. Skid Steering
@@ -248,6 +251,7 @@ F_lat  = -pacejka(α, ..., D=mu_N_lat)    # 횡 한계 별도
 
 ### 조향 영상
 https://github.com/user-attachments/assets/6685526b-4ccc-4edc-b612-bc1831b88a07
+
 ---
 ## A6. Mesh Terrain Integration (Plane + 가우시안 언덕)
 - plane은 genesis의 기본 plane을 의미
@@ -266,6 +270,7 @@ scene.add_entity(
 - 결론은 mesh terrain이 scene에 생성된다
 ### terrain 위 주행 영상
 https://github.com/user-attachments/assets/00cf9701-8edc-478c-aca4-6e9efdfcd91f
+
 ---
 
 ## todo
