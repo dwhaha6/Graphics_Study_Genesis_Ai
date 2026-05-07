@@ -279,7 +279,7 @@ https://github.com/user-attachments/assets/00cf9701-8edc-478c-aca4-6e9efdfcd91f
 omega[LEFT_IDX]  = omega[LEFT_IDX].mean()    # 좌 5 wheel 평균으로 통일
 omega[RIGHT_IDX] = omega[RIGHT_IDX].mean()
 ```
-- 이전에 피드백 받았던 좌우 별 wheel 각속도 통일도 반영 완료
+- 이전에 피드백 받았던 좌우 별 wheel 각속도 통일도 반영 완료된 영상들임
 
 
 ## todo
