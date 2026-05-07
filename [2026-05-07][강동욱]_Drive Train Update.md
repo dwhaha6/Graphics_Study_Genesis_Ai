@@ -250,13 +250,8 @@ F_lat  = -pacejka(α, ..., D=mu_N_lat)    # 횡 한계 별도
 - 즉 횡방향 마찰계수를 종방향 마찰계수의 절반으로 세팅 
 
 ### 조향 영상
-- 조향의 경우 Belt Constraint 적용 전 후 차이가 보여 2가지 영상을 첨부
-
-https://github.com/user-attachments/assets/6685526b-4ccc-4edc-b612-bc1831b88a07
-- Belt Constraint 적용 X
 
 https://github.com/user-attachments/assets/4030a181-778b-4091-b7ec-c5e41bb8c615
-- Belt Constraint 적용 O(현재 setting)
 
 ---
 ## A6. Mesh Terrain Integration (Plane + 가우시안 언덕)
