@@ -1,7 +1,8 @@
-- 보고서에 나오는 chassis = tank의 차체입니다(자동차의 chassis와는 조금 다른 개념)
 # Ray-based vehicle(Tank) physics 구현
 
-  - solver에게 맡겼던 계산들을 어떻게 직접 설계했는지 알아보기
+- 보고서에 나오는 chassis = tank의 차체입니다(자동차의 chassis와는 조금 다른 개념)
+
+- solver에게 맡겼던 계산들을 어떻게 직접 설계했는지 알아보기
 ---
 ## A1. tank_ray.urdf
 
