@@ -243,7 +243,9 @@ T_brake = brake · T_BRAKE_MAX · tanh(ω / 0.5)
 - `ω < 0`: T_brake < 0 → 자동으로 부호 뒤집어 반대 방향 회전도 저지
 - `ω ≈ 0`: T_brake ≈ 0 → sign이 아닌 tanh로 구현하여 w가 감소할 때 부드럽게 진동없이 정지
 ### Brake 영상
+
 https://github.com/user-attachments/assets/59dc7692-faf9-4213-80e6-72501ad78dd0
+
 ---
 
 ## A5. Skid Steering
