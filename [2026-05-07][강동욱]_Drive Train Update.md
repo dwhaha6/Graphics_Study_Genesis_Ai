@@ -1,3 +1,4 @@
+- 보고서에 나오는 chassis = tank의 차체입니다(자동차의 chassis와는 조금 다른 개념)
 # Ray-based vehicle(Tank) physics 구현
 
   - solver에게 맡겼던 계산들을 어떻게 직접 설계했는지 알아보기
@@ -178,6 +179,7 @@ $$T_{\text{friction}} = R \cdot F_{\text{long}}$$
 $$\frac{d\omega}{dt} = \frac{T_{\text{drive}} - T_{\text{brake}} - T_{\text{friction}}}{I_{\text{wheel}}}$$
 
 $$\omega \leftarrow \omega + \frac{d\omega}{dt} \cdot \Delta t$$
+- 엔전 토크, brake 토크, 지면 마찰 반작용 힘을 각각 계산
 - 바퀴에 걸리는 모든 토크(엔전 토크, brake 토크, 지면 마찰 반작용)의 합을 구함(바퀴에 가해지는 힘)
 - 위 합을 바퀴의 관성으로 나누면 바퀴의 각가속도 도출(관성은 가만히 있으려는 힘, 상수 50 kg·m²로 세팅)
 - 각가속도를 dt에 대해 적분 -> 한 step동안 w(바퀴 각속도) 변화량 -> 이 값을 바탕으로 w값 업데이트
@@ -193,17 +195,15 @@ T_max(ω) = T_DRIVE_MAX × max(0, 1 - |ω|/OMEGA_MAX_DRIVE)
 - T_max(w)는 현재 w에서 출력할 수 있는 최대 토크를 의미
 
 
-### 5. Wheel이 만든 힘을 차체에 인가
-- 각 Wheel이 만든 force를 차체에 전달
+### 5. Wheel이 만든 힘을 chassis에 인가
 
-|wheel 위치|어떤 force|torque 효과|
-|---|---|---|
-|앞 wheel (x=+3) 의 위쪽 N|F = +z|y 축 토크 → chassis **nose-up pitch** (= 가속 시 앞 들림)|
-|좌측 wheel (y=+1.42) 의 forward F_long|F = +x|z 축 토크 → chassis **CCW yaw** (= skid 좌회전)|
-|모든 wheel 의 N (정상 안착)|F = +z, 좌우 대칭|토크 합 0 (안 회전)|
+- wheel별로 F_world와 torque를 계산
+- 왼쪽 그림은 코드에서 F_world에 대해, 오른쪽은 torque에 대해 나타낸 그럼
+
+![](./이미지/F_world_torque1.png)
 ```
-F_world = N · ẑ_world + F_long · forward + F_lat · lateral 
-torque = r_wheel × F_world # r_wheel은 차체 중심에서 wheel까지의 위치 벡터
+F_world = N · ẑ_world + F_long · forward + F_lat · lateral
+torque = r_wheel × F_world # r_wheel은 chassis 중심에서 wheel까지의 위치 벡터
  
 total_F += F_world 
 total_T += torque # step 끝나면 한 번에 인가 
@@ -212,9 +212,11 @@ solver.apply_links_external_force (total_F, base_link) solver.apply_links_extern
 ```
 - N은 1에서 구한 suspension 반력
 - F_long과 F_lat은 3에서 구한 wheel의 종/횡 마찰력
-- `total_F`: 그냥 **모든 force 벡터 합**, 차체의 직선 운동을 만드는 힘
-- `total_T` = 차체의 회전 운동을 만드는 토크
-- total_F가 0인데 total_T가 0이 아니면 탱크는 제자리 회전
+- F_world는 wheel 이 chassis 에 가하는 앞,뒤,옆에 대한 평행 이동의 힘
+- Torque는 wheel이 chassis에 가하는 회전힘
+- `total_F`: chassis의 직선 운동을 만드는 힘
+- `total_T` = chassis의 회전 운동을 만드는 힘
+- total_F가 0이고 total_T만 값이 있다면 탱크는 제자리 회전
 
 ### 위 힘들을 종합한 결과
 #### 탱크 직진 영상
