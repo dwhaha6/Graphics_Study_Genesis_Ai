@@ -273,7 +273,6 @@ scene.add_entity(
 
 https://github.com/user-attachments/assets/fd08413f-474b-405e-8fe9-a8e73a872072
 
-https://github.com/user-attachments/assets/1745f3c8-5fe6-4017-b9ed-c8d10025cd62
 
 ---
 
