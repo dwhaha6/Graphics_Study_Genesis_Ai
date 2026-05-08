@@ -108,19 +108,17 @@ N = max(N, 0.0)
 $$
 \kappa = \frac{R \cdot \omega_{\text{wheel}} - v_{\text{long}}}{\mathrm{max}(|v_{\text{long}}|,\ \varepsilon)}
 $$
-
-- w_wheel은 바퀴 회전 속도(어떻게 구하는 지는 4번번에서)
+- w_wheel은 바퀴 회전 속도(어떻게 구하는 지는 4번에서)
 - 바퀴 회전 속력보다 탱크 차체 속력이 더 빠르다면 braking slip(멈추는 중)
-	- kappa > 0
-- 바퀴 회전 속력보다 탱크 차체 속력이 더 느리다면 driving slip(출발 가속 중)
 	- kappa < 0
+- 바퀴 회전 속력보다 탱크 차체 속력이 더 느리다면 driving slip(출발 가속 중)
+	- kappa > 0
 
 **횡 slip angle:**
 
 $$
 \alpha = \mathrm{atan2}\left(v_{\text{lat}},\ \mathrm{max}(|v_{\text{long}}|,\ \varepsilon)\right)
 $$
-
 - alpha는 바퀴 정면 방향과 실제 진행 방향의 각도 차이를 의미
 	- 0이면 직진 중 횡방향 slip X
 	- 11이면 좌측으로 살짝 미끄러지는 상황
@@ -144,12 +142,12 @@ Pacejka:   F = D·sin(C·atan(B·slip - E·(B·slip - atan(B·slip))))
 - B,C,D,E 전부 지정해줘야 하는 상수
 - Step B 의 slip (κ, α) 을 입력으로 받아 종/횡 마찰력 (F_long, F_lat) 산출
 
-|기호|이름|곡선 어디 영향|우리 값 (탱크)|
-|---|---|---|---|
-|**D**|peak factor|**곡선 천장 높이** (= 마찰 한계, 보통 μN)|μN, μN·LAT_SCALE|
-|**C**|shape factor|sin 안 들어가는 ratio. 곡선의 전체 모양 결정|1.6 (long), 1.4 (lat)|
-|**B**|stiffness factor|작은 slip 영역에서의 **기울기**. 클수록 빨리 saturate|5.0 (long), 4.0 (lat)|
-|**E**|curvature factor|peak 이후 **얼마나 떨어지나** (E 작을수록 plateau, E 클수록 sharp drop)|0.4 (둘 다)|
+| 기호    | 이름               | 곡선 어디 영향                                                | 우리 값 (탱크)                     |
+| ----- | ---------------- | ------------------------------------------------------- | ----------------------------- |
+| **D** | peak factor      | **곡선 천장 높이** (= 마찰 한계, 보통 μN)                           | μN(μ는 0.9), μN·LAT_SCALE(0.5) |
+| **C** | shape factor     | sin 안 들어가는 ratio. 곡선의 전체 모양 결정                          | 1.6 (long), 1.4 (lat)         |
+| **B** | stiffness factor | 작은 slip 영역에서의 **기울기**. 클수록 빨리 saturate                  | 5.0 (long), 4.0 (lat)         |
+| **E** | curvature factor | peak 이후 **얼마나 떨어지나** (E 작을수록 plateau, E 클수록 sharp drop) | 0.4 (둘 다)                     |
 #### 종 + 횡 force 가 anisotropic 마찰 한계를 동시에 못 넘게 cap
 $$
 \text{norm} = \sqrt{\left(\frac{F_{\text{long}}}{\mu N}\right)^2 + \left(\frac{F_{\text{lat}}}{\mu N_{\text{lat}}}\right)^2}
@@ -161,7 +159,16 @@ $$
 - `norm ≤ 1`: 마찰 한계 안. 그대로 사용.
 - `norm > 1`: 한계 초과. 두 force를 **같은 비율로 줄임** (벡터 방향 유지, 크기만 축소).
 
-### 4. Wheel ω 업데이트
+### 추가 사항
+
+```python
+F_RR = -Cr · N · sign(v_long)
+```
+- Cr은 0.05, N은 지면이 바퀴를 위로 미는 힘(1에서 계산), sign(v_long)은 전진 반대방향
+- 전진하던 차량이 brake없이 악셀에서 발을 뗀다면 서서히 멈춰야 함
+- 그 힘을 구현한 것(brake를 밟지 않아도 서서히 속력이 줄어드는 효과)
+
+### 4. Wheel ω(각속도) 업데이트
 $$T_{\text{drive}} = \text{throttle} \cdot T_{\text{drive}}^{\max}$$
 
 $$T_{\text{brake}} = \text{brake} \cdot T_{\text{brake}}^{\max} \cdot \tanh!\left(\frac{\omega}{0.5}\right)$$
@@ -173,8 +180,18 @@ $$\frac{d\omega}{dt} = \frac{T_{\text{drive}} - T_{\text{brake}} - T_{\text{fric
 $$\omega \leftarrow \omega + \frac{d\omega}{dt} \cdot \Delta t$$
 - 바퀴에 걸리는 모든 토크(엔전 토크, brake 토크, 지면 마찰 반작용)의 합을 구함(바퀴에 가해지는 힘)
 - 위 합을 바퀴의 관성으로 나누면 바퀴의 각가속도 도출(관성은 가만히 있으려는 힘, 상수 50 kg·m²로 세팅)
-- 각가속도를 dt에 대해 적분 -> 한 step동안 w(바퀴 각속도) 변화량
-- w값 업데이트
+- 각가속도를 dt에 대해 적분 -> 한 step동안 w(바퀴 각속도) 변화량 -> 이 값을 바탕으로 w값 업데이트
+
+### 추가 사항
+- 단 w가 커지더라도 토크 출력에는 한계(clip)가 존재
+
+```
+T_max(ω) = T_DRIVE_MAX × max(0, 1 - |ω|/OMEGA_MAX_DRIVE)
+         = 30,000 × max(0, 1 - |ω|/100)
+```
+- 위 식에 따라 w가 100이상이 되면 T_max(w)는 0
+- T_max(w)는 현재 w에서 출력할 수 있는 최대 토크를 의미
+
 
 ### 5. Wheel이 만든 힘을 차체에 인가
 - 각 Wheel이 만든 force를 차체에 전달
@@ -201,6 +218,7 @@ solver.apply_links_external_force (total_F, base_link) solver.apply_links_extern
 
 ### 위 힘들을 종합한 결과
 #### 탱크 직진 영상
+
 https://github.com/user-attachments/assets/5872ce5a-136f-4ee8-9d27-494d2bd5f4c0
 
 
@@ -226,7 +244,6 @@ T_brake = brake · T_BRAKE_MAX · tanh(ω / 0.5)
 - `ω ≈ 0`: T_brake ≈ 0 → sign이 아닌 tanh로 구현하여 w가 감소할 때 부드럽게 진동없이 정지
 ### Brake 영상
 https://github.com/user-attachments/assets/59dc7692-faf9-4213-80e6-72501ad78dd0
-
 ---
 
 ## A5. Skid Steering
@@ -268,7 +285,7 @@ scene.add_entity(
 ```
 - 가우시안 모양의 언덕을 정의하고 scene에 추가
 - Terrain(height_field=hf)를 호출하면 Genesis가 hf 격자의 각 점을 vertex로 만들고, 인접한 점 4개를 2개의 삼각형으로 묶어 face 형성
-- 결론은 mesh terrain이 scene에 생성된다
+- 결론은 mesh terrain이 scene에 생성된다는 것
 ### terrain 위 주행 영상
 
 https://github.com/user-attachments/assets/fd08413f-474b-405e-8fe9-a8e73a872072
@@ -281,8 +298,7 @@ https://github.com/user-attachments/assets/fd08413f-474b-405e-8fe9-a8e73a872072
 omega[LEFT_IDX]  = omega[LEFT_IDX].mean()    # 좌 5 wheel 평균으로 통일
 omega[RIGHT_IDX] = omega[RIGHT_IDX].mean()
 ```
-- 이전에 피드백 받았던 좌우 별 wheel 각속도 통일도 반영 완료된 영상들임
-
+- 이전에 피드백 받았던 좌우 별 wheel 각속도 통일도 반영되어 있음
 
 ## todo
 
