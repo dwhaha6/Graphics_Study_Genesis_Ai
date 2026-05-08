@@ -252,6 +252,7 @@ F_lat  = -pacejka(α, ..., D=mu_N_lat)    # 횡 한계 별도
 ### 조향 영상
 
 https://github.com/user-attachments/assets/1745f3c8-5fe6-4017-b9ed-c8d10025cd62
+
 ---
 ## A6. Mesh Terrain Integration (Plane + 가우시안 언덕)
 - plane은 genesis의 기본 plane을 의미
