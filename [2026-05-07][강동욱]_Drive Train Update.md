@@ -20,9 +20,9 @@
 
 **구조:**
 
-- 10 wheels = 5 (좌) + 5 (우): sprocket(1) + road(3) + idler(1) per side
+- 10 wheels = 5 (좌) + 5 (우)
 
-- y position ±1.42 (track 폭 2.84m), x ∈ {+3, +1.5, 0, -1.5, -3}, wheel radius 0.4m
+- y position ±1.42 (track 폭 2.84m), wheel radius 0.4m
 
 - DoF: 6 chassis root + 10 wheel revolute + turret + barrel = 18
 
