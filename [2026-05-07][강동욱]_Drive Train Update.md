@@ -251,8 +251,7 @@ F_lat  = -pacejka(α, ..., D=mu_N_lat)    # 횡 한계 별도
 
 ### 조향 영상
 
-https://github.com/user-attachments/assets/4030a181-778b-4091-b7ec-c5e41bb8c615
-
+https://github.com/user-attachments/assets/1745f3c8-5fe6-4017-b9ed-c8d10025cd62
 ---
 ## A6. Mesh Terrain Integration (Plane + 가우시안 언덕)
 - plane은 genesis의 기본 plane을 의미
@@ -270,7 +269,10 @@ scene.add_entity(
 - Terrain(height_field=hf)를 호출하면 Genesis가 hf 격자의 각 점을 vertex로 만들고, 인접한 점 4개를 2개의 삼각형으로 묶어 face 형성
 - 결론은 mesh terrain이 scene에 생성된다
 ### terrain 위 주행 영상
-https://github.com/user-attachments/assets/00cf9701-8edc-478c-aca4-6e9efdfcd91f
+
+https://github.com/user-attachments/assets/fd08413f-474b-405e-8fe9-a8e73a872072
+
+https://github.com/user-attachments/assets/1745f3c8-5fe6-4017-b9ed-c8d10025cd62
 
 ---
 
