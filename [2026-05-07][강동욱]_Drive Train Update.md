@@ -293,7 +293,7 @@ scene.add_entity(
 - 결론은 mesh terrain이 scene에 생성된다는 것
 ### terrain 위 주행 영상
 
-https://github.com/user-attachments/assets/fd08413f-474b-405e-8fe9-a8e73a872072
+https://github.com/user-attachments/assets/15bc3470-c649-461c-862f-27a1419cec79
 
 
 ---
