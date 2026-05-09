@@ -100,7 +100,7 @@ N = max(N, 0.0)
 - `comp_rate` = `compression` 의 시간 미분 (압축이 얼마나 빠르게 변하나)
 - `N` 은 항상 ≥ 0 (지면이 바퀴를 위로 미는 힘)
 
-![](./이미지/tank_spring.gif)
+![](./이미지/tank_compression.gif)
 - 탱크가 통통 튀지 않고 가상의 suspension으로 안정적으로 착지하는 모습
 ---
 ### 2. Slip 계산
