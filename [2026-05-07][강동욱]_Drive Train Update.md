@@ -103,6 +103,16 @@ N = max(N, 0.0)
 ![](./이미지/tank_compression2.gif)
 
 - 탱크가 통통 튀지 않고 가상의 suspension으로 안정적으로 착지하는 모습
+
+### 추가사항
+- 위에서 구한 compression을 바탕으로 각 바퀴가 "얼만큼 위로 올라가야 하는지"를 계산
+
+```
+q_target_i = AMP × compression_i
+```
+- q_target_i는 i번째 wheel이 z축에 대해 이동해야하는 좌표값(0이면 기본 바퀴 위치)
+- AMP는 얼만큼 세게 올릴건지를 조절하는 상수(현재 튜닝 후 2.0으로 세팅)
+
 ---
 ### 2. Slip 계산
 
