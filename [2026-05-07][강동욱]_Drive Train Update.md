@@ -24,7 +24,7 @@
 
 - y position ±1.42 (track 폭 2.84m), wheel radius 0.4m
 
-- DoF: 6 chassis root + 10 wheel revolute + turret + barrel = 18
+- DoF: 6 chassis root + 10 wheel prismatic susp + 10 wheel revolute + turret + barrel = 28
 
 ---
 ## A2. Custom Raycaster Pattern (10-ray)
