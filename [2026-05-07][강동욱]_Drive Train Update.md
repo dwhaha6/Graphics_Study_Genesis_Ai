@@ -14,9 +14,9 @@
 **변경 사항:**
 
 - 탱크 몸통만 collision 유지, 바퀴는 collision 제거
-- prismatic joint를 fixed joint로 변경
+- 모든 wheel에 대해 prismatic joint사용(z축 방향 자유도)
 	- prismatic joint는 suspension을 위해 붙어있던 joint
-	- 더 이상 실제 휠이 지면과 충돌해서 서스펜션이 눌리지 않기에 솔버가 서스펜션 계산을 할 필요가 없음
+	- 실제 탱크처럼 wheel이 위아래로 자유도를 갖게 하기 위한 세팅
 
 **구조:**
 
