@@ -85,7 +85,7 @@ compression = (TIRE_R + L_SUSP) - distance
 # TIRE_R은 타이어 반지름, L_SUSP는 spring의 원래 길이
 ```
 - compression은 spring이 원래의 길이보다 얼마나 압축됐는지를 의미
-- 아래 경우 compression = 0
+- Tank가 공중에 뜬 경우 compression = 0
 
 ```
 N = K_SUSP · compression + C_SUSP · comp_rate
