@@ -151,7 +151,7 @@ https://github.com/user-attachments/assets/9d3042da-1715-4c19-9418-581c79e83bfa
 
 ## Todo -> Map 설계
 
-## 현재 설계 진행중
+## 현재 Map설계 진행중
 
 ![](./이미지/map_design.jpg)
 
