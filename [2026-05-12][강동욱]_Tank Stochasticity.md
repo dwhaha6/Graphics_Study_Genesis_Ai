@@ -153,6 +153,6 @@ https://github.com/user-attachments/assets/9d3042da-1715-4c19-9418-581c79e83bfa
 
 ## 현재 설계 진행중
 
-![](./이미/2026_5_12_미팅/map_design.jpg)
+![](./이미지/map_design.jpg)
 
 https://github.com/user-attachments/assets/316eedfe-660f-490e-bf78-a2ffbb4b9e39
