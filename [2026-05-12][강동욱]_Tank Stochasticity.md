@@ -53,7 +53,9 @@ def distance_factor(distance):
 |100|0.61|원거리 sniping|
 |150|0.47|맵 끝|
 |200|0.37|1·d_eff (37%)|
+
 예를들어 10m/s(36km/h) 속력으로 이동 중인 50m 앞 적 탱크를 사격 시 피격 확률은 약 64%
+
 ### 기타 factor(0 또는 1)
 
 - los_quality: 엄폐물이 LOS 상에 존재하는가(존재하면 0)
