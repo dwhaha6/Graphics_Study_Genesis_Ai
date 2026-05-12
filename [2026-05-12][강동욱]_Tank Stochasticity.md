@@ -10,6 +10,8 @@ P_hit = P_base × f_movement × f_distance × f_LOS × f_aim
 
 -> 이후 나오는 명중률은 피격확률을 의미
 
+![](./이미지/e^-x.png)
+
 ### f_movement(이동속도에 대한 명중률)
 
 ```python
