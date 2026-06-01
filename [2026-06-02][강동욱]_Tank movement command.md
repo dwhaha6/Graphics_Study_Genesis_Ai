@@ -1,6 +1,9 @@
 # Tank 이동 방식
 - Tank의 위치와 목표지점 좌표는 주어졌다고 가정했을 때 Tank가 목표지점까지 어떻게 이동하는게 좋을까?
 ## 방식1. spin 후 직진
+
+https://github.com/user-attachments/assets/b6706cb0-2d3e-47b1-9d8c-0123d26b0b81
+
 - 가장 간단, 경로 그리기도 쉽고 Tank 제어도 매우 쉬움
 	- spin하다가 heading 방향과 경로 방향이 align됐을 때 쭉 직진하면 끝
 ### 단점
