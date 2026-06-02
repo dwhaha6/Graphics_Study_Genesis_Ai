@@ -219,12 +219,14 @@ https://github.com/user-attachments/assets/e56a7124-c252-41b9-bb1d-cbfaec69bd0a
 | SDK preset | 0.5 m/s     | 거의 멈춘 후에야 잡음 (보수적)                         |
 | **우리**     | **5.0 m/s** | Brake 걸린 직후부터 미리 활성. brake 시 chassis 빨리 잡힘 |
 - 정지 마찰인 동시에 brake를 보조하는 항으로써 이용중
+
 **K_spring**
 
 |단계|값|의미|
 |---|---|---|
 |SDK preset|500,000 N/m|5톤 차량 기준|
 |**우리**|**1,000,000 N/m**|50톤 chassis 에 비례 → 강하게|
+
 **K_damp**
 
 |단계|값|의미|
