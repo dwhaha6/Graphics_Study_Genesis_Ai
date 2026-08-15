@@ -4,6 +4,8 @@
 - 여기서 throttle, steer로 차량을 조작하지 않고 f(뒷바퀴에 걸리는 토크), s(앞바퀴의 조향 각도)로 차량을 조작했습니다. -> Sim2Real(자율주행) 관점에서도 이게 더 적합하다고 합니다.
 	- throttle에서 여러 계산을 거쳐 토크가 되고 그 토크로 뒷바퀴가 굴러가는데 이러면 미분 식이 복잡해지기 때문
 
+ #### blender에서 측정한 a,k를 정답으로 삼아 제어를 계산한 영상
+
 https://github.com/user-attachments/assets/9e2efbde-1ab4-420a-bc43-c332ffbfb6ea
 
 ### 3개의 경로 비교(블렌더 실제 경로, genesis 미분으로 주행한 경로, a,k값으로 추정한 경로)
