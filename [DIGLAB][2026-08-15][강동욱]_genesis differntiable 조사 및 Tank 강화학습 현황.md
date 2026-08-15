@@ -26,6 +26,9 @@ https://github.com/user-attachments/assets/9e2efbde-1ab4-420a-bc43-c332ffbfb6ea
 |22.4 m|0.1106|**2.77**|
 |37.5 m|0.0043|**7.45**|
 - 즉 미리 계산된 정답 a,k를 따르지 않고 상황에 따라 step 단위로 원하는 a,k 값이 그때 그때 정해짐(Sim2Sim보단 Path2Control에 가까움)
+
+#### 구체적인 파이프라인
+
 ```
 매 프레임 t:
   ① 현재 상태 읽기      → 위치, 헤딩
