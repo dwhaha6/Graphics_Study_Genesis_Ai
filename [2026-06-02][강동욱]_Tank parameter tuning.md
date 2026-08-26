@@ -191,6 +191,7 @@ https://github.com/user-attachments/assets/e8c844da-14db-4897-bda9-9d8cf1746dea
 | Car preset                     | 50-80 rad/s       | 20-32 m/s                         |
 - 현재 Tank 각속도에 의하면 최고 속력이 144km/h가 나옴
 	- 실제 Tank로도 비현실적, 전장에선 더더욱 나오기 힘든 속도
+
 **현재 세팅**
 ```
 v_max = omega_max_drive · wheel_radius = 10.4 × 0.4 = 4.17 m/s = 15 km/h
@@ -204,6 +205,7 @@ v_max = omega_max_drive · wheel_radius = 10.4 × 0.4 = 4.17 m/s = 15 km/h
 | ----------------- | ------ | ----------- | ----------- | -------------------------------------- |
 | `omega_max_drive` | 100    | **10.4**    | rad/s       | wheel ω cap → cruise top speed 15 km/h |
 | `t_brake_max`     | 30,000 | **200,000** | N·m (total) | per-wheel 20k                          |
+
 **Brake 검증**
 
 https://github.com/user-attachments/assets/e56a7124-c252-41b9-bb1d-cbfaec69bd0a
