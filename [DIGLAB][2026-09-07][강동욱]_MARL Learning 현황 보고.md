@@ -108,7 +108,7 @@
 
 ## Best model 전투 영상(룰봇 상대 승률은 70.5%)
 
-| vs A (정면 러시) | vs B (고정 수비) | vs C (우회 협공) | vs M9b (직전 최강 모델) |
+| vs A (고정 수비) | vs B (정면 러시) | vs C (우회 협공) | vs M9b (직전 최강 모델) |
 |:---------------:|:---------------:|:---------------:|:----------------------:|
 | <a href="https://github.com/user-attachments/assets/e495c3fa-2f8b-45a4-a7eb-e218139886ed"><img src="./이미지/LvsA.png" width="200"></a><br>───────<br>L1-it13 **승**<br>종료 176 s<br>생존 1/3 | <a href="https://github.com/user-attachments/assets/a97c8178-37cd-43f5-9ade-1060902f378b"><img src="./이미지/LvsB.png" width="200"></a><br>───────<br>L1-it13 **승**<br>종료 77 s<br>생존 2/3 | <a href="https://github.com/user-attachments/assets/c323b326-e328-4536-86e3-f879e959dfa7"><img src="./이미지/LvsC.png" width="200"></a><br>───────<br>L1-it13 **승**<br>종료 157 s<br>생존 3/3 | <a href="https://github.com/user-attachments/assets/b3b98a43-11ad-4a4c-bea0-4f09129b6975"><img src="./이미지/LvsM9b.png" width="200"></a><br>───────<br>L1-it13 **승**<br>종료 94 s<br>생존 2/3 (HP 62) |
 | 3대 동시 정면 돌격 | 자리 고정·포탑만 회전 | 중앙 1 + 남북 우회 2 | 88판 통계 60:28 (68%) |
