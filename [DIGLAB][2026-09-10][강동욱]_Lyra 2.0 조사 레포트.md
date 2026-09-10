@@ -1,5 +1,8 @@
 - 아래에서 설명할 coordinate은 RHS, up -y, forward +z입니다
 	- OpenCV 카메라 규약
+# Lyra 아키텍쳐
+ ![](./이미지/lyra_architecture_simple.png)
+ 
 # 1. 입력 
 
 ## 1-1. Image
