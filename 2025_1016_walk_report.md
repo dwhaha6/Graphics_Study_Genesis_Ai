@@ -37,10 +37,10 @@ https://github.com/user-attachments/assets/27073d1a-9c1f-414c-9db4-c4e572a14e97
 - GPU는 학습(train)에서 수천개의 환경,배치,역전파가 있을 때 매우 유용함
 - 아래는 gpu를 잡고 학습시켰을 때의 ETA
 
-![](./이미지/gpu_train.png)
+![](./이미지/2025-10-16/gpu_train.png)
 
 - cpu만으로 학습시켰을 때의 ETA
-![](./이미지/cpu_train.png)
+![](./이미지/2025-10-16/cpu_train.png)
 
  
 ### 그렇다면 집(RTX 4060)에서는 단순 eval 코드만 돌리는데도 왜 버벅거렸을까?

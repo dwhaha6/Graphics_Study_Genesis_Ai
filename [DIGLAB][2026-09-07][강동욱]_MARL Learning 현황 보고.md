@@ -11,7 +11,7 @@
 ### model의 obs 추가(93 -> 115)
 
 
-![](./이미지/marlgpt_io_diagram_simple.png)
+![](./이미지/2026-09-07/marlgpt_io_diagram_simple.png)
 #### 기타 11 설명
 
 - **경계 4**: 내 위치에서 맵의 동·서·남·북 벽까지 거리 4개 (가장자리에 몰렸는지를 판단)
@@ -33,7 +33,7 @@
 - 전문가가 이동 명령을 낸 후 목적지에 tank가 도달하기 전까지는 이동에 관해 추가적인 명령이 없음 -> 이를 이동 명령 극히 일부, 정지 명령이 대다수라고 모델이 잘못 오해하여 BC 승률이 44전 1승 43패로 무너졌었음
 #### 2분 43초째 가만히만 있는 모델
 
-![](./이미지/M1.png)
+![](./이미지/2026-09-07/M1.png)
 - 따라서 위 obs 채널 추가(특정 event 발생 후 몇 초 경과했는지를 obs에 추가)하여 위 문제를 해결
 - 가만히 정지해 있는 상태와 이동 중인 상태를 구분짓게 한 효과 
 
@@ -56,7 +56,7 @@
 	- 물론 룰봇 상대 승률이 절대적인 평가 지표는 아니지만 어느정도 성능이 검증된 모델들이 없는 상황에서 룰봇 상대 승률을 1차적인 검증 지표로 사용
 ### M7 전투 영상(B 룰봇에게 패배)
 
-![](./이미지/map5_M7_vs_B_50-70s.gif)
+![](./이미지/2026-09-07/map5_M7_vs_B_50-70s.gif)
 
 ## 3. DAgger 교정: 64.2%
 ### DAgger 설명
@@ -110,5 +110,5 @@
 
 | vs A (고정 수비) | vs B (정면 러시) | vs C (우회 협공) | vs M9b (직전 최강 모델) |
 |:---------------:|:---------------:|:---------------:|:----------------------:|
-| <a href="https://github.com/user-attachments/assets/e495c3fa-2f8b-45a4-a7eb-e218139886ed"><img src="./이미지/LvsA.png" width="200"></a><br>───────<br>L1-it13 **승**<br>종료 176 s<br>생존 1/3 | <a href="https://github.com/user-attachments/assets/a97c8178-37cd-43f5-9ade-1060902f378b"><img src="./이미지/LvsB.png" width="200"></a><br>───────<br>L1-it13 **승**<br>종료 77 s<br>생존 2/3 | <a href="https://github.com/user-attachments/assets/c323b326-e328-4536-86e3-f879e959dfa7"><img src="./이미지/LvsC.png" width="200"></a><br>───────<br>L1-it13 **승**<br>종료 157 s<br>생존 3/3 | <a href="https://github.com/user-attachments/assets/b3b98a43-11ad-4a4c-bea0-4f09129b6975"><img src="./이미지/LvsM9b.png" width="200"></a><br>───────<br>L1-it13 **승**<br>종료 94 s<br>생존 2/3 (HP 62) |
+| <a href="https://github.com/user-attachments/assets/e495c3fa-2f8b-45a4-a7eb-e218139886ed"><img src="./이미지/2026-09-07/LvsA.png" width="200"></a><br>───────<br>L1-it13 **승**<br>종료 176 s<br>생존 1/3 | <a href="https://github.com/user-attachments/assets/a97c8178-37cd-43f5-9ade-1060902f378b"><img src="./이미지/2026-09-07/LvsB.png" width="200"></a><br>───────<br>L1-it13 **승**<br>종료 77 s<br>생존 2/3 | <a href="https://github.com/user-attachments/assets/c323b326-e328-4536-86e3-f879e959dfa7"><img src="./이미지/2026-09-07/LvsC.png" width="200"></a><br>───────<br>L1-it13 **승**<br>종료 157 s<br>생존 3/3 | <a href="https://github.com/user-attachments/assets/b3b98a43-11ad-4a4c-bea0-4f09129b6975"><img src="./이미지/2026-09-07/LvsM9b.png" width="200"></a><br>───────<br>L1-it13 **승**<br>종료 94 s<br>생존 2/3 (HP 62) |
 | 3대 동시 정면 돌격 | 자리 고정·포탑만 회전 | 중앙 1 + 남북 우회 2 | 88판 통계 60:28 (68%) |

@@ -17,7 +17,7 @@ wheel_fwd_world = R_w @ BLENDER_FORWARD_LOCAL
 ```python
 ang = signed_yaw_between(body_fwd_world, wheel_fwd_world)
 ```
-![](./이미지/step_steer.png)
+![](./이미지/2026-01-06/step_steer.png)
 ### 4. 좌/우 바퀴 조향각 평균 계산 -> 이 steer 값이 해당 step에서의 조향 제어값
 ```python
 steer_rad_reverse = 0.5*(steer_FL + steer_FR)
@@ -37,12 +37,12 @@ q_rel = q_car.conjugated() @ q_w
 q_rel.normalize()
 ```
 - 바퀴는 (차체가 도는 것 + 바퀴가 그 자체로 도는 것) 두 가지를 포함했기에 위 연산이 필요
-![](./이미지/step1_2.png)
+![](./이미지/2026-01-06/step1_2.png)
 ### 3. 상대 회전에서 스핀축 방향으로의 회전만 뽑기
 ```
 ang = twist_angle_about_axis_stable(q_rel, axis_car_local)
 ```
-![](./이미지/step3.png)
+![](./이미지/2026-01-06/step3.png)
 ### 4. 각속도(= 각도 변화량/ dt) 구하기
 ```python
 spin = 0.0 if prev is None else (ang_u - prev) / dt_safe
@@ -51,7 +51,7 @@ spin = 0.0 if prev is None else (ang_u - prev) / dt_safe
 ```python
 spin_R = 0.5 * (spin_RL + spin_RR)
 ```
-![](./이미지/step4_5.png)
+![](./이미지/2026-01-06/step4_5.png)
 ### 6. v_long(차체의 전방 속도)를 기반으로 부호를 결정해 throttle 도출
 ```python
 v_long = float(v_B.dot(body_fwd_world))
@@ -69,15 +69,15 @@ throttle_norm_reverse = clamp(throttle_raw_reverse / THROTTLE_OMEGA_MAX, -1.0, 1
 
 - spin = 바퀴 스핀 각속도  
 
-![](./이미지/step6_7.png)
+![](./이미지/2026-01-06/step6_7.png)
 
 https://github.com/user-attachments/assets/cac973ae-bf8d-4742-adac-59dc6161abdf
 
-![](./이미지/eight_blender.png)
+![](./이미지/2026-01-06/eight_blender.png)
 
 https://github.com/user-attachments/assets/e08c512b-a576-4856-9912-f3999d0295d4
 
-![](./이미지/slalom_blender.png)
+![](./이미지/2026-01-06/slalom_blender.png)
 
 - 기존 방식대로 구해낸 정답 제어값을 Genesis에 넣고 시뮬레이션(MLP 학습 움직임이 아닌, 그저 뽑아낸 데이터를 가지고 그대로 시뮬레이션한 것)
 
@@ -107,12 +107,12 @@ https://github.com/user-attachments/assets/7af3d1cb-21d6-4101-9ee4-d9a160d61f08
 
 ### 조향 부호에 따른 움직임 변화
 
-![](./이미지/eight_reverse.png)
+![](./이미지/2026-01-06/eight_reverse.png)
 
-![](./이미지/eight_actual.png)
+![](./이미지/2026-01-06/eight_actual.png)
 
-![](./이미지/slalom_reverse.png)
+![](./이미지/2026-01-06/slalom_reverse.png)
 
-![](./이미지/slalom_actual.png)
+![](./이미지/2026-01-06/slalom_actual.png)
 
 

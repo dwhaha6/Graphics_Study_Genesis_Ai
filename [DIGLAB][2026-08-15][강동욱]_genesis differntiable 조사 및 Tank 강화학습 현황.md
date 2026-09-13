@@ -10,7 +10,7 @@ https://github.com/user-attachments/assets/9e2efbde-1ab4-420a-bc43-c332ffbfb6ea
 
 ### 3개의 경로 비교(블렌더 실제 경로, genesis 미분으로 주행한 경로, a,k값으로 추정한 경로)
 
-![](./이미지/three_paths.png)
+![](./이미지/2026-08-15/three_paths.png)
 - 맨 위 이미지에서 **검은 실선**이 원래 경로
 - **초록색 점 선**이 정답 a,k로 그린 경로
 - **빨간 실선**이 genesis에서 주행시킨 경로
@@ -114,7 +114,7 @@ https://github.com/user-attachments/assets/ce50a54c-732e-45a1-bd61-cae19d6a0c2a
 ### 2-1. 엔트로피 정의(move 기준)
 #### 이동을 담당하는 move head에서 벌어지는 일
 
-![](./이미지/entropy설명.png)
+![](./이미지/2026-08-15/entropy설명.png)
 - MGPT 본체(head = 8인 인코더)에서 256차원의 정보를 주면 이를 36차원으로 줄인 뒤 softmax를 계산(구체적인 식은 아래에)
 
 **z값 계산(기존 MLP 컨벤션과 동일)**
@@ -142,10 +142,10 @@ $$H = -\sum_{i=1}^{36} p_i \log p_i$$
 
 ### 2-3. 해결책(논문의 구조와 똑같이 변경)
 
-![](./이미지/Revised_MARL_GPT.png)
+![](./이미지/2026-07-15/Revised_MARL_GPT.png)
 - 기존 MGPT 구조
 
-![](./이미지/new_MGPT.png)
+![](./이미지/2026-08-15/new_MGPT.png)
 - 논문과 동일하게 Actor, Critic을 인코더로 바꾸고 마지막에 차원만 줄여주는 리니어 구조를 붙임
 - Actor, Critic 자체적으로 낼 수 있는 출력이 다양해지므로 위 문제 방지 가능
 - 구조를 바꾼 후 다시 학습 진행중

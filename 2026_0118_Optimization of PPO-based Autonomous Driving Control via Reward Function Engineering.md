@@ -11,14 +11,14 @@ https://github.com/user-attachments/assets/538dbfab-18ac-4481-a2d8-89182b899b61
 
 ### 1. Survival Reward(생존 보상)
 
-![](./이미지/survival_reward.png)
+![](./이미지/2026-01-18/survival_reward.png)
 
 - 점수: 생존한 프레임당 0.01점
 - 의도: 생존 점수가 없으면 감점이 예상되는 상황에서 그냥 경로를 이탈해버리고 시뮬레이션을 끝내는 선택을 할 수 있음 -> 생존 보상으로 이를 방지
 
 ### 2. Speed reward(속력 보상)
 
-![](./이미지/speed_gaussian.png)
+![](./이미지/2026-01-18/speed_gaussian.png)
 
 - 가중치: 5.0
 #### 오차에 따른 점수 부여

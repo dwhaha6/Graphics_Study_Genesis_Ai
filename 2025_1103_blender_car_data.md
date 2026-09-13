@@ -6,7 +6,7 @@
 - 가상센서 
 ### 문제점
 #### 연구실 생성기로 받은 산악지형은 가운데가 움푹 패인 지형
-![](./이미지/p1mountain.png)
+![](./이미지/2025-11-03/p1mountain.png)
 - 지형의 Shape을 Convex Hull로 설정할 시 지면의 세밀한 각도 하나하나가 전부 계산되어 자동차가 움직이진 않아도 연산량을 아낄 수 있다는 장점이 있음
 - 다만 저런 분화구나 계곡같은 지형에선 Convex Hull은 사용 불가
 
@@ -16,7 +16,7 @@
 - Convex_Hull의 Collider 모양 때문
 - 이 문제를 해결하기 위해 Convex_Hull 대신 Mesh로 Shape을 지정하는 방법과 Collider를 조금 거칠게 가져가되 Convex_Hull을 유지하는 방법 2가지를 시도해봤음
 
-![](./이미지/convex_collider.png)
+![](./이미지/2025-11-03/convex_collider.png)
 
 ### 방법1
 - 그럼 그냥 mesh로 지정하면 되는데 뭐가 문제일까?
@@ -39,7 +39,7 @@ https://github.com/user-attachments/assets/7aee6272-3483-4776-8197-09e138583abd
 - 물리 시뮬레이션의 1프레임 결과를 Cache에 임시 저장하고 이를 RAM 캐시 버퍼에 기록 (이 과정을 반복) 
 - 지정된 타임 스텝이 완료되면 Bake를 통해 RAM의 캐시를 디스크에 저장
 
-![](./이미지/cache_bake.png)
+![](./이미지/2025-11-03/cache_bake.png)
 
 https://github.com/user-attachments/assets/c4eef099-c48e-4fbf-a477-e0565a6ce1af
 

@@ -12,7 +12,7 @@ Blender (Bullet physics)와 Genesis 물리 엔진은 동일한 제어 입력(thr
 - **횡방향 속도 차이**: 타이어 모델 차이(Bullet RaycastVehicle vs Genesis Coulomb contact)로 인해 코너링 시 v_lat 거동이 다름
 - **결과**: Blender에서 녹화한 제어 시퀀스를 Genesis에 그대로 재생하면 궤적이 크게 이탈
 
-![](./이미지/blender_raw_control.png)
+![](./이미지/2026-02-21/blender_raw_control.png)
 
 **목표**: Blender에서 생성된 차량 주행 궤적을 Genesis에서 동일하게 재현하는 Sim-to-Sim 전이 파이프라인 구축
 
@@ -100,7 +100,7 @@ Ground truth 생성 파이프라인(sweep + PD feedback)은 매 시나리오마�
 
 ### 4.3 아키텍처
 
-![MLP Architecture](./이미지/SL_MLP.png)
+![MLP Architecture](./이미지/2026-02-21/SL_MLP.png)
 
 | 구성요소 | 상세 |
 |---------|------|

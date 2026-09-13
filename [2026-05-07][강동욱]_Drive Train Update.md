@@ -9,7 +9,7 @@
 기존 `tank_belt.urdf` 를 ray-based 모델용으로 재구성.
 (아래 사진은 ray 부착이 된 사진, 부착 안 할시 바퀴가 땅 밑으로 꺼짐)
 
-![](./이미지/NewURDF.png)
+![](./이미지/2026-05-07/NewURDF.png)
 
 **변경 사항:**
 
@@ -100,7 +100,7 @@ N = max(N, 0.0)
 - `comp_rate` = `compression` 의 시간 미분 (압축이 얼마나 빠르게 변하나)
 - `N` 은 항상 ≥ 0 (지면이 바퀴를 위로 미는 힘)
 
-![](./이미지/tank_compression2.gif)
+![](./이미지/2026-05-07/tank_compression2.gif)
 
 - 탱크가 통통 튀지 않고 가상의 suspension으로 안정적으로 착지하는 모습
 
@@ -145,7 +145,7 @@ $$
 ### 3. Tire force (Pacejka Magic Formula)
 
 ### Pacejka??
-![](./이미지/Pacejka_linear.png)
+![](./이미지/2026-05-07/Pacejka_linear.png)
 - slip에 따라 타이어가 만들어내는 마찰력 곡선을 의미
 	- 수식이 linear 곡선보다 조금 복잡하나, 현실과 더 일치하는 곡선이기에 채택 
 
@@ -214,7 +214,7 @@ T_max(ω) = T_DRIVE_MAX × max(0, 1 - |ω|/OMEGA_MAX_DRIVE)
 - wheel별로 F_world와 torque를 계산
 - 왼쪽 그림은 코드에서 F_world에 대해, 오른쪽은 torque에 대해 나타낸 그럼
 
-![](./이미지/F_world_torque1.png)
+![](./이미지/2026-05-07/F_world_torque1.png)
 ```
 F_world = N · ẑ_world + F_long · forward + F_lat · lateral
 torque = r_wheel × F_world # r_wheel은 chassis 중심에서 wheel까지의 위치 벡터

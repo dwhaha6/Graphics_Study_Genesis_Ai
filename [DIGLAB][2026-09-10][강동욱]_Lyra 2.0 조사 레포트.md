@@ -1,19 +1,19 @@
 - 아래에서 설명할 coordinate은 RHS, up -y, forward +z입니다
 	- OpenCV 카메라 규약
 # Lyra 아키텍쳐
- ![](./이미지/lyra_architecture_simple.png)
+ ![](./이미지/2026-09-10/lyra_architecture_simple.png)
  
 # 1. 입력 
 
 ## 1-1. Image
 
-![](./이미지/first_image.png)
+![](./이미지/2026-09-10/first_image.png)
 - input image
 - DA3(Depth Anything 3): 사진 1장(혹은 그 이상)을 넣으면 각 픽셀의 depth + 카메라 렌즈값(내부 파라미터)을 함께 추정해주는 기하추정모델
 	- Lyra는 DA3를 사용하여 사진에서 픽셀마다의 depth를 추정
 ## 1-2. 카메라가 움직일 경로
 
-![](./이미지/w2c.png)
+![](./이미지/2026-09-10/w2c.png)
 - 카메라 외부 파라미터(rotation, translation) 정보를 담은 w2c matrix
 	- 카메라가 월드 어디에 있는가는 c2w matrix(별도 저장하지 않고 위 행렬 저장 후 역행렬을 취해줌)
 - 1번째 input image가 곧 coordinate의 원점, +z 방향(forward)
@@ -29,11 +29,11 @@
 ### 장면 생성에 들어가는 추가적인 장치
 
 #### 3D homography
-![](./이미지/depth_warp.png)
+![](./이미지/2026-09-10/depth_warp.png)
 
 - 어떤 프레임 하나를 생성할 때 공간 메모리에서 고른 최대 5장 프레임의 픽셀들을 3D점으로 띄우고 각 픽셀들을 새 카메라 위치, 자세로 좌표 변환 -> 기존에 보여진 정보들은 보존
 #### 광선 정보
-![](./이미지/plucker_ray.png)
+![](./이미지/2026-09-10/plucker_ray.png)
 
 - d는 카메라 원점에서 픽셀 방향으로의 벡터(카메라의 자세)
 - o는 월드 원점에서 카메라 원점으로의 벡터

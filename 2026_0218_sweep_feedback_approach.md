@@ -8,7 +8,7 @@ Blender 차량 궤적을 Genesis 물리엔진에서 재현하는 Sim2Sim 과제.
 - L-BFGS-B로 매 프레임 throttle/steer 최적화
 - loss를 지정하면 해당 loss들을 가장 최소로 하는 최적의 제어를 찾는 방식 BUT 경로 추종 특성상 초기에 pos, v,k 등 무엇 하나가 조금만 틀어져도 그에 대한 나비효과로 이후 결과도 전부 틀어져버림
 
-![](./이미지/MPC_result.png)
+![](./이미지/2026-02-18/MPC_result.png)
 
 - 직선 구간에서부터 쌓인 v오차(더 빨리 주행)로 코너링 구간에서 늦게 코너링 -> 벗어난 경로를 다시 복구하고자 steer를 주었으나 더 큰 pos 오차를 유발 
 
@@ -119,7 +119,7 @@ s = s_ff - kp_yaw * yaw_error      # kp_yaw = 0.5
 
 ### Cross-track 예시 
 
-![](./이미지/cross_track.png)
+![](./이미지/2026-02-18/cross_track.png)
 
 - a가 추종 경로 b가 경로점부터 차량까지의 위치 벡터라고 했을 때, cross product(aXb) 가 양수면 경로 기준 왼쪽 -> 우측 steering 보정
 - b가 추종 경로 a가 경로점부터 차량까지의 위치 벡터라면, 이 경우 cross product가 bXa가 되므로 -aXb 즉 음수가 됨-> 좌측 steering 보정
@@ -145,11 +145,11 @@ s = s_ff - kp_yaw * yaw_error      # kp_yaw = 0.5
 
 | MPC (L-BFGS-B) | Sweep open-loop |
 |--------|--------|
-| ![](./이미지/MPC_result.png) | ![](./이미지/sweep_openloop.png) |
+| ![](./이미지/2026-02-18/MPC_result.png) | ![](./이미지/2026-02-18/sweep_openloop.png) |
 
 | Sweep + v feedback only | **Sweep + full feedback** |
 |--------|--------|
-| ![](./이미지/sweep_v.png) | ![](./이미지/sweep_full.png) |
+| ![](./이미지/2026-02-18/sweep_v.png) | ![](./이미지/2026-02-18/sweep_full.png) |
 
 
 ### 최종 결과 상세 (Sweep + Full Feedback)
@@ -178,6 +178,6 @@ https://github.com/user-attachments/assets/bd3fb5ec-692a-4194-afff-1f2f62bd9d07
 
 ## 추가 개선사항
 
-![](./이미지/최적화작업2.png)
+![](./이미지/2026-02-18/최적화작업2.png)
 
 - 위 방식을 유지하되, 코너 구간에서만 yaw 오차와 cross-track 오차에 더 강하게 반응하도록 kp_yaw와 kp_ct를 2배 강화한 결과 

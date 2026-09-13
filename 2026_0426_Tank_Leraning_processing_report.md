@@ -23,7 +23,7 @@
 - 실제 최단 경로는 반대 방향 +10° 회전
 - 즉 포탑이 최단거리로 회전하지 않는 문제
 
-![](./이미지/tank_rotate.png)
+![](./이미지/2026-04-26/tank_rotate.png)
 
 ### 원인
 - `turret_yaw_joint`이 `type="continuous"` (제한 없는 누적 각도)
@@ -184,7 +184,7 @@ Stage 2에서 alive=1, hp=2로 바뀌면 NN이 본 적 없는 분포 → value f
 
 **대처**: 단계 전환 시 critic의 마지막 layer만 재초기화 (정책 layer는 보존). 첫 20 iter `value_loss_coef` 2배로 critic warm-up.
 
-![](./이미지/critic_output1.png)
+![](./이미지/2026-04-26/critic_output1.png)
 
 #### 문제 3 — Stage 4 self-play 풀 다양성
 Stage 3까지는 frozen 상대 → 일관된 학습. Stage 4는 풀 self-play → 풀이 비어있으면 self-current와만 매치.

@@ -30,7 +30,7 @@ spin_R = 0.5 * (spin_RL + spin_RR)
 ```
 
 # 수정된 MLP 구조
-![](./이미지/new_MLP.png)
+![](./이미지/2025-12-17/new_MLP.png)
 ## 입력
 ### 자세(Orientation)
 ```

@@ -39,12 +39,12 @@ I = [  iyx   iyy   iyz ]
 - 기본 개념: 현실 세계에 존재하는 무한한 회전축에 대해 9개의 회전 관성을 정의한 것
 #### 이게 무게중심 분포와 무슨 관련이 있는가?
 
-![](./이미지/square.png)
+![](./이미지/2025-11-18/square.png)
 
 - 차체가 위와 같은 모양이면? -> 관성값들이 고르게 나옴
     - (Ixx ≈ Iyy ≈ Izz)
 
-![](./이미지/long_exam.png)
+![](./이미지/2025-11-18/long_exam.png)
 
 - 위와 같은 모양에선?
     - Z축 회전(Izz)이 큼 → 옆으로 도는 게 어려움
@@ -59,10 +59,10 @@ I = [  iyx   iyy   iyz ]
 ## 바퀴 세팅
 - 피드백에 따라 collision을 mesh -> cylinder로 변경하였습니다
 
-![](./이미지/cylinder.png)
+![](./이미지/2025-11-18/cylinder.png)
 - rpy = 0,0,0 일 때의 실린더 모양
 
-![](./이미지/rotation_cylinder.png)
+![](./이미지/2025-11-18/rotation_cylinder.png)
 - rpy = 1.5708, 0, 0 일 때(x축에 대해 90도 회전)의 실린더 모양
     - 이 상태에서 axis xyz="0 1 0"으로 두고 y축에 대해 회전 -> 정상적으로 작동
 
@@ -89,7 +89,7 @@ https://github.com/user-attachments/assets/d117c0b1-a937-4f97-9e35-f645352ab223
   </geometry>
 </collision>
 ```
-![](./이미지/collision문제.png.jpg)
+![](./이미지/2025-11-18/collision문제.png.jpg)
 - 위 상황을 도식화한 것
 #### 현재의 box collision
 ```
@@ -100,7 +100,7 @@ https://github.com/user-attachments/assets/d117c0b1-a937-4f97-9e35-f645352ab223
       </geometry>
     </collision>
 ```
-![](./이미지/collision해결.png.jpg)
+![](./이미지/2025-11-18/collision해결.png.jpg)
 - 마찬가지로 현재 collision 상황을 도식화 한 것  
 -> 앞바퀴 문제 해결
 ## 주행 영상

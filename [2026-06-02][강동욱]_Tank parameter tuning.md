@@ -33,7 +33,7 @@
 - prismatic이 하는 역할: ray cast로 측정한 wheel 압축량(compression)에 따라 wheel이 시각적으로 자연스럽게 위 아래로 움직이는 효과 부여
 	- prismatic joint의 운동이 차체 dynamics에 직접 영향을 주는 건 아님
 
-![](./이미지/tank_compression2.gif)
+![](./이미지/2026-05-07/tank_compression2.gif)
 
 ### 2. 차량 구조 및 DoF
 #### 탱크 부품 구성
@@ -51,8 +51,8 @@
 
 #### Track 폭, 가로 길이
 
-![](./이미지/track_width.png)
-![](./이미지/track_length.png)
+![](./이미지/2026-06-02/track_width.png)
+![](./이미지/2026-06-02/track_length.png)
 
 - 트랙 폭 (좌·우 wheel 사이) = 2 × 1.42 = **2.84 m**
 - 트랙 길이 (sprocket → idler) = **6.0 m** -> chain을 쭉 풀었을 때 길이 아님
@@ -117,7 +117,7 @@ I = m(a²+b²)/12
 - Ia = 그 결과 물체가 실제로 회전 가속되는 정도(그 토크가 만드는 회전 운동량)
 - 원래는 Στ = Iα 이기에 수식이 더 복잡하지만 토크가 1개 뿐인 간단한 예시로 설명
 #### r² = y² + z²인 이유 
-![](./이미지/inertia_distance.png)
+![](./이미지/2026-06-02/inertia_distance.png)
 
 ### 수식 유도 2
 
@@ -152,7 +152,7 @@ izz = m(length² + width²) / 12
 |**izz** (yaw)|m(L² + W²)/12 = 50000·(36+9)/12|**187,500**|316,000|×1.7|
 
 
-![](./이미지/inertia_expression.png)
+![](./이미지/2026-06-02/inertia_expression.png)
 - 직육면체 이외의 다른 물체에 대한 관성 수식들(물체 모양에 따라 관성 수식은 달라짐)
 
 ## A3. Wheel 관성 및 마찰 계수

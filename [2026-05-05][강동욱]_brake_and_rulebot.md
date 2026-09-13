@@ -12,7 +12,7 @@ brake_active = True 일 때:
 - **관성**으로 탱크가 멈추지 않고 앞으로 더 밀려날 수밖에 없는 구조
 
 ## 그럼 실제 탱크 brake처럼 궤도를 멈추기 위한 힘을 주면 되지 않나?
-![](./이미지/tank_patch.png)
+![](./이미지/2026-04-07/tank_patch.png)
 
 - 실제 탱크는 “궤도 회전 속도”라는 물리 상태가 있고, 브레이크는 그 회전을 막는 토크를 검
 - Genesis tank는 궤도의 연산 비용이 비싼 관계로 패치로 대체했었음
@@ -56,7 +56,7 @@ https://github.com/user-attachments/assets/150212d0-067b-430f-ad18-db0933a6a2e7
 
 ### 하드코딩 문제점 예시
 
-![hardcoded tank demo](./이미지/hardcord_tank.gif)
+![hardcoded tank demo](./이미지/2026-05-05/hardcord_tank.gif)
 - 위 하드코딩 규칙에 따라서
 	- 동료가 타깃하는 적을 우선 타깃
 	- 재장전중엔 엄폐
@@ -73,7 +73,7 @@ https://github.com/user-attachments/assets/150212d0-067b-430f-ad18-db0933a6a2e7
 - Rule Bot을 제작하고 지도학습 정답으로 삼아 NN을 먼저 지도학습 시켜둔 뒤, 강화학습을 진행하자는 것
 - Deepmind의 AlphaStar라는 모델의 논문에서도 사람의 starcraft play로 먼저 지도학습 시키고 이후 강화학습으로 모델을 발전시켰다고 한 사례가 존재
 
-![alphastar 논문 일부](./이미지/alphastar.jpg)
+![alphastar 논문 일부](./이미지/2026-05-05/alphastar.jpg)
 
 ## Rule
 ### 1. 이동 규칙
@@ -85,7 +85,7 @@ https://github.com/user-attachments/assets/150212d0-067b-430f-ad18-db0933a6a2e7
 - 재장전 중일 땐 엄폐하는 게 더 합리적이지만, Bot의 목적은 warm start 즉 initial NN보다 나은 전투 능력을 보이면 됨(그 이상의 전략 전술은 NN이 학습하게 끔 두자는 것)
 #### 이동과 관련한 brake 부재 issue
 
-![](./이미지/brake_need.gif)
+![](./이미지/2026-05-05/brake_need.gif)
 
 - brake가 없어서 NN이 원하는 지점(엄폐물 뒤, 개활지 등)에 도달하지 못 하고 관성으로 앞으로 더 밀려나는 등의 문제가 있었음
 - brake 추가로 위 문제 해결
@@ -137,7 +137,7 @@ bot/NN 이 점사 (concentrated fire) 를 잘 수행하면 화력 우위로 역�
 
 | Left | Center | Right |
 |---|---|---|
-| ![](./이미지/map_left.png) | ![](./이미지/map_center.png) | ![](./이미지/map_right.png) |
+| ![](./이미지/2026-05-05/map_left.png) | ![](./이미지/2026-05-05/map_center.png) | ![](./이미지/2026-05-05/map_right.png) |
 - 환경의 다양성(차후 NN의 학습 고려)과 Bot이 다양한 환경에서 문제 없이 잘 동작하는지 확인하기 위해 map은 3가지 형태로 간단하게 제작
 - Bot(혹은 NN)은 항상 엄폐물 뒤에서 spawn, 나머지 탱크들은 이동하지 않으므로 엄폐물 부여 X
 ### randomness가 들어간 항목들 정리
@@ -162,7 +162,7 @@ bot/NN 이 점사 (concentrated fire) 를 잘 수행하면 화력 우위로 역�
 
 | Bot Lose (근소한 차이) | Bot Lose | Bot Win |
 |---|---|---|
-| [![Bot Lose close](./이미지/bot_close_game.jpg)](https://github.com/user-attachments/assets/de2795fd-8d8c-46a6-b8c2-8101a2330b21) | [![Bot Lose](./이미지/bot_lose.jpg)](https://github.com/user-attachments/assets/74da7095-d153-4068-90a9-d25acff6e9d1) | [![Bot Win](./이미지/bot_win.jpg)](https://github.com/user-attachments/assets/114ee1bb-4530-41ec-a825-cfb176883fb9) |
+| [![Bot Lose close](./이미지/2026-05-05/bot_close_game.jpg)](https://github.com/user-attachments/assets/de2795fd-8d8c-46a6-b8c2-8101a2330b21) | [![Bot Lose](./이미지/2026-05-05/bot_lose.jpg)](https://github.com/user-attachments/assets/74da7095-d153-4068-90a9-d25acff6e9d1) | [![Bot Win](./이미지/2026-05-05/bot_win.jpg)](https://github.com/user-attachments/assets/114ee1bb-4530-41ec-a825-cfb176883fb9) |
 
 ### 총 전적(총 256개 episode)
 | 결과                          |  횟수 |  비율 |

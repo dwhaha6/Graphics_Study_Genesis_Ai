@@ -10,7 +10,7 @@ P_hit = P_base × f_movement × f_distance × f_LOS × f_aim
 
 -> 이후 나오는 명중률은 피격확률을 의미
 
-![](./이미지/e^-x.png)
+![](./이미지/2026-05-12/e^-x.png)
 
 ### f_movement(이동속도에 대한 명중률)
 
@@ -157,6 +157,6 @@ https://github.com/user-attachments/assets/9d3042da-1715-4c19-9418-581c79e83bfa
 
 ## 현재 Map설계 진행중
 
-![](./이미지/map_design.jpg)
+![](./이미지/2026-05-12/map_design.jpg)
 
 https://github.com/user-attachments/assets/316eedfe-660f-490e-bf78-a2ffbb4b9e39

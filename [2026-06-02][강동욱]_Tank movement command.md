@@ -34,7 +34,7 @@ LSL, RSR, LSR, RSL  (L은 좌회전, S는 직진, R은 우회전)
 7. tank controller가 waypoint를 따라감
 ```
 **family 종류**
-![](./이미지/dubins.png)
+![](./이미지/2026-06-02/dubins.png)
 ```python
 L1 = t × R_min       # 첫 L arc 길이 (m)
 L2 = p × R_min       # 직선 길이 (m)

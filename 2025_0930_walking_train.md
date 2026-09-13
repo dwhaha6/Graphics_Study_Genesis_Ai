@@ -7,7 +7,7 @@ backflip 예제 관련 train코드가 없어 학습 데이터를 찾을 수 없�
 - 이 예제에선 num_envs = 4096 
     - 로봇 4096마리를 동시에 돌림  
 
-![독립된 환경에서 존재하는 로봇들](./이미지/env.png)
+![독립된 환경에서 존재하는 로봇들](./이미지/2025-09-30/env.png)
 ## step
 - 현재 상태 관측 -> 정책이 행동을 선택 -> 환경이 그 행동을 반영해서 다음 상태와 보상 반환
     - 이 하나의 과정이 1 step
@@ -31,7 +31,7 @@ backflip 예제 관련 train코드가 없어 학습 데이터를 찾을 수 없�
     2. mini-batch로 나눠 학습
     3. 데이터 폐기 -> 다음 iteration에서 새로운 rollout 수집  
 
-![Rollout,Iteration,Episode](./이미지/REI.png)
+![Rollout,Iteration,Episode](./이미지/2025-09-30/REI.png)
 
 ## Mini-batch(새로 알게 된 개념)
 - 98,304개의 샘플을 4등분(num_mini_batches = 4)
@@ -44,7 +44,7 @@ backflip 예제 관련 train코드가 없어 학습 데이터를 찾을 수 없�
 - mini-batch 4번 학습이 끝나면 -> epoch 1회
 - 결과적으로 한 iteration마다 4 mini-batch X 5 epoch = 20번 update
 
-![](./이미지/batch.png)
+![](./이미지/2025-09-30/batch.png)
 
 ## 이후 처리
 - 한 iteration이 끝나면 학습이 끝난 데이터는 버림

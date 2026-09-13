@@ -6,7 +6,7 @@ https://github.com/user-attachments/assets/6b979586-b3ab-4eff-a421-58f1abbbba04
 - 위 움직임을 모사할 예정
 
 ## MLP 구조
-![](./이미지/MLP_steer.png)
+![](./이미지/2025-11-24/MLP_steer.png)
 
 ### 입력층(Input Layer) - 6차원
 | 차원       | 의미                  |
@@ -57,7 +57,7 @@ https://github.com/user-attachments/assets/6b979586-b3ab-4eff-a421-58f1abbbba04
 raw_steer = out[0]
 steer_cmd = torch.tanh(raw_steer) * steer_scale
 ```
-![](./이미지/tanh.png)
+![](./이미지/2025-11-24/tanh.png)
 - tanh -> -1~1 의 범위로 제한
 - steer_scale -> 최대 조향각(Blender와 동일하게 35도)
 - 최종 조향 각도 산출 완료

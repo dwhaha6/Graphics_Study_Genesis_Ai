@@ -69,7 +69,7 @@ ang_vel = axis * (angle / dt)
 
 ## 뽑아낸 데이터로 MLP 만들고 Pytorch로 학습시키기
 ### MLP 구조
-![](./이미지/MLP.png)
+![](./이미지/2025-11-21/MLP.png)
 #### 1. Linear(3,64)
 - weight: 3 × 64 = 192
 - bias: 64

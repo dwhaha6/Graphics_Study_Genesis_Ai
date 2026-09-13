@@ -32,7 +32,7 @@ def diffdrive_cmd(vx: float, wz: float, dof_count: int) -> np.ndarray:
 - 4륜 구동인지 2륜 구동인지에 따라 반환하는 바퀴 속도의 개수가 달라짐
     - 이 값들을 기반으로 v_l(왼쪽 바퀴 속도)와 v_r(오른쪽 바퀴 속도)가 각각 얼마의 속도로 돌아야 하는지를 계산
     - 예를 들어 직진은 두 바퀴의 속도가 같고, 오른쪽으로 돌려면 오른쪽 바퀴보다 왼쪽 바퀴가 더 빨리 돌도록 명령
-![](./이미지/diff_drive.png)
+![](./이미지/2025-09-22/diff_drive.png)
 ### 2. scene(가상 세계 생성) 과 terrain(지형 생성)
 ```python
 scene = gs.Scene(
@@ -69,8 +69,8 @@ terrain = scene.add_entity(gs.morphs.Terrain(
     - horiaontal은 가로로 울퉁불퉁한 정도
     - vertical은 세로로 울퉁불퉁한 정도
       
-![](./이미지/wave.png)
-![위 코드로 생성된 지형의 모습](./이미지/terrain.png)
+![](./이미지/2025-09-22/wave.png)
+![위 코드로 생성된 지형의 모습](./이미지/2025-09-22/terrain.png)
 ### 3. car 불러오기
 ```python
 car = scene.add_entity(gs.morphs.URDF(
@@ -88,7 +88,7 @@ car = scene.add_entity(gs.morphs.URDF(
     1. 링크(link) : 자동차를 이루는 각각의 고정된 부품들(바퀴, 본체 등)
     2. 조인트(joint) : 두 개의 링크를 서로 연결하고, 어떻게 움직일 수 있는지를 정의(우리 몸의 관절과 비슷)
     - URDF 파일의 경우 아직 모르는 부분이 많아 필요시 더 자세히 학습하겠습니다.
-![](./이미지/urdf)
+![](./이미지/2025-09-22/urdf.png)
 - pos : 자동차의 생성 위치
     - cx,cy는 맵 정중앙을 의미 
     - z축 좌표를 0.25로 주어 자동차가 땅에 박히지 않게 살짝 띄워주기
@@ -127,7 +127,7 @@ car.set_dofs_kv(kv=np.full(n, KV, dtype=np.float32), dofs_idx_local=dofs)
         - lower는 뒤로 가게 하는 힘
         - upper는 앞으로 가게 하는 힘
       
-![](./이미지/TOQUE.png)
+![](./이미지/2025-09-22/TOQUE.png)
 ## 3. 시뮬레이션 루프
 ```python
 for t in range(STEPS):
@@ -151,7 +151,7 @@ for t in range(STEPS):
 4. 중력 (Gravity Force): 자동차는 항상 아래로 잡아당겨짐
 5. 수직 항력 (Normal Force): 중력으로 땅을 누르면, 땅이 자동차를 다시 위로 밀어내는 힘  
 
-![](./이미지/sujik.png)
+![](./이미지/2025-09-22/sujik.png)
 - 이 모든 힘들을 계산해 자동차의 움직임을 예측, 업데이트함
 - 자동차가 실제 물리 법칙으로 움직이는 것처럼 보임 
 ## 5. 시행 착오 정리

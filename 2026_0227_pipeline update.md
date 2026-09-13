@@ -31,7 +31,7 @@ if max_upcoming_k > k_brake_threshold:
     t = t_ff - k_brake * (max_upcoming_k - k_brake_threshold)
 ```
 
-![](./이미지/k_brake.png)
+![](./이미지/2026-02-27/k_brake.png)
 
 | 파라미터 | 최종값 | 설명 |
 |---------|:------:|------|
@@ -50,11 +50,11 @@ if max_upcoming_k > k_brake_threshold:
 
 | k_brake = 0.0 | k_brake = 0.5 |
 |:---:|:---:|
-| ![](./이미지/kb_0.png) | ![](./이미지/kb_05.png) |
+| ![](./이미지/2026-02-27/kb_0.png) | ![](./이미지/2026-02-27/kb_05.png) |
 
 | k_brake = 1.0 | k_brake = 1.25 (최종) |
 |:---:|:---:|
-| ![](./이미지/kb_10.png) | ![](./이미지/kb_125.png) |
+| ![](./이미지/2026-02-27/kb_10.png) | ![](./이미지/2026-02-27/kb_125.png) |
 
 #### 최종 PD 파라미터
 
@@ -135,7 +135,7 @@ throttle = clip(t_ff + Δthrottle, −1.0,  1.0)
 - 이때 잔차는 sweep table에서 구했던 대략적인 제어에 대한 잔차를 의미
 ### MLP 구조 및 학습 설정
 
-![](./이미지/MLP0227.png)
+![](./이미지/2026-02-27/MLP0227.png)
 
 | 항목 | 값 |
 |------|----|
