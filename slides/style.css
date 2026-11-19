@@ -1,0 +1,77 @@
+:root {
+  --lx-bg: #0d1117;
+  --lx-panel: #161b22;
+  --lx-panel2: #1f2630;
+  --lx-line: #30363d;
+  --lx-text: #e6edf3;
+  --lx-muted: #9aa5b1;
+  --lx-accent: #5eead4;
+  --lx-warn: #fbbf24;
+  --lx-bad: #f87171;
+  --lx-good: #4ade80;
+}
+
+.slidev-layout {
+  background: var(--lx-bg) !important;
+  color: var(--lx-text);
+  font-family: 'Noto Sans KR', sans-serif;
+  padding: 1.6rem 2.6rem 2.2rem;
+}
+
+.slidev-layout h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: .2rem;
+  color: var(--lx-text);
+}
+.slidev-layout h1 + p { opacity: 1; }
+.slidev-layout button { cursor: pointer; color: inherit; }
+
+.kicker { color: var(--lx-accent); font-size: .72rem; letter-spacing: .14em; font-weight: 700; }
+.lead { color: var(--lx-muted); font-size: .95rem; margin: 0 0 .9rem; }
+.em { color: var(--lx-accent); font-weight: 700; }
+.y { color: var(--lx-warn); font-weight: 700; }
+.bad { color: var(--lx-bad); font-weight: 700; }
+.muted { color: var(--lx-muted); }
+
+.src {
+  position: absolute; left: 2.6rem; bottom: .7rem;
+  font-size: .6rem; color: #6e7781;
+}
+.concept {
+  position: absolute; right: 2.6rem; bottom: .65rem;
+  font-size: .6rem; color: var(--lx-warn);
+  border: 1px solid #fbbf2488; border-radius: 4px; padding: 0 .4rem;
+}
+.panel {
+  background: var(--lx-panel); border: 1px solid var(--lx-line);
+  border-radius: 12px; padding: .8rem 1rem;
+}
+.term { font-size: .78rem; line-height: 1.5; }
+.term b { color: var(--lx-accent); }
+
+/* section cover slides */
+.sec { text-align: left; width: 34rem; margin: 0 auto; }
+.sec h1 { font-size: 2.5rem !important; margin: .3rem 0 .1rem; }
+.sec .sub { font-size: 1.15rem; font-weight: 500; }
+.sec .steps2 { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; margin-top: 1.6rem; }
+.sec .steps2 > div { border: 1px solid var(--lx-line); border-radius: 10px; padding: .55rem .8rem; opacity: .45; }
+.sec .steps2 > div.on { opacity: 1; border-color: var(--lx-accent); background: #5eead414; }
+.sec .steps2 b { display: block; font-size: .95rem; }
+.sec .steps2 span { font-size: .72rem; color: var(--lx-muted); }
+.sec .agenda { margin-top: 1.1rem; display: grid; grid-template-columns: 4.2rem 1fr; gap: .45rem .6rem; font-size: .9rem; }
+.sec .agenda .pn { color: var(--lx-accent); font-weight: 700; }
+
+/* paper notation strip (bottom of concept slides) */
+.peq {
+  position: absolute; left: 2.6rem; right: 2.6rem; bottom: 1.75rem;
+  font-size: .74rem; line-height: 1.6; color: var(--lx-text);
+  border-top: 1px dashed var(--lx-line); padding-top: .3rem;
+}
+.peq p { margin: 0; }
+.peq .pl { display: inline-block; font-size: .6rem; font-weight: 700; letter-spacing: .06em; color: #0d1117; background: #cbd5e1; border-radius: 4px; padding: 0 .35rem; margin-right: .45rem; }
+.peq .katex { font-size: 1.12em; }
+.peq .katex-display { margin: .25rem 0 0; }
+.peq .katex-display .katex { font-size: 1.3em; }
+.peq .mu { color: var(--lx-muted); }
